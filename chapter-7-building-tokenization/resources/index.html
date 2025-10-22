@@ -1,0 +1,494 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="Nathan Reed">
+	<meta name="description" content="Pixels and polygons and shaders, oh my!">
+	<meta name="keywords" content="graphics,coding,programming,shader,rendering,math,directx,opengl,c++,gpu,pbr,brdf,vector,matrix">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i|Cabin:400,400i,700,700i|Roboto+Mono:400,400i">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+	<link rel="canonical" href="/blog/programmers-intro-to-unicode/">
+	<link rel="alternate" type="application/rss+xml" href="/feed/" title="Nathan Reed’s coding blog">
+	<link rel="stylesheet" href="css/katex.min.css" crossorigin="anonymous">
+	<script defer="" src="js/katex.min.js" crossorigin="anonymous"></script>
+	<script defer="" src="js/auto-render.min.js" crossorigin="anonymous" onload="renderMath();"></script>
+	<title>A Programmer’s Introduction to Unicode – Nathan Reed’s coding blog</title>
+</head>
+<body>
+	<div id="footer-pusher">
+		<header id="site-header">
+			<div id="site-header-aligner">
+				<h1><a href="/">Nathan Reed</a></h1>
+				<nav>
+					<a href="/" class="active">Blog</a>
+					<a href="/made/">Stuff I’ve Made</a>
+					<a href="/talks/">Talks</a>
+					<a href="/about/">About Me</a>
+				</nav>
+			</div>
+		</header>
+		<div id="content">
+			<nav class="pagination">
+<a class="page-left" href="/blog/many-meanings-of-shader/">The Many Meanings of “Shader”</a><a class="page-right" href="/blog/quadrilateral-interpolation-part-2/">Quadrilateral Interpolation, Part 2</a>		</nav>
+
+	<article>
+			<header>
+		<h1>A Programmer’s Introduction to Unicode</h1>
+			<p>March 3, 2017 · <a href="/blog/category/coding/">Coding</a> · <a href="/blog/programmers-intro-to-unicode/#comments" class="disqus-comment-count" data-disqus-identifier="/blog/programmers-intro-to-unicode/">Comments</a></p>
+	</header>
+
+		<p>Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪! 😄 The very name strikes fear and awe into the hearts of programmers
+worldwide. We all know we ought to “support Unicode” in our software (whatever that means—like
+using <code>wchar_t</code> for all the strings, right?). But Unicode can be abstruse, and diving into the
+thousand-page <a href="http://www.unicode.org/versions/latest/">Unicode Standard</a> plus its dozens of
+supplementary <a href="http://www.unicode.org/reports/">annexes, reports</a>, and <a href="http://www.unicode.org/notes/">notes</a>
+can be more than a little intimidating. I don’t blame programmers for still finding the whole thing
+mysterious, even 30 years after Unicode’s inception.</p>
+<p>A few months ago, I got interested in Unicode and decided to spend some time learning more about it
+in detail. In this article, I’ll give an introduction to it from a programmer’s point of view.</p>
+<!--more-->
+<p>I’m going to focus on the character set and what’s involved in working with strings and files of Unicode text.
+However, in this article I’m not going to talk about fonts, text layout/shaping/rendering, or
+localization in detail—those are separate issues, beyond my scope (and knowledge) here.</p>
+<div class="toc">
+<ul>
+<li><a href="#diversity-and-inherent-complexity">Diversity and Inherent Complexity</a></li>
+<li><a href="#the-unicode-codespace">The Unicode Codespace</a><ul>
+<li><a href="#codespace-allocation">Codespace Allocation</a></li>
+<li><a href="#scripts">Scripts</a></li>
+<li><a href="#usage-frequency">Usage Frequency</a></li>
+</ul>
+</li>
+<li><a href="#encodings">Encodings</a><ul>
+<li><a href="#utf-8">UTF-8</a></li>
+<li><a href="#utf-16">UTF-16</a></li>
+</ul>
+</li>
+<li><a href="#combining-marks">Combining Marks</a><ul>
+<li><a href="#canonical-equivalence">Canonical Equivalence</a></li>
+<li><a href="#normalization-forms">Normalization Forms</a></li>
+<li><a href="#grapheme-clusters">Grapheme Clusters</a></li>
+</ul>
+</li>
+<li><a href="#and-more">And More…</a></li>
+</ul>
+</div>
+<h2 id="diversity-and-inherent-complexity"><a href="#diversity-and-inherent-complexity" title="Permalink to this section">Diversity and Inherent Complexity</a></h2>
+<p>As soon as you start to study Unicode, it becomes clear that it represents a large jump in complexity
+over character sets like ASCII that you may be more familiar with. It’s not just that Unicode
+contains a much larger number of characters, although that’s part of it. Unicode also has a great
+deal of internal structure, features, and special cases, making it much more than what one might
+expect a mere “character set” to be. We’ll see some of that later in this article.</p>
+<p>When confronting all this complexity, especially as an engineer, it’s hard not to find oneself asking,
+“Why do we need all this? Is this really necessary? Couldn’t it be simplified?”</p>
+<p>However, Unicode aims to faithfully represent the <em>entire world’s</em> writing systems. The Unicode
+Consortium’s stated goal is “enabling people around the world to use computers in any language”.
+And as you might imagine, the diversity of written languages is immense! To date, Unicode supports
+135 different scripts, covering some 1100 languages, and there’s still a long tail of
+<a href="http://linguistics.berkeley.edu/sei/">over 100 unsupported scripts</a>, both modern and historical,
+which people are still working to add.</p>
+<p>Given this enormous diversity, it’s inevitable that representing it is a complicated project.
+Unicode embraces that diversity, and accepts the complexity inherent in its mission to include all
+human writing systems. It doesn’t make a lot of trade-offs in the name of simplification, and it
+makes exceptions to its own rules where necessary to further its mission.</p>
+<p>Moreover, Unicode is committed not just to supporting texts in any <em>single</em> language, but also to
+letting multiple languages coexist within one text—which introduces even more complexity.</p>
+<p>Most programming languages have libraries available to handle the gory low-level details of text
+manipulation, but as a programmer, you’ll still need to know about certain Unicode features in order
+to know when and how to apply them. It may take some time to wrap your head around it all, but
+don’t be discouraged—think about the billions of people for whom your software will be more
+accessible through supporting text in their language. Embrace the complexity!</p>
+<h2 id="the-unicode-codespace"><a href="#the-unicode-codespace" title="Permalink to this section">The Unicode Codespace</a></h2>
+<p>Let’s start with some general orientation. The basic elements of Unicode—its “characters”, although
+that term isn’t quite right—are called <em>code points</em>. Code points are identified by number,
+customarily written in hexadecimal with the prefix “U+”, such as
+<a href="http://unicode.org/cldr/utility/character.jsp?a=A">U+0041 “A” <span class="smallcaps">latin capital letter a</span></a> or
+<a href="http://unicode.org/cldr/utility/character.jsp?a=θ">U+03B8 “θ” <span class="smallcaps">greek small letter theta</span></a>. Each
+code point also has a short name, and quite a few other properties, specified in the
+<a href="http://www.unicode.org/reports/tr44/">Unicode Character Database</a>.</p>
+<p>The set of all possible code points is called the <em>codespace</em>. The Unicode codespace consists of
+1,114,112 code points. However, only 128,237 of them—about 12% of the codespace—are actually
+assigned, to date. There’s plenty of room for growth! Unicode also reserves an additional 137,468
+code points as “private use” areas, which have no standardized meaning and are available for
+individual applications to define for their own purposes.</p>
+<h3 id="codespace-allocation"><a href="#codespace-allocation" title="Permalink to this section">Codespace Allocation</a></h3>
+<p>To get a feel for how the codespace is laid out, it’s helpful to visualize it. Below is a map of the
+entire codespace, with one pixel per code point. It’s arranged in tiles for visual coherence;
+each small square is 16×16 = 256 code points, and each large square is a “plane” of 65,536 code
+points. There are 17 planes altogether.</p>
+<p><a class="invert-when-dark" href="codespace-map.png" style="mix-blend-mode:unset"><img alt="Map of the Unicode codespace (click to zoom)" src="images/codespace-map.png" title="Map of the Unicode codespace (click to zoom)"></a></p>
+<p>White represents unassigned space. Blue is assigned code points, green is private-use areas, and
+the small red area is surrogates (more about those later).
+As you can see, the assigned code points are distributed somewhat sparsely, but concentrated in the
+first three planes.</p>
+<p>Plane 0 is also known as the “Basic Multilingual Plane”, or BMP. The BMP contains essentially all
+the characters needed for modern text in any script, including Latin, Cyrillic, Greek, Han (Chinese),
+Japanese, Korean, Arabic, Hebrew, Devanagari (Indian), and many more.</p>
+<p>(In the past, the codespace was just the BMP and no more—Unicode was originally conceived as a
+straightforward 16-bit encoding, with only 65,536 code points. It was expanded to its current size
+in 1996. However, the vast majority of code points in modern text belong to the BMP.)</p>
+<p>Plane 1 contains historical scripts, such as Sumerian cuneiform and Egyptian hieroglyphs, as well as
+emoji and various other symbols. Plane 2 contains a large block of less-common and historical Han
+characters. The remaining planes are empty, except for a small number of rarely-used formatting
+characters in Plane 14; planes 15–16 are reserved entirely for private use.</p>
+<h3 id="scripts"><a href="#scripts" title="Permalink to this section">Scripts</a></h3>
+<p>Let’s zoom in on the first three planes, since that’s where the action is:</p>
+<p><a class="invert-when-dark" href="script-map.png" style="mix-blend-mode:unset"><img alt="Map of scripts in Unicode planes 0–2 (click to zoom)" src="images/script-map.png" title="Map of scripts in Unicode planes 0–2 (click to zoom)"></a></p>
+<p>This map color-codes the 135 different scripts in Unicode. You can see how Han
+<nobr>(<span class="swatch" style="background-color:#6bd8d3"></span>)</nobr> and Korean
+<nobr>(<span class="swatch" style="background-color:#ce996a"></span>)</nobr> take up
+most of the range of the BMP (the left large square). By contrast, all of the European, Middle
+Eastern, and South Asian scripts fit into the first row of the BMP in this diagram.</p>
+<p>Many areas of the codespace are adapted or copied from earlier encodings. For
+example, the first 128 code points of Unicode are just a copy of ASCII. This has clear benefits
+for compatibility—it’s easy to losslessly convert texts from smaller encodings into Unicode (and
+the other direction too, as long as no characters outside the smaller encoding are used).</p>
+<h3 id="usage-frequency"><a href="#usage-frequency" title="Permalink to this section">Usage Frequency</a></h3>
+<p>One more interesting way to visualize the codespace is to look at the distribution of usage—in
+other words, how often each code point is actually used in real-world texts. Below
+is a heat map of planes 0–2 based on a large sample of text from Wikipedia and Twitter (all
+languages). Frequency increases from black (never seen) through red and yellow to white.</p>
+<p><a href="heatmap-wiki+tweets.png"><img alt="Heat map of code point usage frequency in Unicode planes 0–2 (click to zoom)" src="images/heatmap-wiki%2Btweets.png" title="Heat map of code point usage frequency in Unicode planes 0–2 (click to zoom)"></a></p>
+<p>You can see that the vast majority of this text sample lies in the BMP, with only scattered
+usage of code points from planes 1–2. The biggest exception is emoji, which show up here as the
+several bright squares in the bottom row of plane 1.</p>
+<h2 id="encodings"><a href="#encodings" title="Permalink to this section">Encodings</a></h2>
+<p>We’ve seen that Unicode code points are abstractly identified by their index in the codespace,
+ranging from U+0000 to U+10FFFF. But how do code points get represented as bytes, in memory or in
+a file?</p>
+<p>The most convenient, computer-friendliest (and programmer-friendliest) thing to do would be to just
+store the code point index as a 32-bit integer. This works, but it consumes 4 bytes per code point,
+which is sort of a lot. Using 32-bit ints for Unicode will cost you a bunch of extra storage,
+memory, and performance in bandwidth-bound scenarios, if you work with a lot of text.</p>
+<p>Consequently, there are several more-compact encodings for Unicode. The 32-bit integer encoding is
+officially called UTF-32 (UTF = “Unicode Transformation Format”), but it’s rarely used for storage.
+At most, it comes up sometimes as a temporary internal representation, for examining or operating on
+the code points in a string.</p>
+<p>Much more commonly, you’ll see Unicode text encoded as either UTF-8 or UTF-16. These are both
+<em>variable-length</em> encodings, made up of 8-bit or 16-bit units, respectively. In these schemes,
+code points with smaller index values take up fewer bytes, which saves a lot of memory for
+typical texts. The trade-off is that processing UTF-8/16 texts is more programmatically involved,
+and likely slower.</p>
+<h3 id="utf-8"><a href="#utf-8" title="Permalink to this section">UTF-8</a></h3>
+<p>In UTF-8, each code point is stored using 1 to 4 bytes, based on its index value.</p>
+<p>UTF-8 uses a system of binary prefixes, in which the high bits of each byte mark whether it’s a
+single byte, the beginning of a multi-byte sequence, or a continuation byte; the remaining bits,
+concatenated, give the code point index. This table shows how it works:</p>
+<table>
+    <thead>
+        <tr>
+            <th>UTF-8 (binary)
+            </th><th>Code point (binary)
+            </th><th>Range
+        </th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mono">0xxxxxxx</td>
+            <td class="mono">xxxxxxx</td>
+            <td>U+0000–U+007F</td>
+        </tr>
+        <tr>
+            <td class="mono">110xxxxx 10yyyyyy</td>
+            <td class="mono">xxxxxyyyyyy</td>
+            <td>U+0080–U+07FF</td>
+        </tr>
+        <tr>
+            <td class="mono">1110xxxx 10yyyyyy 10zzzzzz</td>
+            <td class="mono">xxxxyyyyyyzzzzzz</td>
+            <td>U+0800–U+FFFF</td>
+        </tr>
+        <tr>
+            <td class="mono">11110xxx 10yyyyyy 10zzzzzz 10wwwwww</td>
+            <td class="mono">xxxyyyyyyzzzzzzwwwwww</td>
+            <td>U+10000–U+10FFFF</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>A handy property of UTF-8 is that code points below 128 (ASCII characters) are encoded as single
+bytes, and all non-ASCII code points are encoded using sequences of bytes 128–255. This has a couple
+of nice consequences. First, any strings or files out there that are already in ASCII can also be
+interpreted as UTF-8 without any conversion. Second, lots of widely-used string programming
+idioms—such as null termination, or delimiters (newlines, tabs, commas, slashes, etc.)—will
+just work on UTF-8 strings. ASCII bytes never occur inside
+the encoding of non-ASCII code points, so searching byte-wise for a null terminator or a delimiter
+will do the right thing.</p>
+<p>Thanks to this convenience, it’s relatively simple to extend legacy ASCII programs and APIs to handle
+UTF-8 strings. UTF-8 is very widely used in the Unix/Linux and Web worlds, and many programmers
+argue <a href="http://utf8everywhere.org/">UTF-8 should be the default encoding everywhere</a>.</p>
+<p>However, UTF-8 isn’t a drop-in replacement for ASCII strings in all respects. For instance,
+code that iterates over the “characters” in a string will need to decode UTF-8 and iterate over
+code points (or maybe grapheme clusters—more about those later), not bytes. When you measure the
+“length” of a string, you’ll need to think about whether you want the length in bytes, the length
+in code points, the width of the text when rendered, or something else.</p>
+<h3 id="utf-16"><a href="#utf-16" title="Permalink to this section">UTF-16</a></h3>
+<p>The other encoding that you’re likely to encounter is UTF-16. It uses 16-bit words, with
+each code point stored as either 1 or 2 words.</p>
+<p>Like UTF-8, we can express the UTF-16 encoding rules in the form of binary prefixes:</p>
+<table>
+    <thead>
+        <tr>
+            <th>UTF-16 (binary)
+            </th><th>Code point (binary)
+            </th><th>Range
+        </th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mono">xxxxxxxxxxxxxxxx</td>
+            <td class="mono">xxxxxxxxxxxxxxxx</td>
+            <td>U+0000–U+FFFF</td>
+        </tr>
+        <tr>
+            <td class="mono">110110xxxxxxxxxx 110111yyyyyyyyyy</td>
+            <td class="mono">xxxxxxxxxxyyyyyyyyyy + 0x10000</td>
+            <td>U+10000–U+10FFFF</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>A more common way that people talk about UTF-16 encoding, though, is in terms of code points called
+“surrogates”. All the code points in the range U+D800–U+DFFF—or in other words, the code points
+that match the binary prefixes <code>110110</code> and <code>110111</code> in the table above—are reserved specifically
+for UTF-16 encoding, and don’t represent any valid characters on their own. They’re only meant
+to occur in the 2-word encoding pattern above, which is called a “surrogate pair”. Surrogate code
+points are illegal in any other context! They’re not allowed in UTF-8 or UTF-32 at all.</p>
+<p>Historically, UTF-16 is a descendant of the original, pre-1996 versions of Unicode, in which there
+were only 65,536 code points. The original intention was that there would be no different “encodings”;
+Unicode was supposed to be a straightforward 16-bit character set. Later, the codespace was expanded
+to make room for a long tail of less-common (but still important) Han characters, which the Unicode
+designers didn’t originally plan for. Surrogates were then introduced, as—to put it bluntly—a
+kludge, allowing 16-bit encodings to access the new code points.</p>
+<p>Today, Javascript uses UTF-16 as its standard string representation: if you ask for the length of a
+string, or iterate over it, etc., the result will be in UTF-16 words, with any
+code points outside the BMP expressed as surrogate pairs. UTF-16 is also used by the Microsoft Win32 APIs;
+though Win32 supports either 8-bit or 16-bit strings, <del>the 8-bit version unaccountably
+still doesn’t support UTF-8—only legacy code-page encodings, like ANSI. This leaves UTF-16 as the
+only way to get proper Unicode support in Windows</del>. (<em>Update:</em> in Win10 version 1903,
+<a href="https://docs.microsoft.com/en-us/windows/apps/design/globalizing/use-utf8-code-page">they finally added UTF-8 support to the 8-bit APIs!</a>
+😊)</p>
+<p>By the way, UTF-16’s words can be stored either little-endian or big-endian. Unicode has no opinion
+on that issue, though it does encourage the convention of putting
+<a href="http://unicode.org/cldr/utility/character.jsp?a=FEFF">U+FEFF <span class="smallcaps">zero width no-break space</span></a>
+at the top of a UTF-16 file as a <a href="https://en.wikipedia.org/wiki/Byte_order_mark">byte-order mark</a>,
+to disambiguate the endianness. (If the file doesn’t match the system’s endianness, the BOM will be
+decoded as U+FFFE, which isn’t a valid code point.)</p>
+<h2 id="combining-marks"><a href="#combining-marks" title="Permalink to this section">Combining Marks</a></h2>
+<p>In the story so far, we’ve been focusing on code points. But in Unicode, a “character” can be more
+complicated than just an individual code point!</p>
+<p>Unicode includes a system for <em>dynamically composing</em> characters, by combining multiple code points
+together. This is used in various ways to gain flexibility without causing a huge combinatorial
+explosion in the number of code points.</p>
+<p>In European languages, for example, this shows up in the application of diacritics to letters. Unicode supports
+a wide range of diacritics, including acute and grave accents, umlauts, cedillas, and many more.
+All these diacritics can be applied to any letter of any alphabet—and in fact, <em>multiple</em>
+diacritics can be used on a single letter.</p>
+<p>If Unicode tried to assign a distinct code point to every possible combination of letter and
+diacritics, things would rapidly get out of hand. Instead, the dynamic composition system enables you to construct the
+character you want, by starting with a base code point (the letter) and appending additional code
+points, called “combining marks”, to specify the diacritics. When a text renderer sees a sequence
+like this in a string, it automatically stacks the diacritics over or under the base
+letter to create a composed character.</p>
+<p>For example, the accented character “Á” can be expressed as a string of two code points:
+<a href="http://unicode.org/cldr/utility/character.jsp?a=A">U+0041 “A” <span class="smallcaps">latin capital letter a</span></a>
+plus <a href="http://unicode.org/cldr/utility/character.jsp?a=0301">U+0301 “◌́” <span class="smallcaps">combining acute accent</span></a>.
+This string automatically gets rendered as a single character: “Á”.</p>
+<p>Now, Unicode does also include many “precomposed” code points, each representing a letter with some
+combination of diacritics already applied, such as <a href="http://unicode.org/cldr/utility/character.jsp?a=Á">U+00C1 “Á” <span class="smallcaps">latin capital letter a with acute</span></a>
+or <a href="http://unicode.org/cldr/utility/character.jsp?a=ệ">U+1EC7 “ệ” <span class="smallcaps">latin small letter e with circumflex and dot below</span></a>.
+I suspect these are mostly inherited from older encodings that were assimilated into Unicode, and
+kept around for compatibility. In practice, there are precomposed code points for most of the common
+letter-with-diacritic combinations in European-script languages, so they don’t use dynamic
+composition that much in typical text.</p>
+<p>Still, the system of combining marks does allow for an <em>arbitrary number</em> of diacritics to be
+stacked on any base character. The reductio-ad-absurdum of this is <a href="https://eeemo.net/">Zalgo text</a>,
+which works by ͖͟ͅr͞aṋ̫̠̖͈̗d͖̻̹óm̪͙͕̗̝ļ͇̰͓̳̫ý͓̥̟͍ ̕s̫t̫̱͕̗̰̼̘͜a̼̩͖͇̠͈̣͝c̙͍k̖̱̹͍͘i̢n̨̺̝͇͇̟͙ģ̫̮͎̻̟ͅ ̕n̼̺͈͞u̮͙m̺̭̟̗͞e̞͓̰̤͓̫r̵o̖ṷs҉̪͍̭̬̝̤ ̮͉̝̞̗̟͠d̴̟̜̱͕͚i͇̫̼̯̭̜͡ḁ͙̻̼c̲̲̹r̨̠̹̣̰̦i̱t̤̻̤͍͙̘̕i̵̜̭̤̱͎c̵s ͘o̱̲͈̙͖͇̲͢n͘ ̜͈e̬̲̠̩ac͕̺̠͉h̷̪ ̺̣͖̱ḻ̫̬̝̹ḙ̙̺͙̭͓̲t̞̞͇̲͉͍t̷͔̪͉̲̻̠͙e̦̻͈͉͇r͇̭̭̬͖,̖́ ̜͙͓̣̭s̘̘͈o̱̰̤̲ͅ ̛̬̜̙t̼̦͕̱̹͕̥h̳̲͈͝ͅa̦t̻̲ ̻̟̭̦̖t̛̰̩h̠͕̳̝̫͕e͈̤̘͖̞͘y҉̝͙ ̷͉͔̰̠o̞̰v͈͈̳̘͜er̶f̰͈͔ḻ͕̘̫̺̲o̲̭͙͠ͅw̱̳̺
+͜t̸h͇̭͕̳͍e̖̯̟̠ ͍̞̜͔̩̪͜ļ͎̪̲͚i̝̲̹̙̩̹n̨̦̩̖ḙ̼̲̼͢ͅ ̬͝s̼͚̘̞͝p͙̘̻a̙c҉͉̜̤͈̯̖i̥͡n̦̠̱͟g̸̗̻̦̭̮̟ͅ ̳̪̠͖̳̯̕a̫͜n͝d͡ ̣̦̙ͅc̪̗r̴͙̮̦̹̳e͇͚̞͔̹̫͟a̙̺̙ț͔͎̘̹ͅe̥̩͍ a͖̪̜̮͙̹n̢͉̝ ͇͉͓̦̼́a̳͖̪̤̱p̖͔͔̟͇͎͠p̱͍̺ę̲͎͈̰̲̤̫a̯͜r̨̮̫̣̘a̩̯͖n̹̦̰͎̣̞̞c̨̦̱͔͎͍͖e̬͓͘ ̤̰̩͙̤̬͙o̵̼̻̬̻͇̮̪f̴ ̡̙̭͓͖̪̤“̸͙̠̼c̳̗͜o͏̼͙͔̮r̞̫̺̞̥̬ru̺̻̯͉̭̻̯p̰̥͓̣̫̙̤͢t̳͍̳̖ͅi̶͈̝͙̼̙̹o̡͔n̙̺̹̖̩͝ͅ”̨̗͖͚̩.̯͓</p>
+<p>A few other places where dynamic character composition shows up in Unicode:</p>
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Vowel_pointing">Vowel-pointing notation</a> in Arabic and Hebrew.
+  In these languages, words are normally spelled with some of their vowels left out. They then have
+  diacritic notation to indicate the vowels (used in dictionaries, language-teaching
+  materials, children’s books, and such). These diacritics are expressed with combining marks.
+<br>
+</p><table class="borderless">
+    <tbody><tr><td>A Hebrew example, with <a href="https://en.wikipedia.org/wiki/Niqqud">niqqud</a>:</td><td>אֶת דַלְתִּי הֵזִיז הֵנִיעַ, קֶטֶב לִשְׁכַּתִּי יָשׁוֹד</td></tr>
+    <tr><td>Normal writing (no niqqud):</td><td>את דלתי הזיז הניע, קטב לשכתי ישוד</td></tr>
+  </tbody></table>
+<p></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Devanagari">Devanagari</a>, the script used to write Hindi, Sanskrit,
+  and many other South Asian languages, expresses certain vowels as combining marks attached
+  to consonant letters. For example, “ह” + “​ि” = “हि” (“h” + “i” = “hi”).</p>
+</li>
+<li>
+<p>Korean characters stand for syllables, but they are composed of letters called <a href="https://en.wikipedia.org/wiki/Hangul#Letters">jamo</a>
+  that stand for the vowels and consonants in the syllable. While there are code points for precomposed Korean
+  syllables, it’s also possible to dynamically compose them by concatenating their jamo.
+  For example, “ᄒ” + “ᅡ” + “ᆫ” = “한” (“h” + “a” + “n” = “han”).</p>
+</li>
+</ul>
+<h3 id="canonical-equivalence"><a href="#canonical-equivalence" title="Permalink to this section">Canonical Equivalence</a></h3>
+<p>In Unicode, precomposed characters exist alongside the dynamic composition system. A consequence of
+this is that there are multiple ways to express “the same” string—different sequences of code
+points that result in the same user-perceived characters. For example, as we saw earlier, we can
+express the character “Á” either as the single code point U+00C1, <em>or</em> as the string of two code
+points U+0041 U+0301.</p>
+<p>Another source of ambiguity is the ordering of multiple diacritics in a single character.
+Diacritic order matters visually when two diacritics apply to the same side of the base character,
+e.g. both above: “ǡ” (dot, then macron) is different from “ā̇” (macron, then dot). However, when
+diacritics apply to different sides of the character, e.g. one above and one below, then the order
+doesn’t affect rendering. Moreover, a character with multiple diacritics might have one of the
+diacritics precomposed and others expressed as combining marks.</p>
+<p>For example, the Vietnamese letter “ệ” can be expressed in <em>five</em> different ways:</p>
+<ul>
+<li>Fully precomposed: U+1EC7 “ệ”</li>
+<li>Partially precomposed: U+1EB9 “ẹ” + U+0302 “◌̂”</li>
+<li>Partially precomposed: U+00EA “ê” + U+0323 “◌̣”</li>
+<li>Fully decomposed: U+0065 “e” + U+0323 “◌̣” + U+0302 “◌̂”</li>
+<li>Fully decomposed: U+0065 “e” + U+0302 “◌̂” + U+0323 “◌̣”</li>
+</ul>
+<p>Unicode refers to set of strings like this as “canonically equivalent”. Canonically equivalent
+strings are supposed to be treated as identical for purposes of searching, sorting, rendering,
+text selection, and so on. This has implications for how you implement operations on text.
+For example, if an app has a “find in file” operation and the user searches for “ệ”, it should, by
+default, find occurrences of <em>any</em> of the five versions of “ệ” above!</p>
+<h3 id="normalization-forms"><a href="#normalization-forms" title="Permalink to this section">Normalization Forms</a></h3>
+<p>To address the problem of “how to handle canonically equivalent strings”, Unicode defines several
+<em>normalization forms</em>: ways of converting strings into a canonical form so that they can be
+compared code-point-by-code-point (or byte-by-byte).</p>
+<p>The “NFD” normalization form fully <em>decomposes</em> every character down to its component base and
+combining marks, taking apart any precomposed code points in the string. It also sorts the combining
+marks in each character according to their rendered position, so e.g. diacritics that go below the
+character come before the ones that go above the character. (It doesn’t reorder diacritics in the
+same rendered position, since their order matters visually, as previously mentioned.)</p>
+<p>The “NFC” form, conversely, puts things back together into precomposed code points as much as
+possible. If an unusual combination of diacritics is called for, there may not be any precomposed
+code point for it, in which case NFC still precomposes what it can and leaves any remaining
+combining marks in place (again ordered by rendered position, as in NFD).</p>
+<p>There are also forms called NFKD and NFKC. The “K” here refers to <em>compatibility</em> decompositions,
+which cover characters that are “similar” in some sense but not visually identical. However, I’m not
+going to cover that here.</p>
+<h3 id="grapheme-clusters"><a href="#grapheme-clusters" title="Permalink to this section">Grapheme Clusters</a></h3>
+<p>As we’ve seen, Unicode contains various cases where a thing that a user thinks of
+as a single “character” might actually be made up of multiple code points under the hood. Unicode
+formalizes this using the notion of a <em>grapheme cluster</em>: a string of one or more code points that
+constitute a single “user-perceived character”.</p>
+<p><a href="http://www.unicode.org/reports/tr29/">UAX #29</a> defines the rules for what, precisely, qualifies
+as a grapheme cluster. It’s approximately “a base code point followed by any number of combining
+marks”, but the actual definition is a bit more complicated; it accounts for things like Korean
+jamo, and <a href="http://blog.emojipedia.org/emoji-zwj-sequences-three-letters-many-possibilities/">emoji ZWJ sequences</a>.</p>
+<p>The main thing grapheme clusters are used for is text <em>editing</em>: they’re often the most sensible
+unit for cursor placement and text selection boundaries. Using grapheme clusters for these purposes
+ensures that you can’t accidentally chop off some diacritics when you copy-and-paste text, that
+left/right arrow keys always move the cursor by one visible character, and so on.</p>
+<p>Another place where grapheme clusters are useful is in enforcing a string length limit—say, on a
+database field. While the true, underlying limit might be something like the byte length of the string
+in UTF-8, you wouldn’t want to enforce that by just truncating bytes. At a minimum, you’d want to
+“round down” to the nearest code point boundary; but even better, round down to the nearest <em>grapheme
+cluster boundary</em>. Otherwise, you might be corrupting the last character by cutting off a diacritic,
+or interrupting a jamo sequence or ZWJ sequence.</p>
+<h2 id="and-more"><a href="#and-more" title="Permalink to this section">And More…</a></h2>
+<p>There’s much more that could be said about Unicode from a programmer’s perspective! I haven’t gotten
+into such fun topics as case mapping, collation, compatibility decompositions and confusables,
+Unicode-aware regexes, or bidirectional text. Nor have I said anything yet about implementation
+issues—how to efficiently store and look-up data about the sparsely-assigned code points, or how
+to optimize UTF-8 decoding, string comparison, or NFC normalization. Perhaps I’ll return to some of
+those things in future posts.</p>
+<p>Unicode is a fascinating and complex system. It has a many-to-one mapping between bytes and
+code points, and on top of that a many-to-one (or, under some circumstances, many-to-many) mapping
+between code points and “characters”. It has oddball special cases in every corner. But no one ever
+claimed that representing <em>all written languages</em> was going to be <em>easy</em>, and it’s clear that
+we’re never going back to the bad old days of a patchwork of incompatible encodings.</p>
+<p>Further reading:</p>
+<ul>
+<li><a href="http://www.unicode.org/versions/latest/">The Unicode Standard</a></li>
+<li><a href="http://utf8everywhere.org/">UTF-8 Everywhere Manifesto</a></li>
+<li><a href="https://eev.ee/blog/2015/09/12/dark-corners-of-unicode/">Dark corners of Unicode</a> by Eevee</li>
+<li><a href="http://site.icu-project.org/">ICU (International Components for Unicode)</a>—C/C++/Java libraries
+    implementing many Unicode algorithms and related things</li>
+<li><a href="https://docs.python.org/3/howto/unicode.html">Python 3 Unicode Howto</a></li>
+<li><a href="https://www.google.com/get/noto/">Google Noto Fonts</a>—set of fonts intended to cover all
+    assigned code points</li>
+</ul>
+			<footer>
+						<nav class="pagination">
+<a class="page-left" href="/blog/many-meanings-of-shader/">The Many Meanings of “Shader”</a><a class="page-right" href="/blog/quadrilateral-interpolation-part-2/">Quadrilateral Interpolation, Part 2</a>		</nav>
+
+					<hr>
+					<h2 id="comments"><span class="disqus-comment-count" data-disqus-identifier="/blog/programmers-intro-to-unicode/">Comments</span> on “A Programmer’s Introduction to Unicode”</h2>
+					<div id="disqus_thread"></div>
+					<script>
+						var disqus_config = function () {
+							this.page.url = "https://www.reedbeta.com/blog/programmers-intro-to-unicode/";
+							this.page.identifier = "/blog/programmers-intro-to-unicode/";
+							this.page.title = "A Programmer’s Introduction to Unicode";
+						};
+						(function() {
+							var d = document, s = d.createElement('script');
+							s.src = 'https://reedbeta.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							d.body.appendChild(s);
+						})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			</footer>
+	</article>
+		</div>
+		<div id="sidebar">
+			<h1>Subscribe</h1>
+			<ul>
+				<li>
+					<a href="/feed/" title="RSS feed">
+						<img class="feed-button" src="images/rss-icon.png" alt="RSS">
+						RSS
+					</a>
+				</li>
+			</ul>
+			<h1>Recent Posts</h1>
+			<ul>
+					<li><a href="/blog/reading-veach-thesis-2/">Reading Veach’s Thesis, Part 2</a></li>
+					<li><a href="/blog/reading-veach-thesis/">Reading Veach’s Thesis</a></li>
+					<li><a href="/blog/texture-gathers-and-coordinate-precision/">Texture Gathers and Coordinate Precision</a></li>
+					<li><a href="/made/git-partial-submodule/">git-partial-submodule</a></li>
+					<li><a href="/blog/slope-space-in-brdf-theory/">Slope Space in BRDF Theory</a></li>
+					<li><a href="/blog/hash-functions-for-gpu-rendering/">Hash Functions for GPU Rendering</a></li>
+				<li><a class="page-right" href="/all/">All Posts</a></li>
+			</ul>
+			<h1>Categories</h1>
+			<ul>
+					<li><a href="/blog/category/graphics">Graphics<span class="catnum">(32)</span></a></li>
+					<li><a href="/blog/category/coding">Coding<span class="catnum">(23)</span></a></li>
+					<li><a href="/blog/category/math">Math<span class="catnum">(21)</span></a></li>
+					<li><a href="/blog/category/gpu">GPU<span class="catnum">(15)</span></a></li>
+					<li><a href="/blog/category/physics">Physics<span class="catnum">(6)</span></a></li>
+					<li><a href="/blog/category/eye-candy">Eye Candy<span class="catnum">(4)</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<footer id="site-footer">
+		<div id="site-footer-aligner">
+			© 2007–2024 by Nathan Reed.
+			Licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>.
+		</div>
+	</footer>
+<script id="dsq-count-scr" src="js/count.js" defer=""></script>	<script>
+		function renderMath()
+		{
+			renderMathInElement(document.body,
+				{ delimiters: [
+						{left: "$$", right: "$$", display: true},
+						{left: "$", right: "$", display: false},
+				]});
+		}
+	</script>
+
+</body></html>

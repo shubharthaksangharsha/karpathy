@@ -1,0 +1,826 @@
+@charset 'utf-8';
+
+/* basic text formatting */
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	background-color: #fff;
+	color: #000;
+	font: normal 12pt/1.5 "Noto Serif", serif;
+}
+p, ul, ol { margin: 8pt 0; }
+a {
+	color: #07a;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	text-decoration-skip: ink;
+}
+
+/* lists */
+@media (min-width: 40rem) {
+	#content ul, #content ol { padding-right: 2rem; }
+}
+@media (max-width: 40rem) {
+	#content ul, #content ol { padding-left: 1.2rem; }
+}
+li, li ul, li ol { margin: 2pt 0; }
+li p:first-child { margin-top: 2pt; }
+li p:last-child { margin-bottom: 2pt; }
+li ul li { list-style-type: disc; }
+li ol li { list-style-type: lower-alpha; }
+
+/* headings and separators */
+h1, h2, h3, h4 {
+	font: bold 22pt/1.3 "Cabin", sans-serif;
+	hyphens: none;
+}
+h1 {
+	font-size: 22pt;
+	margin: 8pt 0 2pt 0;
+}
+h2 {
+	font-size: 18pt;
+	margin: 18pt 0 0 0;
+}
+h3 {
+	font-size: 14pt;
+	margin: 18pt 0 0 0;
+}
+h4 {
+	font-size: 12pt;
+	margin: 18pt 0 0 0;
+}
+@media (max-width: 40rem) {
+	h1 { font-size: 18pt; }
+	h2 { font-size: 16pt; }
+	h3 { font-size: 13pt; }
+}
+h1 + p, h2 + p, h3 + p, h4 + p,
+h1 + ul, h2 + ul, h3 + ul, h4 + ul,
+h1 + ol, h2 + ol, h3 + ol, h4 + ol,
+h1 + table, h2 + table, h3 + table, h4 + table {
+	margin-top: 2pt;
+}
+article header p {
+	margin-top: 0;
+	color: #058;
+}
+
+/* links in headers */
+article h1 a {
+	color: #048;
+}
+article h1 a:hover {
+	color: #3af;
+	text-decoration: none;
+}
+/* section permalinks in headers */
+article h2 a,
+article h3 a,
+article h4 a {
+	color: #000;
+}
+article h2 a:hover,
+article h3 a:hover,
+article h4 a:hover {
+	color: #000;
+	text-decoration: underline #bbb;
+}
+
+/* horizontal separators */
+hr {
+	border: 1px solid #ddd;
+	width: 90%;
+	margin: 20pt auto;
+}
+article + hr {
+	margin-top: 20pt;
+	margin-bottom: 16pt;
+}
+article footer {
+	margin-top: 18pt;
+}
+article footer > hr {
+	margin-top: 18pt;
+	margin-bottom: 15pt;
+}
+article footer > h2 {
+	margin-top: 10pt;
+}
+
+/* main page layout - wide screen
+   content and sidebar are side-by-side; everything's centered */
+:root {
+	--content-main-width: 45rem;
+	--sidebar-main-width: 20rem;
+	--content-sidebar-space: 4rem;
+	--total-main-width: calc(var(--content-main-width) + var(--sidebar-main-width) + var(--content-sidebar-space));
+}
+#content, #sidebar, #site-header-aligner, #site-footer-aligner {
+	display: inline-block;
+	text-align: left;
+}
+@media (min-width: 52.1rem) {
+	body { text-align: center; }
+	#content {
+		vertical-align: top;
+		width: var(--content-main-width);
+		margin-right: calc(0.5 * var(--content-sidebar-space));
+	}
+	#sidebar {
+		vertical-align: top;
+		width: var(--sidebar-main-width);
+		margin-left: calc(0.5 * var(--content-sidebar-space));
+	}
+	#site-header-aligner, #site-footer-aligner {
+		text-align: left;
+		width: var(--total-main-width);
+	}
+}
+/* medium screen - sidebar goes below content */
+@media (min-width: 52.1rem) and (max-width: 75rem) {
+	#content { margin-right: 0; }
+	#sidebar {
+		width: var(--content-main-width);
+		margin-left: 0;
+		padding-right: calc(var(--content-main-width) - var(--sidebar-main-width));	/* maintain width of contents */
+	}
+	#site-header-aligner, #site-footer-aligner {
+		width: var(--content-main-width);
+	}
+}
+/* narrow screen - everything's full-width with 3rem side margins */
+@media (min-width: 40rem) and (max-width: 52.1rem) {
+	#content, #sidebar, #site-header-aligner, #site-footer-aligner {
+		margin: 0 3rem;
+		max-width: calc(100% - 6rem);
+	}
+}
+/* mobile - side margins reduce to 0.5rem */
+@media (max-width: 40rem) {
+	#content, #sidebar, #site-header-aligner, #site-footer-aligner {
+		margin: 0 .5rem;
+		max-width: calc(100% - 1rem);
+	}
+}
+
+/* site header */
+#site-header {
+	background: linear-gradient(#0cf, #06b 95%, #09c);
+	overflow: hidden;
+}
+#site-header h1 {
+	font-size: 36pt;
+	text-shadow: .05em .05em .2em rgba(0,0,0,.3);
+	margin: .3rem 0 0 0;
+}
+@media (max-width: 40rem) {
+	#site-header h1 { font-size: 30pt; }
+}
+#site-header h1 a {
+	color: #fff;
+}
+#site-header h1 a:hover {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: .05em .05em .2em rgba(0,0,0,.5);
+}
+
+/* site footer */
+:root {
+	--footer-height: 20pt;
+}
+#site-footer {
+	height: var(--footer-height);
+	background: linear-gradient(#09c, #06b 20%, #09d);
+	font: normal 9pt "Cabin", sans-serif;
+	color: #cdf;
+	white-space: nowrap;
+}
+#site-footer-aligner {
+	padding-top: 5pt;
+}
+#site-footer a {
+	color: #fff;
+}
+#footer-pusher {
+	/* push footer to bottom of if page height is less than viewport */
+	min-height: calc(100vh - var(--footer-height));
+}
+
+/* main nav bar */
+#site-header nav { white-space: nowrap; }
+#site-header nav a {
+	display: inline-block;
+	border-radius: .3em .3em 0 0;
+	padding: .1em .7em;
+	margin: .4em 0 0 0;
+	color: #fff;
+	font: normal 14pt/1.3 "Cabin", sans-serif;
+	text-shadow: .05em .05em .1em rgba(0,0,0,.3);
+}
+@media (max-width: 40rem) {
+	#site-header nav a {
+		padding: .1em .4em;
+		margin-top: .3em;
+		font-size: 12pt;
+	}
+}
+#site-header nav a:first-of-type { margin-left: 0; }
+#site-header nav a:hover {
+	text-decoration: none;
+	background-color: #4bf;
+	box-shadow: .1em .1em .3em rgba(0,0,0,.3);
+}
+#site-header nav a.active {
+	background-color: #fff;
+	color: #000;
+	text-shadow: none;
+	box-shadow: .1em .1em .3em rgba(0,0,0,.3);
+}
+#site-header nav a.active:hover {
+	text-shadow: .05em .05em .05em rgba(0,102,187,.4);
+}
+
+/* svg arrows for "left" and "right" buttons */
+.page-left::before {
+	content: url(../images/chevron-left.svg);
+	display: inline-block;
+	width: 9pt;
+	margin-right: 2pt;
+	vertical-align: middle;
+}
+.page-right::after {
+	content: url(../images/chevron-right.svg);
+	display: inline-block;
+	width: 9pt;
+	margin-left: 2pt;
+	vertical-align: middle;
+}
+
+/* pagination nav bar */
+.pagination {
+	margin: 4pt 0;
+	font-size: 11pt;
+}
+.pagination::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.pagination a {
+	color: #48b;
+}
+.pagination .page-left {
+	float: left;
+	text-align: left;
+}
+.pagination .page-right {
+	float: right;
+	text-align: right;
+}
+
+/* sidebar */
+#sidebar h1 {
+	margin: 12pt 0 0 0;
+	font-size: 16pt;
+	font-weight: normal;
+	color: #058;
+}
+#sidebar ul {
+	padding-left: 1.5em;
+	list-style: none;
+	font-size: 11pt;
+	line-height: 1.4;
+}
+#sidebar li {
+	margin: 3pt 0;
+}
+#sidebar a {
+	color: #48b;
+}
+.catnum {
+	font-size: 9pt;
+	margin-left: 4pt;
+}
+.feed-button {
+	display: inline;
+	vertical-align: middle;
+	height: auto;
+	width: 1.4rem;
+	margin: 0;
+}
+
+/* images and various ways of displaying them */
+img, video {
+	display: block;
+	margin: 10pt auto;
+	max-width: 100%;
+	height: auto;
+}
+audio {
+	vertical-align: middle;
+	min-width: 26rem;
+}
+.align-center { text-align: center; }
+figure {
+	display: table;
+	margin: 10pt auto;
+}
+figure img, figure video {
+	display: inline-block;
+	margin: 0;
+}
+.float-left {
+	float: left;
+	margin: 0 1.5rem 0 0;
+}
+.float-right {
+	float: right;
+	margin: 0 0 0 1.5rem;
+}
+.not-too-wide {
+	max-width: 70%;
+}
+.max-width-50 {
+	max-width: 50%;
+}
+@media (max-width: 40rem) {
+	.float-left, .float-right { float: none; margin: 10pt auto; }
+	.not-too-wide { max-width: 100%; }
+	.max-width-50 { max-width: 100%; }
+}
+.image-array {
+	text-align: center;
+	margin: 0;
+}
+.image-array img {
+	display: inline-block;
+	margin: 5pt;
+}
+.profile-pic {
+	float: right;
+	width: 30%;
+	margin: 0 0 0 1rem;
+	border-radius: .3rem;
+}
+@media (max-width: 40rem) {
+	.profile-pic {
+		width: 40%;
+		margin: 0 0 0 .5rem;
+	}
+}
+
+/* image captions */
+figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	font-size: 10pt;
+	text-align: center;
+	margin-bottom: 4pt;
+}
+figcaption p:first-child { margin-top: 0; }
+figcaption p:last-child { margin-bottom: 0; }
+figcaption .attribution {
+	font-style: italic;
+	font-size: 8pt;
+}
+figcaption .attribution a {
+	color: #bbb;
+}
+figcaption .attribution a:hover {
+	color: #999;
+}
+
+/* iframe embeds - needs *two* wrapper divs to control overall width and aspect ratio;
+   see https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+.embed-wrapper-outer {
+	margin: 10pt auto;
+	max-width: 85%;
+}
+.embed-wrapper-inner {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.embed {
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 40rem) {
+	.embed-wrapper-outer {
+		max-width: 100%;
+	}
+}
+
+/* "Read more" buttons */
+.read-more {
+	color: #48b;
+	font-size: 120%;
+	display: inline-block;
+}
+.read-more::after {
+	content: url(../images/chevron-right.svg);
+	display: inline-block;
+	width: 11pt;
+	margin-left: 2pt;
+	vertical-align: middle;
+}
+
+
+/* subscript and superscript */
+sub, sup {
+	font-size: 80%;
+}
+
+/* big prominent link e.g. for downloading */
+.biglink {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+/* small caps */
+.smallcaps { font-variant: small-caps; }
+
+/* color swatch */
+.swatch {
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	margin: 0 1pt;
+	vertical-align: baseline;
+}
+
+/* block quotes */
+blockquote {
+	margin: 12pt 2rem;
+	padding: .5rem;
+	background: linear-gradient(#e8f8ff, #d8f2ff);
+	box-shadow: .2rem .2rem .3rem rgba(0,102,187,.4);
+	border-radius: .3rem;
+}
+blockquote p:first-child,
+blockquote ul:first-child,
+blockquote ol:first-child {
+	margin-top: 0;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+	margin-bottom: 0;
+}
+@media (max-width: 40rem) {
+	blockquote { margin-left: 1rem; margin-right: 1rem; }
+}
+blockquote .attribution {
+	font-size: 80%;
+}
+
+/* table of contents */
+.toc {
+	display: inline-block;
+	margin: 2pt 0;
+	padding: .4rem 1.8rem .6rem .8rem;
+	background: linear-gradient(#f8faff, #e8f8ff);
+	box-shadow: .15rem .15rem .3rem rgba(0,102,187,.4);
+	border-radius: .3rem
+}
+.toc::before {
+	display: block;
+	content: "Contents";
+	margin-bottom: 4pt;
+	font: normal 18pt/1.3 "Cabin", sans-serif;
+	color: #058;
+}
+#content .toc ul {
+	margin: 0;
+	padding-left: 1rem;
+	padding-right: 0;
+	list-style: none;
+	line-height: 1.4;
+}
+#content .toc ul li ul li {
+	list-style: none;
+	font-size: 10pt;
+}
+
+/* embedded tables */
+table {
+	margin: 10pt auto;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid black;
+	padding: .3rem .5rem;
+	text-align: left;
+}
+th:empty, td:empty {
+	border: none;
+}
+thead th {
+	text-align: center;
+}
+table.borderless { margin: 8pt 0; }
+table.borderless th, table.borderless td { border: none; padding: .1rem .5rem; }
+table.borderless th:first-of-type, table.borderless td:first-of-type { padding-left: 0; }
+table.borderless th:last-of-type, table.borderless td:last-of-type { padding-right: 0; }
+
+/* post-list tables, as seen on all-posts and category pages */
+.post-list {
+	margin-left: 0; margin-right: 0;
+}
+.post-list td {
+	border: none;
+	vertical-align: top;
+}
+.post-list td:first-child {
+	min-width: 4.2rem;
+	white-space: nowrap;
+}
+
+/* embedded code */
+code, tt, pre, .mono {
+	font: normal 11pt/1.3 "Roboto Mono", monospace;
+}
+figcaption code, figcaption tt {
+	font-size: 9pt;
+}
+code, tt {
+	background-color: #ececec;
+	padding: 0 0.2rem;
+	border-radius: 0.2rem;
+}
+.codehilite {
+	max-width: 100%;
+	overflow-x: auto;
+	white-space: nowrap;
+	margin: 2pt 0;
+	padding: .2rem .4rem;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	border-radius: .3rem;
+}
+.codehilite pre {
+	margin: 0;
+}
+.codehilite code {
+	background-color: unset;
+	padding: unset;
+	border-radius: unset;
+}
+
+/* pygments code highlighting styles */
+.codehilite .c,		/* Comment */
+.codehilite .cm,	/* Comment.Multiline */
+.codehilite .ch,	/* Comment.Hashbang */
+.codehilite .c1,	/* Comment.Single */
+.codehilite .cs		/* Comment.Special */
+{ color: #008000; font-style: italic; }
+
+.codehilite .cp { color: #888880 } /* Comment.Preproc */
+.codehilite .cpf { color: #a31515 } /* Comment.PreprocFile */
+
+.codehilite .k,		/* Keyword */
+.codehilite .kc,	/* Keyword.Constant */
+.codehilite .kd,	/* Keyword.Declaration */
+.codehilite .kn,	/* Keyword.Namespace */
+.codehilite .kp,	/* Keyword.Pseudo */
+.codehilite .kr,	/* Keyword.Reserved */
+.codehilite .ow		/* Operator.Word */
+{ color: #0000ff }
+
+.codehilite .kt,	/* Keyword.Type */
+.codehilite .nc,	/* Name.Class */
+.codehilite .ni,	/* Name.Entity */
+.codehilite .ne		/* Name.Exception */
+{ color: #007ca0 }
+
+.codehilite .nb,	/* Name.Builtin */
+.codehilite .bp,	/* Name.Builtin.Pseudo */
+.codehilite .nd,	/* Name.Decorator */
+.codehilite .nf,	/* Name.Function */
+.codehilite .nl,	/* Name.Label */
+.codehilite .nn,	/* Name.Namespace */
+.codehilite .nt		/* Name.Tag */
+{ color: #006ee4 }
+
+.codehilite .no,	/* Name.Constant */
+.codehilite .na,	/* Name.Attribute */
+.codehilite .nv,	/* Name.Variable */
+.codehilite .vc,	/* Name.Variable.Class */
+.codehilite .vg,	/* Name.Variable.Global */
+.codehilite .vi		/* Name.Variable.Instance */
+{ color: #000080 }
+
+.codehilite .o,		/* Operator */
+.codehilite .p		/* Punctuation */
+{ color: #666666 }
+
+.codehilite .m,		/* Literal.Number */
+.codehilite .mb,	/* Literal.Number.Bin */
+.codehilite .mf,	/* Literal.Number.Float */
+.codehilite .mh,	/* Literal.Number.Hex */
+.codehilite .mi,	/* Literal.Number.Integer */
+.codehilite .mo,	/* Literal.Number.Oct */
+.codehilite .il		/* Literal.Number.Integer.Long */
+{ color: #d31515 }
+
+.codehilite .s,		/* Literal.String */
+.codehilite .sc,	/* Literal.String.Char */
+.codehilite .sd,	/* Literal.String.Doc */
+.codehilite .s2,	/* Literal.String.Double */
+.codehilite .sh,	/* Literal.String.Heredoc */
+.codehilite .sx,	/* Literal.String.Other */
+.codehilite .s1,	/* Literal.String.Single */
+.codehilite .ss		/* Literal.String.Symbol */
+{ color: #a31515 }
+
+.codehilite .se { color: #BB6688 } /* Literal.String.Escape */
+
+.codehilite .sb,	/* Literal.String.Backtick */
+.codehilite .si,	/* Literal.String.Interpol */
+.codehilite .sr		/* Literal.String.Regex */
+{ color: #DD5515 }
+
+.codehilite .w { color: #bbbbbb } /* Text.Whitespace */
+
+.codehilite .gd { color: #A00000 } /* Generic.Deleted */
+.codehilite .ge { font-style: italic } /* Generic.Emph */
+.codehilite .gr { color: #FF0000 } /* Generic.Error */
+.codehilite .gs { font-weight: bold } /* Generic.Strong */
+
+.codehilite .hll { background-color: #ffffcc }
+.codehilite .err { border: 1px solid #FF0000 } /* Error */
+
+/* KaTeX tweak to make math symbols auto-bold in headers */
+h1 .katex, h2 .katex, h3 .katex {
+	font-weight: bold;
+}
+
+/* dark-mode-switching elements */
+@media (prefers-color-scheme: light) {
+	.only-dark-theme {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #222;
+		color: #ccc;
+	}
+	a { color: #5be; }
+	article header p { color: #5d97b5; }
+	article h1 { color: #eee; }
+	article h1 a { color: #9cc6db; }
+	article h1 a:hover { color: #d5f1ff; }
+	article h2 a, article h3 a, article h4 a { color: #eee; }
+	article h2 a:hover, article h3 a:hover, article h4 a:hover { color: #eee; }
+	hr { border-color: #555; }
+
+	#site-header {
+		background: linear-gradient(#00a5ce, #024780 95%, #003446);
+	}
+	#site-header nav a { color: #fff; }
+	#site-header nav a:hover { background-color: #28b; }
+	#site-header nav a.active {
+		background: linear-gradient(#717171, #484848 85%, #333);
+		color: #fff;
+	}
+	#site-header nav a.active:hover {
+		text-shadow: .05em .05em .1em rgba(0,0,0,.6);
+	}
+
+	#site-footer {
+		background: linear-gradient(#003446, #0059a2 20%, #004c66);
+		color: #9cc6db;
+	}
+	#site-footer a { color: #d5f1ff; }
+
+	.pagination a { color: #4ad; }
+	.page-left::before { content: url(../images/chevron-left-dark.svg); }
+	.page-right::after { content: url(../images/chevron-right-dark.svg); }
+
+	#sidebar h1 { color: #acd; }
+	#sidebar a { color: #4ad; }
+
+	figcaption .attribution a { color: #777; }
+	figcaption .attribution a:hover { color: #999; }
+
+	.read-more { color: #4ad; }
+	.read-more::after { content: url(../images/chevron-right-dark.svg); }
+
+	blockquote {
+		background: linear-gradient(#00658f, #004967);
+		box-shadow: .2rem .2rem .3rem rgba(0,76,134,.4);
+	}
+
+	.toc {
+		background: linear-gradient(#00415b, #00354c);
+		box-shadow: .15rem .15rem .3rem rgba(0,40,71,.4);
+	}
+	.toc::before { color: #7bd; }
+	th, td { border-color: #555; }
+
+	code, tt { background-color: #383838; }
+	.codehilite {
+		background-color: #333;
+		border-color: #555;
+	}
+
+	/* low effort fixer-upper for diagrams and similar images where exact colors don't matter -
+	   thanks to Marcin Wichary for the idea: https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a */
+	.invert-when-dark {
+		filter: invert(100%) hue-rotate(180deg);
+		mix-blend-mode: lighten;
+	}
+	.invert-brighten-when-dark {
+		filter: invert(100%) hue-rotate(180deg) brightness(130%);
+		mix-blend-mode: lighten;
+	}
+
+	/* dark-mode-switching elements */
+	.only-light-theme {
+		display: none;
+	}
+
+	/* pygments code highlighting styles */
+	.codehilite .c,		/* Comment */
+	.codehilite .cm,	/* Comment.Multiline */
+	.codehilite .ch,	/* Comment.Hashbang */
+	.codehilite .c1,	/* Comment.Single */
+	.codehilite .cs		/* Comment.Special */
+	{ color: #3e9e3e; font-style: italic; }
+
+	.codehilite .cp { color: #848464 } /* Comment.Preproc */
+	.codehilite .cpf { color: #af8b1d } /* Comment.PreprocFile */
+
+	.codehilite .k,		/* Keyword */
+	.codehilite .kc,	/* Keyword.Constant */
+	.codehilite .kd,	/* Keyword.Declaration */
+	.codehilite .kn,	/* Keyword.Namespace */
+	.codehilite .kp,	/* Keyword.Pseudo */
+	.codehilite .kr,	/* Keyword.Reserved */
+	.codehilite .ow		/* Operator.Word */
+	{ color: #4182ff }
+
+	.codehilite .kt,	/* Keyword.Type */
+	.codehilite .nc,	/* Name.Class */
+	.codehilite .ni,	/* Name.Entity */
+	.codehilite .ne		/* Name.Exception */
+	{ color: #35c1c8 }
+
+	.codehilite .nb,	/* Name.Builtin */
+	.codehilite .bp,	/* Name.Builtin.Pseudo */
+	.codehilite .nd,	/* Name.Decorator */
+	.codehilite .nf,	/* Name.Function */
+	.codehilite .nl,	/* Name.Label */
+	.codehilite .nn,	/* Name.Namespace */
+	.codehilite .nt		/* Name.Tag */
+	{ color: #44b9ff }
+
+	.codehilite .no,	/* Name.Constant */
+	.codehilite .na,	/* Name.Attribute */
+	.codehilite .nv,	/* Name.Variable */
+	.codehilite .vc,	/* Name.Variable.Class */
+	.codehilite .vg,	/* Name.Variable.Global */
+	.codehilite .vi		/* Name.Variable.Instance */
+	{ color: #a2d5fb }
+
+	.codehilite .o,		/* Operator */
+	.codehilite .p		/* Punctuation */
+	{ color: #888 }
+
+	.codehilite .m,		/* Literal.Number */
+	.codehilite .mb,	/* Literal.Number.Bin */
+	.codehilite .mf,	/* Literal.Number.Float */
+	.codehilite .mh,	/* Literal.Number.Hex */
+	.codehilite .mi,	/* Literal.Number.Integer */
+	.codehilite .mo,	/* Literal.Number.Oct */
+	.codehilite .il		/* Literal.Number.Integer.Long */
+	{ color: #ea6464 }
+
+	.codehilite .s,		/* Literal.String */
+	.codehilite .sc,	/* Literal.String.Char */
+	.codehilite .sd,	/* Literal.String.Doc */
+	.codehilite .s2,	/* Literal.String.Double */
+	.codehilite .sh,	/* Literal.String.Heredoc */
+	.codehilite .sx,	/* Literal.String.Other */
+	.codehilite .s1,	/* Literal.String.Single */
+	.codehilite .ss		/* Literal.String.Symbol */
+	{ color: #d9a220 }
+
+	.codehilite .se { color: #f5d280 } /* Literal.String.Escape */
+
+	.codehilite .sb,	/* Literal.String.Backtick */
+	.codehilite .si,	/* Literal.String.Interpol */
+	.codehilite .sr,	/* Literal.String.Regex */
+	.codehilite .dl
+	{ color: #ffd779 }
+}
