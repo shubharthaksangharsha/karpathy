@@ -100,7 +100,7 @@ class GPT(nn.Module):
         self.lm_head = nn.Linear(config.n_embd, config.vocab_size, bias=False)
 
 
-    def forward(self, idx):
+    def forward(self, idx, targets=None):
         # idx is of shape (B, T)
         B, T = idx.size() 
         assert T <= self.config.block_size, f"Cannot forward sequence of length {T}, block size"
@@ -115,7 +115,10 @@ class GPT(nn.Module):
         # forward the final layernorm and the classifer 
         x = self.transformer.ln_f(x)
         logits = self.lm_head(x) # (B, T, vocab_size) 
-        return logits 
+        loss = None 
+        if targets is not None: 
+            loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
+        return logits, loss 
         
 
     @classmethod
@@ -199,17 +202,32 @@ if torch.cuda.is_available():
     device = "cuda"
 elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
     device = "mps"
-
 print(f"using device: {device}")
+device = "cpu" #OVERRIDE
+# max_length = 30
+# num_return_sequences = 5 
 
-max_length = 30
-num_return_sequences = 5 
+# get a batch 
+import tiktoken 
+enc = tiktoken.get_encoding("gpt2")
+with open("input.txt", "r") as f:
+    text = f.read() 
+text = text[:1000]
+tokens = enc.encode(text) 
+B, T = 4, 32 
+buf = torch.tensor(tokens[:B*T + 1])
+x = buf[:-1].view(B, T)
+y = buf[1:].view(B, T)
 
-
-# model = GPT.from_pretrained("gpt2")
+# get the logits
 model = GPT(GPTConfig())
-model.eval()
+# model = GPT.from_pretrained("gpt2")
 model.to(device)
+logits, loss = model(x, y)
+
+print(loss)
+import sys; sys.exit(0)
+
 
 #prefix tokens 
 import tiktoken 
