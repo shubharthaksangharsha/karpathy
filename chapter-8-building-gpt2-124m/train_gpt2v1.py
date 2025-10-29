@@ -245,8 +245,10 @@ class DataLoaderLite:
         return x, y 
     
 # -----------------------------------------------------------------------------
-
 # attempt to autodetect the device 
+import time 
+
+
 device = "cpu"
 if torch.cuda.is_available():
     device = "cuda"
@@ -261,7 +263,7 @@ torch.manual_seed(1337)
 if torch.cuda.is_available():
     torch.cuda.manual_seed(1337)
 
-train_loader = DataLoaderLite(B=4, T=32) 
+train_loader = DataLoaderLite(B=16, T=1024) 
 
 
 # get the logits
@@ -271,13 +273,17 @@ model.to(device)
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4)
 for i in range(50):
+    t0 = time.time() 
     x, y = train_loader.next_batch() 
     x, y = x.to(device), y.to(device)
     optimizer.zero_grad() 
     logits, loss = model(x, y)
     loss.backward() 
     optimizer.step() 
-    print(f" step {i}, loss: {loss.item()}") 
+    torch.cuda.synchronize() 
+    t1 = time.time() 
+    dt = (t1 - t0) * 100  # time difference in milliseconds
+    print(f" step {i}, loss: {loss.item()}, dt: {dt:.2f}ms") 
 
 
 import sys; sys.exit(0)
