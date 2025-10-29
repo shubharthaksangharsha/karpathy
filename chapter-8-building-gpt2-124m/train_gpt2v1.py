@@ -257,6 +257,9 @@ print(f"using device: {device}")
 # max_length = 30
 # num_return_sequences = 5 
 
+torch.manual_seed(1337)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed(1337)
 
 train_loader = DataLoaderLite(B=4, T=32) 
 
