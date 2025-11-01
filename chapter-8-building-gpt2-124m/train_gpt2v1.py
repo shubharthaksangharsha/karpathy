@@ -80,9 +80,6 @@ class Block(nn.Module):
         x = x + self.mlp(self.ln_2(x))
         return x
 
-
-
-
 @dataclass
 class GPTConfig:
     block_size: int = 1024 # max sequence length
@@ -276,7 +273,7 @@ train_loader = DataLoaderLite(B=4, T=1024)
 
 
 # get the logits
-model = GPT(GPTConfig())
+model = GPT(GPTConfig(vocab_size=50304))
 # model = GPT.from_pretrained("gpt2")
 model.to(device)
 
