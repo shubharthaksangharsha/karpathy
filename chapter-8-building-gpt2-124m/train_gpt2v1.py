@@ -245,8 +245,11 @@ class DataLoaderLite:
         return x, y 
     
 # -----------------------------------------------------------------------------
-# attempt to autodetect the device 
-import time 
+# attempt to autodetect the device
+import time
+torch.backends.cuda.matmul.allow_tf32 = True  # no effect on T4, safe to enable
+torch.backends.cudnn.allow_tf32 = True
+torch.set_float32_matmul_precision("high")
 
 
 device = "cpu"
@@ -257,13 +260,13 @@ elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
 print(f"using device: {device}")
 # device = "cpu" #OVERRIDE
 # max_length = 30
-# num_return_sequences = 5 
+# num_return_sequences = 5
 
 torch.manual_seed(1337)
 if torch.cuda.is_available():
     torch.cuda.manual_seed(1337)
 
-train_loader = DataLoaderLite(B=16, T=1024) 
+train_loader = DataLoaderLite(B=4, T=1024)
 
 
 # get the logits
@@ -271,26 +274,47 @@ model = GPT(GPTConfig())
 # model = GPT.from_pretrained("gpt2")
 model.to(device)
 
-optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4)
-for i in range(50):
-    t0 = time.time() 
-    x, y = train_loader.next_batch() 
-    x, y = x.to(device), y.to(device)
-    optimizer.zero_grad() 
-    logits, loss = model(x, y)
-    loss.backward() 
-    optimizer.step() 
-    torch.cuda.synchronize() 
-    t1 = time.time() 
-    dt = (t1 - t0) * 100  # time difference in milliseconds
-    print(f" step {i}, loss: {loss.item()}, dt: {dt:.2f}ms") 
+#compile the model 
+model = torch.compile(model)
 
+#optimize! 
+from torch.cuda.amp import autocast, GradScaler
+
+scaler = GradScaler()  # NEW: enable mixed precision
+
+optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4)
+
+for i in range(50):
+    t0 = time.time()
+
+    x, y = train_loader.next_batch()
+    x, y = x.to(device), y.to(device)
+
+    optimizer.zero_grad()
+
+    # FP16 forward + loss (autocast enables mixed precision on T4)
+    with autocast():
+        logits, loss = model(x, y)
+
+    # backward pass (scaled for safe gradients in FP16)
+    scaler.scale(loss).backward()
+
+    # update weights
+    scaler.step(optimizer)
+    scaler.update()
+
+    torch.cuda.synchronize()
+    t1 = time.time()
+
+    dt = (t1 - t0) * 100  # time difference in milliseconds
+    tokens_per_sec = (train_loader.B * train_loader.T) / (t1 - t0)
+    print(f" step {i}, loss: {loss.item()}, dt: {dt:.2f}ms, tok/sec: {tokens_per_sec:.2f}")
 
 import sys; sys.exit(0)
 
 
-#prefix tokens 
-import tiktoken 
+#prefix tokens
+import tiktoken
 enc = tiktoken.get_encoding("gpt2")
 tokens = enc.encode("Hello, I'm a language model,")
 tokens = torch.tensor(tokens, dtype=torch.long) #(8, )
@@ -298,31 +322,30 @@ tokens = tokens.unsqueeze(0).repeat(num_return_sequences, 1) #(5, 8)
 x = tokens.to(device)
 
 
-# generate! right now x is (B, T) where B = 5, T = 8 
+# generate! right now x is (B, T) where B = 5, T = 8
 # set the seed is 42 (my fav what is life :P)
 torch.manual_seed(42)
 torch.cuda.manual_seed(42)
 while x.size(1) < max_length:
-    # forward the model to get the logits 
+    # forward the model to get the logits
     with torch.no_grad():
         logits = model(x) # (B, T, vocab_size)
-        # take the logits at the last position 
-        logits = logits[:, -1, :] # (B, vocab_size) 
-        # get the probabilities 
+        # take the logits at the last position
+        logits = logits[:, -1, :] # (B, vocab_size)
+        # get the probabilities
         probs = F.softmax(logits, dim=-1)
-        # do top-k sampling of 50 (huggingface pipeline default) 
-        # topk_probs here becomes (5, 50), topk_indices is  (5, 50) 
+        # do top-k sampling of 50 (huggingface pipeline default)
+        # topk_probs here becomes (5, 50), topk_indices is  (5, 50)
         topk_probs, topk_indices = torch.topk(probs, k=50, dim=-1)
-        # select a token from the top-k probabilities 
-        ix = torch.multinomial(topk_probs, num_samples=1) # (B, 1) 
-        # gather the corresponding indices 
+        # select a token from the top-k probabilities
+        ix = torch.multinomial(topk_probs, num_samples=1) # (B, 1)
+        # gather the corresponding indices
         xcol = torch.gather(topk_indices, -1, ix) # (B, 1)
-        # append to the sequnce 
+        # append to the sequnce
         x = torch.cat((x, xcol), dim=1)
 
-# print the generated text 
+# print the generated text
 for i in range(num_return_sequences):
-    tokens = x[i, :max_length].tolist() 
+    tokens = x[i, :max_length].tolist()
     decoded = enc.decode(tokens)
     print(">", decoded)
-
