@@ -269,7 +269,7 @@ torch.manual_seed(1337)
 if torch.cuda.is_available():
     torch.cuda.manual_seed(1337)
 
-train_loader = DataLoaderLite(B=4, T=1024)
+train_loader = DataLoaderLite(B=8, T=1024)
 
 
 # get the logits
@@ -281,11 +281,11 @@ model.to(device)
 model = torch.compile(model)
 
 #optimize! 
-from torch.cuda.amp import autocast, GradScaler
+from torch import amp
 
-scaler = GradScaler()  # NEW: enable mixed precision
+scaler = amp.GradScaler(device="cuda")  # NEW: enable mixed precision
 
-optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4)
+optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, betas=(0.9, 0.95), eps=1e-8)
 
 for i in range(50):
     t0 = time.time()
@@ -296,11 +296,15 @@ for i in range(50):
     optimizer.zero_grad()
 
     # FP16 forward + loss (autocast enables mixed precision on T4)
-    with autocast():
+    with amp.autocast("cuda"):
         logits, loss = model(x, y)
 
     # backward pass (scaled for safe gradients in FP16)
     scaler.scale(loss).backward()
+
+    #unscale before clipping
+    scaler.unscale_(optimizer)
+    norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0) 
 
     # update weights
     scaler.step(optimizer)
@@ -311,7 +315,7 @@ for i in range(50):
 
     dt = (t1 - t0) * 100  # time difference in milliseconds
     tokens_per_sec = (train_loader.B * train_loader.T) / (t1 - t0)
-    print(f" step {i}, loss: {loss.item()}, dt: {dt:.2f}ms, tok/sec: {tokens_per_sec:.2f}")
+    print(f" step {i:4d} | loss: {loss.item():.6f} | norm: {norm:.4f} | dt: {dt:.2f}ms | tok/sec: {tokens_per_sec:.2f}")
 
 import sys; sys.exit(0)
 
