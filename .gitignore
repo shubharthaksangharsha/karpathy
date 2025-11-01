@@ -1,0 +1,11 @@
+# ======== MODEL WEIGHTS ========
+*.pt
+*.pth
+*.bin
+*.ckpt
+checkpoints/
+models/
+runs/
+outputs/
+# ===============================
+

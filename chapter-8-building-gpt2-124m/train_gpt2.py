@@ -251,159 +251,160 @@ class DataLoaderLite:
             self.current_position = 0
         return x, y
 
-# -----------------------------------------------------------------------------
-# attempt to autodetect the device
-import time
-torch.backends.cuda.matmul.allow_tf32 = True  # no effect on T4, safe to enable
-torch.backends.cudnn.allow_tf32 = True
-torch.set_float32_matmul_precision("high")
+if __name__ == "__main__":
+    # -----------------------------------------------------------------------------
+    # attempt to autodetect the device
+    import time
+    torch.backends.cuda.matmul.allow_tf32 = True  # no effect on T4, safe to enable
+    torch.backends.cudnn.allow_tf32 = True
+    torch.set_float32_matmul_precision("high")
 
 
-device = "cpu"
-if torch.cuda.is_available():
-    device = "cuda"
-elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
-    device = "mps"
-print(f"using device: {device}")
-# device = "cpu" #OVERRIDE
-# max_length = 30
-# num_return_sequences = 5
+    device = "cpu"
+    if torch.cuda.is_available():
+        device = "cuda"
+    elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+        device = "mps"
+    print(f"using device: {device}")
+    # device = "cpu" #OVERRIDE
+    # max_length = 30
+    # num_return_sequences = 5
 
-torch.manual_seed(1337)
-if torch.cuda.is_available():
-    torch.cuda.manual_seed(1337)
+    torch.manual_seed(1337)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(1337)
 
-total_batch_size = 524288 # 2**19, ~0.5M, in number of tokens
-B = 8 # micro batch size 
-T = 1024 # sequence length 
-assert total_batch_size % (B * T) == 0, "make sure total_batch_size is divisible by B * T"
-grad_accum_steps = total_batch_size // (B * T)
-print(f"total desired batch size: {total_batch_size}")
-print(f"calculated gradient accumulation steps: {grad_accum_steps}")
+    total_batch_size = 524288 # 2**19, ~0.5M, in number of tokens
+    B = 8 # micro batch size 
+    T = 1024 # sequence length 
+    assert total_batch_size % (B * T) == 0, "make sure total_batch_size is divisible by B * T"
+    grad_accum_steps = total_batch_size // (B * T)
+    print(f"total desired batch size: {total_batch_size}")
+    print(f"calculated gradient accumulation steps: {grad_accum_steps}")
 
-train_loader = DataLoaderLite(B=8, T=1024)
-
-
-# get the logits
-model = GPT(GPTConfig(vocab_size=50304))
-# model = GPT.from_pretrained("gpt2")
-model.to(device)
-
-#compile the model 
-model = torch.compile(model)
-
-max_lr = 6e-4 
-min_lr = max_lr * 0.1 
-warmup_steps = 10 
-max_steps = 50 
-def get_lr(it):
-  # 1) linear warmup for warmup_iters steps 
-  if it < warmup_steps:
-    return max_lr * (it+1) / warmup_steps
-  # 2) if it > lr_decay_iters, return min learning rate
-  if it >= max_steps:
-    return min_lr
-  # 3) in between, use consine decay down to min learning rate 
-  decay_ratio = (it - warmup_steps) / (max_steps - warmup_steps) 
-  assert 0 <= decay_ratio <= 1
-  coeff = 0.5 * (1.0 + math.cos(math.pi * decay_ratio)) # coeff ranges at 1 and goes to 0
-  return min_lr + coeff * (max_lr - min_lr)
-
-#optimize! 
-from torch import amp
-
-scaler = amp.GradScaler(device="cuda")  # NEW: enable mixed precision
-
-optimizer = model.configure_optimizers(weight_decay=0.1, learning_rate=6e-4, device_type=device)
-# optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, betas=(0.9, 0.95), eps=1e-8)
-
-for step in range(max_steps):
-    t0 = time.time()
-    optimizer.zero_grad()
-    loss_accum = 0.0
-
-    #determine and set the learning rate for this iteration 
-    lr = get_lr(step)
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = lr
-
-    for micro_step in range(grad_accum_steps):        
-      x, y = train_loader.next_batch()
-      x, y = x.to(device), y.to(device)
-
-      # FP16 forward + loss (autocast enables mixed precision on T4)
-      with amp.autocast("cuda"):
-          logits, loss = model(x, y)
-      
-      # we have to scale the loss to account for gradient accumulation, 
-      # because the gradients just add on each successive backward(). 
-      # addition of gradients corresponds to a SUM in the objective, but 
-      # instead of a SUM we want MEAN. Scale the loss here so it comes out right.
-      loss = loss / grad_accum_steps # scale the loss
-      loss_accum += loss.item()
-      
-
-      # backward pass (scaled for safe gradients in FP16)
-      scaler.scale(loss).backward()
-
-    #unscale before clipping
-    scaler.unscale_(optimizer)
-    norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0) 
-
-    
-    # update weights
-    scaler.step(optimizer)
-    scaler.update()
-
-    torch.cuda.synchronize() # wait for GPU to finish work 
-    t1 = time.time()
-
-    dt = (t1 - t0) # time difference
-    ms = dt * 1000 #ms 
-    tokens_processed = train_loader.B * train_loader.T * grad_accum_steps 
-    tokens_per_sec = tokens_processed / dt 
-    print(
-        f" step {step:4d} | loss: {loss_accum:.6f} | lr: {lr:.4e} | "
-        f"norm: {norm:.4f} | dt: {ms:.2f}ms | tok/sec: {tokens_per_sec:.2f}"
-     )
+    train_loader = DataLoaderLite(B=8, T=1024)
 
 
-import sys; sys.exit(0)
+    # get the logits
+    model = GPT(GPTConfig(vocab_size=50304))
+    # model = GPT.from_pretrained("gpt2")
+    model.to(device)
+
+    #compile the model 
+    model = torch.compile(model)
+
+    max_lr = 6e-4 
+    min_lr = max_lr * 0.1 
+    warmup_steps = 10 
+    max_steps = 50 
+    def get_lr(it):
+        # 1) linear warmup for warmup_iters steps 
+        if it < warmup_steps:
+            return max_lr * (it+1) / warmup_steps
+        # 2) if it > lr_decay_iters, return min learning rate
+        if it >= max_steps:
+            return min_lr
+        # 3) in between, use consine decay down to min learning rate 
+        decay_ratio = (it - warmup_steps) / (max_steps - warmup_steps) 
+        assert 0 <= decay_ratio <= 1
+        coeff = 0.5 * (1.0 + math.cos(math.pi * decay_ratio)) # coeff ranges at 1 and goes to 0
+        return min_lr + coeff * (max_lr - min_lr)
+
+    #optimize! 
+    from torch import amp
+
+    scaler = amp.GradScaler(device="cuda")  # NEW: enable mixed precision
+
+    optimizer = model.configure_optimizers(weight_decay=0.1, learning_rate=6e-4, device_type=device)
+    # optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, betas=(0.9, 0.95), eps=1e-8)
+
+    for step in range(max_steps):
+        t0 = time.time()
+        optimizer.zero_grad()
+        loss_accum = 0.0
+
+        #determine and set the learning rate for this iteration 
+        lr = get_lr(step)
+        for param_group in optimizer.param_groups:
+            param_group['lr'] = lr
+
+        for micro_step in range(grad_accum_steps):        
+            x, y = train_loader.next_batch()
+            x, y = x.to(device), y.to(device)
+
+            # FP16 forward + loss (autocast enables mixed precision on T4)
+            with amp.autocast("cuda"):
+                logits, loss = model(x, y)
+            
+            # we have to scale the loss to account for gradient accumulation, 
+            # because the gradients just add on each successive backward(). 
+            # addition of gradients corresponds to a SUM in the objective, but 
+            # instead of a SUM we want MEAN. Scale the loss here so it comes out right.
+            loss = loss / grad_accum_steps # scale the loss
+            loss_accum += loss.item()
+        
+
+            # backward pass (scaled for safe gradients in FP16)
+            scaler.scale(loss).backward()
+
+        #unscale before clipping
+        scaler.unscale_(optimizer)
+        norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0) 
+
+        
+        # update weights
+        scaler.step(optimizer)
+        scaler.update()
+
+        torch.cuda.synchronize() # wait for GPU to finish work 
+        t1 = time.time()
+
+        dt = (t1 - t0) # time difference
+        ms = dt * 1000 #ms 
+        tokens_processed = train_loader.B * train_loader.T * grad_accum_steps 
+        tokens_per_sec = tokens_processed / dt 
+        print(
+            f" step {step:4d} | loss: {loss_accum:.6f} | lr: {lr:.4e} | "
+            f"norm: {norm:.4f} | dt: {ms:.2f}ms | tok/sec: {tokens_per_sec:.2f}"
+        )
 
 
-#prefix tokens
-import tiktoken
-enc = tiktoken.get_encoding("gpt2")
-tokens = enc.encode("Hello, I'm a language model,")
-tokens = torch.tensor(tokens, dtype=torch.long) #(8, )
-tokens = tokens.unsqueeze(0).repeat(num_return_sequences, 1) #(5, 8)
-x = tokens.to(device)
+    import sys; sys.exit(0)
 
 
-# generate! right now x is (B, T) where B = 5, T = 8
-# set the seed is 42 (my fav what is life :P)
-torch.manual_seed(42)
-torch.cuda.manual_seed(42)
-while x.size(1) < max_length:
-    # forward the model to get the logits
-    with torch.no_grad():
-        logits = model(x) # (B, T, vocab_size)
-        # take the logits at the last position
-        logits = logits[:, -1, :] # (B, vocab_size)
-        # get the probabilities
-        probs = F.softmax(logits, dim=-1)
-        # do top-k sampling of 50 (huggingface pipeline default)
-        # topk_probs here becomes (5, 50), topk_indices is  (5, 50)
-        topk_probs, topk_indices = torch.topk(probs, k=50, dim=-1)
-        # select a token from the top-k probabilities
-        ix = torch.multinomial(topk_probs, num_samples=1) # (B, 1)
-        # gather the corresponding indices
-        xcol = torch.gather(topk_indices, -1, ix) # (B, 1)
-        # append to the sequnce
-        x = torch.cat((x, xcol), dim=1)
+    #prefix tokens
+    import tiktoken
+    enc = tiktoken.get_encoding("gpt2")
+    tokens = enc.encode("Hello, I'm a language model,")
+    tokens = torch.tensor(tokens, dtype=torch.long) #(8, )
+    tokens = tokens.unsqueeze(0).repeat(num_return_sequences, 1) #(5, 8)
+    x = tokens.to(device)
 
-# print the generated text
-for i in range(num_return_sequences):
-    tokens = x[i, :max_length].tolist()
-    decoded = enc.decode(tokens)
-    print(">", decoded)
+
+    # generate! right now x is (B, T) where B = 5, T = 8
+    # set the seed is 42 (my fav what is life :P)
+    torch.manual_seed(42)
+    torch.cuda.manual_seed(42)
+    while x.size(1) < max_length:
+        # forward the model to get the logits
+        with torch.no_grad():
+            logits = model(x) # (B, T, vocab_size)
+            # take the logits at the last position
+            logits = logits[:, -1, :] # (B, vocab_size)
+            # get the probabilities
+            probs = F.softmax(logits, dim=-1)
+            # do top-k sampling of 50 (huggingface pipeline default)
+            # topk_probs here becomes (5, 50), topk_indices is  (5, 50)
+            topk_probs, topk_indices = torch.topk(probs, k=50, dim=-1)
+            # select a token from the top-k probabilities
+            ix = torch.multinomial(topk_probs, num_samples=1) # (B, 1)
+            # gather the corresponding indices
+            xcol = torch.gather(topk_indices, -1, ix) # (B, 1)
+            # append to the sequnce
+            x = torch.cat((x, xcol), dim=1)
+
+    # print the generated text
+    for i in range(num_return_sequences):
+        tokens = x[i, :max_length].tolist()
+        decoded = enc.decode(tokens)
+        print(">", decoded)
