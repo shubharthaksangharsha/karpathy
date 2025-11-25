@@ -1,0 +1,1336 @@
+{"question": "What is the capital of Australia?", "answer": "Canberra."}
+{"question": "What is the largest city in Australia?", "answer": "Sydney."}
+{"question": "What is Australia's national animal?", "answer": "The kangaroo."}
+{"question": "What is a koala's main food?", "answer": "Eucalyptus leaves."}
+{"question": "What ocean borders Australia to the east?", "answer": "The Pacific Ocean."}
+{"question": "What is the Great Barrier Reef?", "answer": "The world's largest coral reef system."}
+{"question": "What is Uluru?", "answer": "A large sandstone rock formation in central Australia."}
+{"question": "What is the currency used in Australia?", "answer": "The Australian dollar."}
+{"question": "What does 'mate' mean in Australian slang?", "answer": "Friend."}
+{"question": "What is Vegemite?", "answer": "A popular Australian spread made from yeast extract."}
+{"question": "What sport is played in the AFL?", "answer": "Australian Rules Football."}
+{"question": "What is Australia Day?", "answer": "A national holiday on January 26th."}
+{"question": "What is a boomerang?", "answer": "A curved throwing tool used by Aboriginal Australians."}
+{"question": "What is the Sydney Opera House?", "answer": "A famous performing arts center in Sydney."}
+{"question": "What is the outback?", "answer": "The remote, arid interior of Australia."}
+{"question": "What are damper and billy tea?", "answer": "Traditional Australian bush foods."}
+{"question": "What is a barbie in Australia?", "answer": "A barbecue."}
+{"question": "What does 'arvo' mean?", "answer": "Afternoon."}
+{"question": "What is ANZAC Day?", "answer": "April 25th, a day honoring Australian and New Zealand soldiers."}
+{"question": "What is Melbourne Cup?", "answer": "A famous horse race held annually in Melbourne."}
+{"question": "What is Tasmania?", "answer": "An island state of Australia."}
+{"question": "What is a dingo?", "answer": "A wild dog native to Australia."}
+{"question": "What is the Boxing Day Test?", "answer": "A cricket test match starting on December 26th."}
+{"question": "What does 'G'day' mean?", "answer": "Hello or good day."}
+{"question": "What is Bondi Beach?", "answer": "A famous beach in Sydney."}
+{"question": "What is a Tim Tam?", "answer": "A popular Australian chocolate biscuit."}
+{"question": "What is the Daintree Rainforest?", "answer": "A tropical rainforest in Queensland."}
+{"question": "What is a wombat?", "answer": "A burrowing marsupial native to Australia."}
+{"question": "What is Kakadu National Park?", "answer": "A large national park in the Northern Territory."}
+{"question": "What is the Gold Coast?", "answer": "A coastal city in Queensland known for beaches and theme parks."}
+{"question": "What does 'brekkie' mean?", "answer": "Breakfast."}
+{"question": "What is a meat pie in Australia?", "answer": "A popular savory pastry filled with meat."}
+{"question": "What is the Tasman Sea?", "answer": "The sea between Australia and New Zealand."}
+{"question": "What is the Twelve Apostles?", "answer": "Limestone rock formations along the Great Ocean Road."}
+{"question": "What is a platypus?", "answer": "An egg-laying mammal native to Australia."}
+{"question": "What does 'no worries' mean?", "answer": "You're welcome or it's okay."}
+{"question": "What is Canberra known for?", "answer": "Being Australia's capital city."}
+{"question": "What is the Sydney Harbour Bridge?", "answer": "A famous bridge in Sydney."}
+{"question": "What is a kookaburra?", "answer": "A bird known for its laughing call."}
+{"question": "What is Fremantle?", "answer": "A port city near Perth in Western Australia."}
+{"question": "What does 'thongs' mean in Australia?", "answer": "Flip-flops or sandals."}
+{"question": "What is a ute?", "answer": "A utility vehicle or pickup truck."}
+{"question": "What is the Murray River?", "answer": "Australia's longest river."}
+{"question": "What is Rottnest Island known for?", "answer": "Quokkas and beautiful beaches."}
+{"question": "What is a quokka?", "answer": "A small marsupial known for looking like it's smiling."}
+{"question": "What does 'servo' mean?", "answer": "Service station or gas station."}
+{"question": "What is the Nullarbor Plain?", "answer": "A vast, treeless plain in southern Australia."}
+{"question": "What is a sausage sizzle?", "answer": "A community barbecue fundraising event."}
+{"question": "What is the Blue Mountains?", "answer": "A mountain range near Sydney."}
+{"question": "What does 'bottle-o' mean?", "answer": "Liquor store."}
+{"question": "What is gas do plants absorb?", "answer": "Carbon dioxide."}
+{"question": "How many continents are there?", "answer": "Seven."}
+{"question": "What is the largest ocean?", "answer": "The Pacific Ocean."}
+{"question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci."}
+{"question": "What organ pumps blood?", "answer": "The heart."}
+{"question": "What planet is known as the Red Planet?", "answer": "Mars."}
+{"question": "What do bees produce?", "answer": "Honey."}
+{"question": "How many days are in a year?", "answer": "365."}
+{"question": "What do humans need to breathe?", "answer": "Oxygen."}
+{"question": "What is the hardest natural substance?", "answer": "Diamond."}
+{"question": "What do we call frozen water?", "answer": "Ice."}
+{"question": "What part of the body helps you see?", "answer": "The eyes."}
+{"question": "Who wrote Harry Potter?", "answer": "J.K. Rowling."}
+{"question": "What is Earth's largest animal?", "answer": "The blue whale."}
+{"question": "What do you call a baby cat?", "answer": "A kitten."}
+{"question": "What is the tallest mountain in the world?", "answer": "Mount Everest."}
+{"question": "What gas do humans exhale?", "answer": "Carbon dioxide."}
+{"question": "What is the smallest country?", "answer": "Vatican City."}
+{"question": "What instrument has 88 keys?", "answer": "The piano."}
+{"question": "What do cows drink?", "answer": "Water."}
+{"question": "What is a group of lions called?", "answer": "A pride."}
+{"question": "What planet is closest to the sun?", "answer": "Mercury."}
+{"question": "What do we call a shape with three sides?", "answer": "A triangle."}
+{"question": "What fruit keeps doctors away?", "answer": "An apple."}
+{"question": "What does CPU stand for?", "answer": "Central Processing Unit."}
+{"question": "What is RAM?", "answer": "Temporary computer memory used while programs run."}
+{"question": "What does GPU stand for?", "answer": "Graphics Processing Unit."}
+{"question": "What is an IP address?", "answer": "A unique number that identifies a device on a network."}
+{"question": "What is a router?", "answer": "A device that directs network traffic."}
+{"question": "What is a firewall?", "answer": "A tool that blocks unwanted network traffic."}
+{"question": "What is phishing?", "answer": "A cyber attack that tricks people into giving information."}
+{"question": "What is SQL?", "answer": "A language for managing databases."}
+{"question": "What is HTML used for?", "answer": "Creating web pages."}
+{"question": "What is Python?", "answer": "A popular programming language."}
+{"question": "What is a bug in software?", "answer": "An error in the program."}
+{"question": "What is open source software?", "answer": "Software whose source code is free to view and modify."}
+{"question": "What is the internet?", "answer": "A global network of connected computers."}
+{"question": "What is data encryption?", "answer": "Scrambling data to keep it safe."}
+{"question": "What is an algorithm?", "answer": "A set of steps to solve a problem."}
+{"question": "What is machine learning?", "answer": "Teaching computers to learn from data."}
+{"question": "What is cloud computing?", "answer": "Using remote servers to store and process data."}
+{"question": "What is a database?", "answer": "A system that stores and organizes information."}
+{"question": "What is Wi-Fi?", "answer": "A technology that lets devices connect wirelessly."}
+{"question": "What is a smartphone?", "answer": "A phone that can run apps and access the internet."}
+{"question": "What is a password?", "answer": "A secret string used to access accounts."}
+{"question": "What is a screenshot?", "answer": "A picture of what is on your screen."}
+{"question": "What is a file?", "answer": "A piece of data stored on a computer."}
+{"question": "What is a web browser?", "answer": "A program used to view websites."}
+{"question": "How many hours are in a day?", "answer": "24 hours."}
+{"question": "What do you use to cut paper?", "answer": "Scissors."}
+{"question": "What color is the sky on a clear day?", "answer": "Blue."}
+{"question": "How many wheels does a bicycle have?", "answer": "Two."}
+{"question": "What do you call the meal eaten in the evening?", "answer": "Dinner."}
+{"question": "What do you wear on your feet?", "answer": "Shoes or socks."}
+{"question": "What do you use to write on paper?", "answer": "A pen or pencil."}
+{"question": "What room do you sleep in?", "answer": "The bedroom."}
+{"question": "What do you use to brush your teeth?", "answer": "A toothbrush."}
+{"question": "What liquid do we drink to stay hydrated?", "answer": "Water."}
+{"question": "What do you sit on?", "answer": "A chair."}
+{"question": "What do you use an umbrella for?", "answer": "Protection from rain."}
+{"question": "What meal comes before lunch?", "answer": "Breakfast."}
+{"question": "What appliance keeps food cold?", "answer": "A refrigerator."}
+{"question": "What do you use to tell time?", "answer": "A clock or watch."}
+{"question": "What room has a toilet?", "answer": "The bathroom."}
+{"question": "What do you use to open a locked door?", "answer": "A key."}
+{"question": "What vehicle has four wheels and carries people?", "answer": "A car."}
+{"question": "What do you use to clean your hands?", "answer": "Soap and water."}
+{"question": "What do you wear when it's cold outside?", "answer": "A jacket or coat."}
+{"question": "What is the opposite of hot?", "answer": "Cold."}
+{"question": "What do you call water that falls from clouds?", "answer": "Rain."}
+{"question": "What do you use to sweep the floor?", "answer": "A broom."}
+{"question": "What do you sleep on?", "answer": "A bed."}
+{"question": "What do birds use to fly?", "answer": "Wings."}
+{"question": "What is the opposite of day?", "answer": "Night."}
+{"question": "What do you use to see in the dark?", "answer": "A flashlight or lamp."}
+{"question": "What season comes after winter?", "answer": "Spring."}
+{"question": "What do you use to dry yourself after a shower?", "answer": "A towel."}
+{"question": "What appliance cooks food with heat?", "answer": "An oven or stove."}
+{"question": "What do you drink from?", "answer": "A cup or glass."}
+{"question": "What do you use to eat soup?", "answer": "A spoon."}
+{"question": "What is the opposite of up?", "answer": "Down."}
+{"question": "What do you use to lock things?", "answer": "A lock."}
+{"question": "What grows on trees and can be eaten?", "answer": "Fruit."}
+{"question": "What animal says meow?", "answer": "A cat."}
+{"question": "What animal says woof?", "answer": "A dog."}
+{"question": "What color are most leaves?", "answer": "Green."}
+{"question": "What do you put letters in to mail them?", "answer": "An envelope."}
+{"question": "What do you use to call someone?", "answer": "A phone."}
+{"question": "What is the opposite of fast?", "answer": "Slow."}
+{"question": "What do you wear on your head?", "answer": "A hat."}
+{"question": "What do you use to cut food?", "answer": "A knife."}
+{"question": "What comes after Monday?", "answer": "Tuesday."}
+{"question": "What is the first month of the year?", "answer": "January."}
+{"question": "What is the last month of the year?", "answer": "December."}
+{"question": "How many minutes are in an hour?", "answer": "60 minutes."}
+{"question": "How many seconds are in a minute?", "answer": "60 seconds."}
+{"question": "What is the opposite of left?", "answer": "Right."}
+{"question": "What do you use to measure things?", "answer": "A ruler or measuring tape."}
+{"question": "What do you use to erase pencil marks?", "answer": "An eraser."}
+{"question": "What do flowers need to grow?", "answer": "Water and sunlight."}
+{"question": "What is the opposite of old?", "answer": "Young or new."}
+{"question": "What do you use to fix papers together?", "answer": "A stapler or paperclip."}
+{"question": "What is Perth?", "answer": "The capital city of Western Australia."}
+{"question": "What is Adelaide?", "answer": "The capital city of South Australia."}
+{"question": "What is Brisbane?", "answer": "The capital city of Queensland."}
+{"question": "What is Hobart?", "answer": "The capital city of Tasmania."}
+{"question": "What is Darwin?", "answer": "The capital city of the Northern Territory."}
+{"question": "What does 'fair dinkum' mean?", "answer": "Genuine or true."}
+{"question": "What is a pavlova?", "answer": "A meringue-based dessert topped with cream and fruit."}
+{"question": "What is Lamington?", "answer": "A sponge cake coated in chocolate and coconut."}
+{"question": "What does 'she'll be right' mean?", "answer": "Everything will be okay."}
+{"question": "What is a billabong?", "answer": "A water hole or small lake."}
+{"question": "What is the Southern Cross?", "answer": "A constellation visible from Australia."}
+{"question": "What does 'bogan' mean?", "answer": "An uncultured or unsophisticated person."}
+{"question": "What is a snag?", "answer": "A sausage."}
+{"question": "What is the NRL?", "answer": "National Rugby League."}
+{"question": "What is cricket?", "answer": "A bat-and-ball sport popular in Australia."}
+{"question": "What does 'chockers' mean?", "answer": "Very full."}
+{"question": "What is a mozzie?", "answer": "A mosquito."}
+{"question": "What is the Torres Strait?", "answer": "The strait between Australia and Papua New Guinea."}
+{"question": "What does 'dunny' mean?", "answer": "Toilet."}
+{"question": "What is Kakadu?", "answer": "A national park in the Northern Territory."}
+{"question": "What is the Yarra River?", "answer": "A river that flows through Melbourne."}
+{"question": "What does 'stubby' mean?", "answer": "A small bottle of beer."}
+{"question": "What is Mardi Gras in Sydney?", "answer": "An annual LGBTQ+ pride parade and festival."}
+{"question": "What is the ACT?", "answer": "Australian Capital Territory, where Canberra is located."}
+{"question": "What does 'heaps' mean?", "answer": "A lot or very."}
+{"question": "What is a galah?", "answer": "A pink and grey cockatoo."}
+{"question": "What is the Kimberley?", "answer": "A remote region in northern Western Australia."}
+{"question": "What does 'reckon' mean?", "answer": "To think or suppose."}
+{"question": "What is a fairy bread?", "answer": "Buttered bread with sprinkles, popular at children's parties."}
+{"question": "What is the Sydney to Hobart?", "answer": "An annual yacht race."}
+{"question": "What does 'spitting the dummy' mean?", "answer": "Having a tantrum."}
+{"question": "What is Kakadu plum?", "answer": "A native fruit high in vitamin C."}
+{"question": "What is a magpie?", "answer": "A black and white bird known for swooping in spring."}
+{"question": "What does 'flat out' mean?", "answer": "Very busy."}
+{"question": "What is the Snowy Mountains?", "answer": "A mountain range in southeastern Australia."}
+{"question": "What does 'drongo' mean?", "answer": "A fool or idiot."}
+{"question": "What is a huntsman spider?", "answer": "A large spider common in Australian homes."}
+{"question": "What is the Whitsundays?", "answer": "A group of islands off the coast of Queensland."}
+{"question": "What does 'ripper' mean?", "answer": "Excellent or great."}
+{"question": "What is the Ashes?", "answer": "A cricket test series between Australia and England."}
+{"question": "What is Kata Tjuta?", "answer": "A group of large rock formations near Uluru."}
+{"question": "What does 'strewth' mean?", "answer": "An expression of surprise."}
+{"question": "What is a redback spider?", "answer": "A venomous spider with a red stripe."}
+{"question": "What is Fraser Island?", "answer": "The world's largest sand island in Queensland."}
+{"question": "What does 'budgie smugglers' mean?", "answer": "Men's tight swimming briefs."}
+{"question": "What is the Big Banana?", "answer": "A large tourist attraction in Coffs Harbour."}
+{"question": "What does 'bludger' mean?", "answer": "A lazy person."}
+{"question": "What is King Island?", "answer": "An island between Tasmania and mainland Australia."}
+{"question": "What is the sun?", "answer": "The star at the center of our solar system."}
+{"question": "What is gravity?", "answer": "The force that pulls objects toward each other."}
+{"question": "What is photosynthesis?", "answer": "The process plants use to make food from sunlight."}
+{"question": "What is the speed of light?", "answer": "About 300,000 kilometers per second."}
+{"question": "What is the moon?", "answer": "Earth's natural satellite."}
+{"question": "What are atoms?", "answer": "The smallest units of matter."}
+{"question": "What is DNA?", "answer": "The molecule that carries genetic information."}
+{"question": "What is the boiling point of water?", "answer": "100 degrees Celsius or 212 degrees Fahrenheit."}
+{"question": "What is the freezing point of water?", "answer": "0 degrees Celsius or 32 degrees Fahrenheit."}
+{"question": "What is electricity?", "answer": "The flow of electrical charge."}
+{"question": "What is sound?", "answer": "Vibrations that travel through the air or other mediums."}
+{"question": "What is an ecosystem?", "answer": "A community of living things and their environment."}
+{"question": "What is evolution?", "answer": "The process by which species change over time."}
+{"question": "What is a cell?", "answer": "The basic unit of life."}
+{"question": "What is the water cycle?", "answer": "The continuous movement of water on Earth."}
+{"question": "What causes seasons?", "answer": "Earth's tilt as it orbits the sun."}
+{"question": "What is a mammal?", "answer": "An animal that has fur and feeds milk to its young."}
+{"question": "What is chlorophyll?", "answer": "The green pigment in plants that absorbs sunlight."}
+{"question": "What is an earthquake?", "answer": "Shaking of the ground caused by movement in Earth's crust."}
+{"question": "What is a volcano?", "answer": "An opening in Earth's crust where lava erupts."}
+{"question": "What is the atmosphere?", "answer": "The layer of gases surrounding Earth."}
+{"question": "What is magnetism?", "answer": "The force that attracts certain metals."}
+{"question": "What is a chemical reaction?", "answer": "A process where substances change into different substances."}
+{"question": "What is temperature?", "answer": "A measure of how hot or cold something is."}
+{"question": "What is a habitat?", "answer": "The natural home of an animal or plant."}
+{"question": "What is precipitation?", "answer": "Water falling from clouds as rain, snow, or hail."}
+{"question": "What is an element?", "answer": "A pure substance made of one type of atom."}
+{"question": "What is energy?", "answer": "The ability to do work."}
+{"question": "What is a reptile?", "answer": "A cold-blooded animal with scales."}
+{"question": "What is an amphibian?", "answer": "An animal that lives both on land and in water."}
+{"question": "What is the Milky Way?", "answer": "The galaxy containing our solar system."}
+{"question": "What is condensation?", "answer": "When water vapor turns into liquid water."}
+{"question": "What is evaporation?", "answer": "When liquid water turns into water vapor."}
+{"question": "What is a fossil?", "answer": "The preserved remains of ancient life."}
+{"question": "What is biodiversity?", "answer": "The variety of life in an area."}
+{"question": "What is a carnivore?", "answer": "An animal that eats meat."}
+{"question": "What is a herbivore?", "answer": "An animal that eats plants."}
+{"question": "What is an omnivore?", "answer": "An animal that eats both plants and meat."}
+{"question": "What is pollution?", "answer": "Harmful substances in the environment."}
+{"question": "What is renewable energy?", "answer": "Energy from sources that don't run out."}
+{"question": "What is solar power?", "answer": "Energy from the sun."}
+{"question": "What is wind power?", "answer": "Energy from moving air."}
+{"question": "What is a food chain?", "answer": "The sequence of who eats whom in nature."}
+{"question": "What is climate?", "answer": "The average weather in a place over time."}
+{"question": "What is weather?", "answer": "The day-to-day conditions of the atmosphere."}
+{"question": "What is a predator?", "answer": "An animal that hunts other animals."}
+{"question": "What is prey?", "answer": "An animal that is hunted by predators."}
+{"question": "What is metamorphosis?", "answer": "The transformation of an animal's form."}
+{"question": "What is photosynthesis used for?", "answer": "Plants making food from sunlight."}
+{"question": "What is the periodic table?", "answer": "A chart of all chemical elements."}
+{"question": "How do you boil an egg?", "answer": "Put it in boiling water for several minutes."}
+{"question": "What is the best way to stay healthy?", "answer": "Eat well, exercise, and get enough sleep."}
+{"question": "How do you make tea?", "answer": "Steep tea leaves or a tea bag in hot water."}
+{"question": "What should you do if you burn yourself?", "answer": "Run cool water over the burn."}
+{"question": "How often should you wash your hands?", "answer": "Before eating and after using the bathroom."}
+{"question": "What is a balanced diet?", "answer": "Eating a variety of healthy foods in proper amounts."}
+{"question": "How much water should you drink daily?", "answer": "About 2 liters or 8 glasses."}
+{"question": "What is the safest way to cross a road?", "answer": "Look both ways and use a crosswalk."}
+{"question": "How do you check if milk is spoiled?", "answer": "Smell it and check the expiration date."}
+{"question": "What should you do in case of fire?", "answer": "Get out quickly and call emergency services."}
+{"question": "How do you remove a stain from clothes?", "answer": "Treat it quickly with appropriate stain remover."}
+{"question": "What is the first thing to do when you wake up?", "answer": "Many people drink water or stretch."}
+{"question": "How do you save money?", "answer": "Spend less than you earn and set some aside."}
+{"question": "What should you do if you feel sick?", "answer": "Rest and see a doctor if it gets worse."}
+{"question": "How do you make coffee?", "answer": "Brew ground coffee beans with hot water."}
+{"question": "What is the best way to learn something new?", "answer": "Practice regularly and stay patient."}
+{"question": "How do you iron clothes?", "answer": "Use a hot iron on damp fabric."}
+{"question": "What should you do before going to bed?", "answer": "Brush your teeth and prepare for sleep."}
+{"question": "How do you take care of houseplants?", "answer": "Water them regularly and give them sunlight."}
+{"question": "What is the best way to organize your day?", "answer": "Make a to-do list and prioritize tasks."}
+{"question": "How do you cook rice?", "answer": "Boil it in water until tender."}
+{"question": "What should you do if you lose your keys?", "answer": "Retrace your steps and check common places."}
+{"question": "How do you make a sandwich?", "answer": "Put fillings between two slices of bread."}
+{"question": "What is the best way to wake up on time?", "answer": "Set an alarm clock."}
+{"question": "How do you wash dishes?", "answer": "Use soap and water, then rinse."}
+{"question": "What should you wear in winter?", "answer": "Warm clothing like coats and sweaters."}
+{"question": "How do you tie shoelaces?", "answer": "Make loops and tie them together."}
+{"question": "What is the best way to study?", "answer": "Focus, take breaks, and review regularly."}
+{"question": "How do you make scrambled eggs?", "answer": "Beat eggs and cook them while stirring."}
+{"question": "What should you do when meeting someone new?", "answer": "Introduce yourself and be polite."}
+{"question": "How do you keep your room clean?", "answer": "Put things away and clean regularly."}
+{"question": "What is the best way to apologize?", "answer": "Say sorry sincerely and mean it."}
+{"question": "How do you open a jar with a tight lid?", "answer": "Run it under hot water or use a cloth for grip."}
+{"question": "What should you do if it's raining?", "answer": "Take an umbrella or wear a raincoat."}
+{"question": "How do you brush your teeth properly?", "answer": "Use circular motions for two minutes."}
+{"question": "What is the best way to make friends?", "answer": "Be kind, listen, and show interest in others."}
+{"question": "How do you fold clothes?", "answer": "Flatten them and fold them neatly."}
+{"question": "What should you do if you're lost?", "answer": "Stay calm and ask for directions."}
+{"question": "How do you make toast?", "answer": "Put bread in a toaster until golden."}
+{"question": "What is the best way to remember things?", "answer": "Write them down or create reminders."}
+{"question": "How do you water plants?", "answer": "Pour water near the roots."}
+{"question": "What should you pack for a trip?", "answer": "Clothes, toiletries, and essentials."}
+{"question": "How do you make a bed?", "answer": "Straighten sheets and arrange pillows."}
+{"question": "What is the best way to relax?", "answer": "Do something you enjoy or rest."}
+{"question": "How do you send an email?", "answer": "Write your message and click send."}
+{"question": "What should you do before cooking?", "answer": "Wash your hands and gather ingredients."}
+{"question": "How do you clean windows?", "answer": "Wipe them with cleaner and a cloth."}
+{"question": "What is the best way to stay organized?", "answer": "Keep things in their place and use lists."}
+{"question": "How do you change a lightbulb?", "answer": "Turn off power, remove old bulb, insert new one."}
+{"question": "What should you do if you're tired?", "answer": "Rest or take a nap."}
+{"question": "Who invented the telephone?", "answer": "Alexander Graham Bell."}
+{"question": "What year did World War II end?", "answer": "1945."}
+{"question": "Who was the first person on the moon?", "answer": "Neil Armstrong."}
+{"question": "What is the Eiffel Tower?", "answer": "A famous tower in Paris, France."}
+{"question": "Who wrote Romeo and Juliet?", "answer": "William Shakespeare."}
+{"question": "What is the Great Wall of China?", "answer": "An ancient wall in China."}
+{"question": "Who discovered penicillin?", "answer": "Alexander Fleming."}
+{"question": "What year did the Titanic sink?", "answer": "1912."}
+{"question": "Who painted the Sistine Chapel ceiling?", "answer": "Michelangelo."}
+{"question": "What is the Colosseum?", "answer": "An ancient amphitheater in Rome."}
+{"question": "Who invented the lightbulb?", "answer": "Thomas Edison."}
+{"question": "What is the Statue of Liberty?", "answer": "A statue in New York Harbor."}
+{"question": "Who was Albert Einstein?", "answer": "A famous physicist who developed relativity theory."}
+{"question": "What is the Taj Mahal?", "answer": "A white marble mausoleum in India."}
+{"question": "Who wrote The Odyssey?", "answer": "Homer."}
+{"question": "What year did Columbus reach America?", "answer": "1492."}
+{"question": "Who was Cleopatra?", "answer": "The last pharaoh of ancient Egypt."}
+{"question": "What is Stonehenge?", "answer": "A prehistoric monument in England."}
+{"question": "Who invented the airplane?", "answer": "The Wright Brothers."}
+{"question": "What is the Pyramids of Giza?", "answer": "Ancient pyramids in Egypt."}
+{"question": "Who was Leonardo da Vinci?", "answer": "An Italian artist and inventor."}
+{"question": "What year did the Berlin Wall fall?", "answer": "1989."}
+{"question": "Who discovered America?", "answer": "Indigenous peoples first, then Columbus in 1492."}
+{"question": "What is Machu Picchu?", "answer": "An ancient Incan city in Peru."}
+{"question": "Who was Martin Luther King Jr.?", "answer": "An American civil rights leader."}
+{"question": "What is the Forbidden City?", "answer": "A palace complex in Beijing, China."}
+{"question": "Who composed the Fifth Symphony?", "answer": "Ludwig van Beethoven."}
+{"question": "What year did World War I start?", "answer": "1914."}
+{"question": "Who was Napoleon?", "answer": "A French military leader and emperor."}
+{"question": "What is Big Ben?", "answer": "A clock tower in London."}
+{"question": "Who invented the printing press?", "answer": "Johannes Gutenberg."}
+{"question": "What is the Louvre?", "answer": "A famous art museum in Paris."}
+{"question": "Who was Galileo?", "answer": "An Italian astronomer and physicist."}
+{"question": "What year did man first land on the moon?", "answer": "1969."}
+{"question": "Who was Julius Caesar?", "answer": "A Roman general and dictator."}
+{"question": "What is the Panama Canal?", "answer": "A waterway connecting the Atlantic and Pacific oceans."}
+{"question": "Who wrote Pride and Prejudice?", "answer": "Jane Austen."}
+{"question": "What is the Parthenon?", "answer": "An ancient temple in Athens, Greece."}
+{"question": "Who was Isaac Newton?", "answer": "An English scientist who described gravity."}
+{"question": "What year did the internet become public?", "answer": "1991."}
+{"question": "Who was Marie Curie?", "answer": "A scientist who discovered radioactivity."}
+{"question": "What is the Acropolis?", "answer": "An ancient citadel in Athens."}
+{"question": "Who composed The Four Seasons?", "answer": "Antonio Vivaldi."}
+{"question": "What year was the first iPhone released?", "answer": "2007."}
+{"question": "Who was Socrates?", "answer": "An ancient Greek philosopher."}
+{"question": "What is the Sistine Chapel?", "answer": "A chapel in Vatican City with famous frescoes."}
+{"question": "Who discovered gravity?", "answer": "Isaac Newton."}
+{"question": "What year did the Roman Empire fall?", "answer": "476 AD."}
+{"question": "Who was Charles Darwin?", "answer": "A naturalist who proposed evolution theory."}
+{"question": "What is the Kremlin?", "answer": "A fortified complex in Moscow, Russia."}
+{"question": "What is JavaScript?", "answer": "A programming language for web development."}
+{"question": "What does HTTP stand for?", "answer": "HyperText Transfer Protocol."}
+{"question": "What is a server?", "answer": "A computer that provides services to other computers."}
+{"question": "What is Linux?", "answer": "An open-source operating system."}
+{"question": "What is a PDF?", "answer": "A document format that preserves formatting."}
+{"question": "What is USB?", "answer": "Universal Serial Bus, a connection standard."}
+{"question": "What is malware?", "answer": "Harmful software designed to damage systems."}
+{"question": "What is a cookie?", "answer": "A small file stored by websites on your computer."}
+{"question": "What is bandwidth?", "answer": "The amount of data that can be transmitted."}
+{"question": "What is the cloud?", "answer": "Remote servers accessed over the internet."}
+{"question": "What is a virus?", "answer": "Malicious software that replicates itself."}
+{"question": "What is an operating system?", "answer": "Software that manages computer hardware and software."}
+{"question": "What is Java?", "answer": "A popular programming language."}
+{"question": "What is a hard drive?", "answer": "A device that stores data permanently."}
+{"question": "What is Bluetooth?", "answer": "A wireless technology for short-range connections."}
+{"question": "What is CSS?", "answer": "A language for styling web pages."}
+{"question": "What is a URL?", "answer": "A web address."}
+{"question": "What is spam?", "answer": "Unwanted or junk email."}
+{"question": "What is a motherboard?", "answer": "The main circuit board in a computer."}
+{"question": "What is a laptop?", "answer": "A portable personal computer."}
+{"question": "What is a tablet?", "answer": "A mobile computer with a touchscreen."}
+{"question": "What is streaming?", "answer": "Playing media over the internet without downloading."}
+{"question": "What is a keyboard?", "answer": "An input device with keys for typing."}
+{"question": "What is a mouse?", "answer": "A pointing device for computers."}
+{"question": "What is an app?", "answer": "A software application, especially on mobile devices."}
+{"question": "What is a download?", "answer": "Transferring data from the internet to your device."}
+{"question": "What is an upload?", "answer": "Transferring data from your device to the internet."}
+{"question": "What is a backup?", "answer": "A copy of data stored for safety."}
+{"question": "What is antivirus software?", "answer": "Software that detects and removes viruses."}
+{"question": "What is a search engine?", "answer": "A tool for finding information online."}
+{"question": "What is social media?", "answer": "Online platforms for sharing and connecting."}
+{"question": "What is an email?", "answer": "Electronic mail sent over the internet."}
+{"question": "What is a domain name?", "answer": "The address of a website."}
+{"question": "What is a browser?", "answer": "Software for viewing websites."}
+{"question": "What is a pixel?", "answer": "The smallest unit of a digital image."}
+{"question": "What is a SSD?", "answer": "Solid State Drive, a fast storage device."}
+{"question": "What is VPN?", "answer": "Virtual Private Network for secure connections."}
+{"question": "What is a podcast?", "answer": "A digital audio program available online."}
+{"question": "What is an emoji?", "answer": "A small digital icon expressing emotion."}
+{"question": "What is a GIF?", "answer": "A moving image file format."}
+{"question": "What is WiFi password?", "answer": "A code needed to access a wireless network."}
+{"question": "What is a zip file?", "answer": "A compressed file format."}
+{"question": "What is a printer?", "answer": "A device that prints documents on paper."}
+{"question": "What is a webcam?", "answer": "A camera for video calls and streaming."}
+{"question": "What is a notification?", "answer": "An alert from an app or device."}
+{"question": "What is coding?", "answer": "Writing instructions for computers."}
+{"question": "What is artificial intelligence?", "answer": "Computer systems that can perform tasks requiring human intelligence."}
+{"question": "What is a touchscreen?", "answer": "A display that responds to touch."}
+{"question": "What is a folder?", "answer": "A container for organizing files."}
+{"question": "What do you eat for breakfast in Australia?", "answer": "Many eat cereal, toast, or eggs."}
+{"question": "What time do Australians typically have dinner?", "answer": "Usually between 6 and 8 PM."}
+{"question": "What is a typical Australian lunch?", "answer": "Often a sandwich, salad, or leftovers."}
+{"question": "How do Australians greet each other?", "answer": "With a handshake or casual hello."}
+{"question": "What is Australia's summer like?", "answer": "Hot and dry in most areas."}
+{"question": "What is Australia's winter like?", "answer": "Mild in most areas, cold in the mountains."}
+{"question": "Do Australians celebrate Christmas?", "answer": "Yes, on December 25th."}
+{"question": "What do Australians call a swimming costume?", "answer": "Bathers, cossie, or togs depending on the state."}
+{"question": "What side of the road do Australians drive on?", "answer": "The left side."}
+{"question": "What is the school year in Australia?", "answer": "Late January to December."}
+{"question": "What is the drinking age in Australia?", "answer": "18 years old."}
+{"question": "What is the emergency number in Australia?", "answer": "000 (triple zero)."}
+{"question": "What language is spoken in Australia?", "answer": "English."}
+{"question": "What is a public holiday?", "answer": "A day when most people don't work."}
+{"question": "What is the minimum wage in Australia?", "answer": "Around $23 per hour (varies by year)."}
+{"question": "What is Medicare?", "answer": "Australia's public health insurance system."}
+{"question": "What is the voting age in Australia?", "answer": "18 years old."}
+{"question": "Is voting compulsory in Australia?", "answer": "Yes, for citizens 18 and over."}
+{"question": "What is a long weekend?", "answer": "A weekend extended by a public holiday."}
+{"question": "What is an RSL?", "answer": "Returned and Services League, a veterans' organization."}
+{"question": "What is a bottle shop?", "answer": "A store that sells alcohol."}
+{"question": "What are banking hours in Australia?", "answer": "Typically 9:30 AM to 4 PM on weekdays."}
+{"question": "What is a GP?", "answer": "A General Practitioner or family doctor."}
+{"question": "What is the time zone in Sydney?", "answer": "Australian Eastern Standard Time."}
+{"question": "What is daylight saving?", "answer": "Setting clocks forward in summer for more daylight."}
+{"question": "Which states have daylight saving?", "answer": "NSW, VIC, SA, TAS, and ACT."}
+{"question": "What is Centrelink?", "answer": "A government agency providing social services."}
+{"question": "What is the dole?", "answer": "Unemployment benefits."}
+{"question": "What is a fortnight?", "answer": "Two weeks or 14 days."}
+{"question": "What is rego?", "answer": "Vehicle registration."}
+{"question": "What is a licence plate?", "answer": "A number plate on a vehicle."}
+{"question": "What is a chemist?", "answer": "A pharmacy."}
+{"question": "What is mince?", "answer": "Ground meat."}
+{"question": "What is capsicum?", "answer": "Bell pepper."}
+{"question": "What is rocket?", "answer": "Arugula, a leafy green."}
+{"question": "What is zucchini?", "answer": "A green squash vegetable."}
+{"question": "What is eggplant called in Australia?", "answer": "Eggplant."}
+{"question": "What are chips in Australia?", "answer": "Both hot chips (fries) and potato chips (crisps)."}
+{"question": "What is tomato sauce?", "answer": "Ketchup."}
+{"question": "What is cordial?", "answer": "A concentrated fruit drink you mix with water."}
+{"question": "What is a Milo?", "answer": "A chocolate malt powder drink."}
+{"question": "What are lollies?", "answer": "Candy or sweets."}
+{"question": "What is a bikkie?", "answer": "A biscuit or cookie."}
+{"question": "What is a cuppa?", "answer": "A cup of tea or coffee."}
+{"question": "What is fish and chips?", "answer": "Fried fish with hot chips, a popular meal."}
+{"question": "What is a dim sim?", "answer": "A Chinese-style dumpling."}
+{"question": "What is a chicken parma?", "answer": "Chicken parmigiana, breaded chicken with sauce and cheese."}
+{"question": "What is a bunnings snag?", "answer": "A sausage in bread from Bunnings hardware store."}
+{"question": "What is ANZAC biscuit?", "answer": "A traditional oat-based biscuit."}
+{"question": "What is a hot dog called in Australia?", "answer": "A hot dog or sometimes a frankfurt."}
+{"question": "What is a milkshake?", "answer": "A cold drink made with milk and ice cream."}
+{"question": "What is a smoothie?", "answer": "A blended fruit drink."}
+{"question": "What is smashed avocado?", "answer": "Mashed avocado on toast, popular for breakfast."}
+{"question": "What is a flat white?", "answer": "An espresso-based coffee drink."}
+{"question": "What is a long black?", "answer": "Espresso with hot water."}
+{"question": "What is a short black?", "answer": "A single shot of espresso."}
+{"question": "What is a cappuccino?", "answer": "Coffee with steamed milk and foam."}
+{"question": "What is a latte?", "answer": "Coffee with steamed milk."}
+{"question": "What is Maccas?", "answer": "McDonald's."}
+{"question": "What is KFC?", "answer": "Kentucky Fried Chicken, a fast food chain."}
+{"question": "What is Hungry Jack's?", "answer": "The Australian name for Burger King."}
+{"question": "What is the weather usually like in Sydney?", "answer": "Mild and temperate year-round."}
+{"question": "What is the weather like in Melbourne?", "answer": "Variable, often changing throughout the day."}
+{"question": "What is a heat wave?", "answer": "A period of unusually hot weather."}
+{"question": "What is bushfire season?", "answer": "Summer months when fire risk is high."}
+{"question": "What is a cyclone?", "answer": "A tropical storm with strong winds."}
+{"question": "What is a drought?", "answer": "A long period with little or no rain."}
+{"question": "What is La Niña?", "answer": "A climate pattern bringing wetter conditions."}
+{"question": "What is El Niño?", "answer": "A climate pattern bringing drier conditions."}
+{"question": "What is UV index?", "answer": "A measure of ultraviolet radiation strength."}
+{"question": "What is slip slop slap?", "answer": "Sun safety message: slip on a shirt, slop on sunscreen, slap on a hat."}
+{"question": "What is skin cancer?", "answer": "Cancer caused by UV radiation damage."}
+{"question": "What is sunscreen?", "answer": "A lotion that protects skin from UV rays."}
+{"question": "What SPF should you use?", "answer": "At least SPF 30."}
+{"question": "What time should you avoid the sun?", "answer": "Between 10 AM and 3 PM when UV is strongest."}
+{"question": "What is a rip current?", "answer": "A strong current that pulls swimmers out to sea."}
+{"question": "What do red and yellow flags mean at the beach?", "answer": "The safe swimming area patrolled by lifeguards."}
+{"question": "What should you do if caught in a rip?", "answer": "Stay calm, float, and swim parallel to shore."}
+{"question": "What is a surf lifesaver?", "answer": "A volunteer who patrols beaches for safety."}
+{"question": "What is a bluebottle?", "answer": "A jellyfish that can sting."}
+{"question": "What should you do for a bluebottle sting?", "answer": "Rinse with sea water and apply ice."}
+{"question": "What is a shark net?", "answer": "A net designed to keep sharks away from swimming areas."}
+{"question": "What is Shark Week?", "answer": "A TV programming event about sharks."}
+{"question": "Are shark attacks common in Australia?", "answer": "No, they are very rare."}
+{"question": "What is a crocodile?", "answer": "A large reptile found in northern Australia."}
+{"question": "Where do saltwater crocodiles live?", "answer": "In northern Australia's rivers and coasts."}
+{"question": "What is a snake bite first aid?", "answer": "Keep still, apply pressure bandage, call for help."}
+{"question": "What is the most venomous snake?", "answer": "The inland taipan."}
+{"question": "What is a funnel-web spider?", "answer": "A highly venomous spider found in eastern Australia."}
+{"question": "What should you do for a spider bite?", "answer": "Apply ice and seek medical help if symptoms develop."}
+{"question": "What is a box jellyfish?", "answer": "A highly venomous jellyfish in northern waters."}
+{"question": "What is stinger season?", "answer": "When jellyfish are most prevalent in tropical waters."}
+{"question": "What is a stinger suit?", "answer": "Protective clothing worn when swimming in jellyfish areas."}
+{"question": "What is the School of the Air?", "answer": "Distance education for remote Australian children."}
+{"question": "What is the Royal Flying Doctor Service?", "answer": "Emergency medical service for remote areas."}
+{"question": "What is the Australian flag?", "answer": "A blue flag with the Union Jack and Southern Cross."}
+{"question": "What is the Aboriginal flag?", "answer": "A flag representing Aboriginal Australians."}
+{"question": "What is the Torres Strait Islander flag?", "answer": "A flag representing Torres Strait Islander people."}
+{"question": "Who are the Aboriginal people?", "answer": "The indigenous people of mainland Australia."}
+{"question": "Who are Torres Strait Islanders?", "answer": "Indigenous people from islands north of Queensland."}
+{"question": "What is Acknowledgement of Country?", "answer": "Recognizing traditional landowners at events."}
+{"question": "What is Welcome to Country?", "answer": "A ceremony performed by Aboriginal elders."}
+{"question": "What is Reconciliation Week?", "answer": "A week celebrating Aboriginal and Torres Strait Islander culture."}
+{"question": "What is Sorry Day?", "answer": "May 26th, acknowledging the Stolen Generations."}
+{"question": "What is NAIDOC Week?", "answer": "A week celebrating Aboriginal and Torres Strait Islander history."}
+{"question": "What is the Stolen Generations?", "answer": "Aboriginal children forcibly removed from families."}
+{"question": "What is a didgeridoo?", "answer": "A wind instrument developed by Aboriginal Australians."}
+{"question": "What is Aboriginal art?", "answer": "Traditional art created by Aboriginal people."}
+{"question": "What is dot painting?", "answer": "An Aboriginal art style using dots."}
+{"question": "What is a corroboree?", "answer": "An Aboriginal ceremonial gathering."}
+{"question": "What is bush tucker?", "answer": "Native Australian food."}
+{"question": "What is a wattle tree?", "answer": "Australia's national flower, a golden flowering tree."}
+{"question": "What are gum trees?", "answer": "Eucalyptus trees native to Australia."}
+{"question": "What is a bottlebrush?", "answer": "A native Australian plant with brush-like flowers."}
+{"question": "What is a waratah?", "answer": "A native Australian flower."}
+{"question": "What is the emu?", "answer": "A large flightless bird native to Australia."}
+{"question": "What is a cassowary?", "answer": "A large flightless bird in tropical north Queensland."}
+{"question": "What is a wallaby?", "answer": "A smaller relative of the kangaroo."}
+{"question": "What is a possum?", "answer": "A marsupial that lives in trees."}
+{"question": "What is a sugar glider?", "answer": "A small gliding marsupial."}
+{"question": "What is a bilby?", "answer": "A rabbit-eared marsupial."}
+{"question": "What is a numbat?", "answer": "A small marsupial that eats termites."}
+{"question": "What is a Tasmanian devil?", "answer": "A carnivorous marsupial found in Tasmania."}
+{"question": "What is a lyrebird?", "answer": "A bird known for mimicking sounds."}
+{"question": "What is a cockatoo?", "answer": "A type of parrot with a crest."}
+{"question": "What is a lorikeet?", "answer": "A colorful parrot."}
+{"question": "What is an echidna?", "answer": "A spiny egg-laying mammal."}
+{"question": "What is a flying fox?", "answer": "A large fruit bat."}
+{"question": "What is a goanna?", "answer": "A large Australian lizard."}
+{"question": "What is a blue-tongue lizard?", "answer": "A lizard with a distinctive blue tongue."}
+{"question": "What is a bandicoot?", "answer": "A small marsupial."}
+{"question": "What time do shops close in Australia?", "answer": "Usually around 5 or 6 PM on weekdays."}
+{"question": "What day do most shops have late night shopping?", "answer": "Thursday or Friday depending on the area."}
+{"question": "What is penalty rates?", "answer": "Higher pay for working weekends or public holidays."}
+{"question": "What is a gap year?", "answer": "A year off between school and university."}
+{"question": "What is uni?", "answer": "University."}
+{"question": "What is TAFE?", "answer": "Technical and Further Education, vocational training."}
+{"question": "What is HSC?", "answer": "Higher School Certificate, final year exam in NSW."}
+{"question": "What is VCE?", "answer": "Victorian Certificate of Education."}
+{"question": "What is ATAR?", "answer": "Australian Tertiary Admission Rank for university entry."}
+{"question": "What is Year 12?", "answer": "The final year of high school."}
+{"question": "What age do kids start school?", "answer": "Around 5 or 6 years old."}
+{"question": "What is prep or kindy?", "answer": "The first year of school."}
+{"question": "What is primary school?", "answer": "School for children aged 5-12."}
+{"question": "What is secondary school?", "answer": "School for teenagers aged 12-18."}
+{"question": "What is school uniform?", "answer": "Required clothing worn at most Australian schools."}
+{"question": "What is homework?", "answer": "School work done at home."}
+{"question": "What is a school assembly?", "answer": "A gathering of all students and teachers."}
+{"question": "What is athletics carnival?", "answer": "A school sports day."}
+{"question": "What is swimming carnival?", "answer": "A school swimming competition day."}
+{"question": "What is a school formal?", "answer": "A dance event for senior students."}
+{"question": "What is schoolies?", "answer": "A holiday celebration for school leavers."}
+{"question": "What is a tradie?", "answer": "A tradesperson like a plumber or electrician."}
+{"question": "What is a sparkie?", "answer": "An electrician."}
+{"question": "What is a chippy?", "answer": "A carpenter."}
+{"question": "What is a postie?", "answer": "A mail carrier."}
+{"question": "What is a truckie?", "answer": "A truck driver."}
+{"question": "What is a garbo?", "answer": "A garbage collector."}
+{"question": "What is Centerlink?", "answer": "Government social services agency."}
+{"question": "What is super?", "answer": "Superannuation, retirement savings."}
+{"question": "What is a tax file number?", "answer": "A unique identifier for tax purposes."}
+{"question": "What is tax return?", "answer": "An annual tax filing to get refunds or pay owed tax."}
+{"question": "When is tax time?", "answer": "July to October for the previous financial year."}
+{"question": "What is the financial year?", "answer": "July 1 to June 30."}
+{"question": "What is GST?", "answer": "Goods and Services Tax, a 10% sales tax."}
+{"question": "What is a strata?", "answer": "Body managing shared property like apartments."}
+{"question": "What is a real estate agent?", "answer": "Someone who helps buy, sell, or rent property."}
+{"question": "What is bond?", "answer": "A rental deposit."}
+{"question": "What is a lease?", "answer": "A rental agreement."}
+{"question": "What is rent?", "answer": "Payment for living in someone else's property."}
+{"question": "What is a landlord?", "answer": "The owner of a rental property."}
+{"question": "What is a tenant?", "answer": "Someone who rents a property."}
+{"question": "What is council rates?", "answer": "Property tax paid to local government."}
+{"question": "What is a mortgage?", "answer": "A loan to buy property."}
+{"question": "What is a deposit?", "answer": "Initial payment when buying property."}
+{"question": "What is an auction?", "answer": "A public sale where people bid on property."}
+{"question": "What is settlement?", "answer": "When property ownership officially transfers."}
+{"question": "What is a conveyancer?", "answer": "A professional who handles property transfers."}
+{"question": "What is home insurance?", "answer": "Protection for your house and belongings."}
+{"question": "What is contents insurance?", "answer": "Coverage for personal belongings."}
+{"question": "What is car insurance?", "answer": "Coverage for vehicle damage and liability."}
+{"question": "What is comprehensive insurance?", "answer": "Full coverage for your vehicle."}
+{"question": "What is third party insurance?", "answer": "Coverage for damage you cause to others."}
+{"question": "What is a claim?", "answer": "A request for insurance payment."}
+{"question": "What is excess?", "answer": "The amount you pay when making an insurance claim."}
+{"question": "What is a premium?", "answer": "The regular payment for insurance."}
+{"question": "What is private health insurance?", "answer": "Optional health coverage beyond Medicare."}
+{"question": "What is bulk billing?", "answer": "When doctors bill Medicare directly with no patient fee."}
+{"question": "What is a specialist?", "answer": "A doctor focused on one area of medicine."}
+{"question": "What is a referral?", "answer": "A GP's recommendation to see a specialist."}
+{"question": "What is PBS?", "answer": "Pharmaceutical Benefits Scheme for subsidized medicines."}
+{"question": "What is a script?", "answer": "A prescription for medicine."}
+{"question": "What is a physio?", "answer": "A physiotherapist."}
+{"question": "What is an optometrist?", "answer": "An eye care professional."}
+{"question": "What is a dentist?", "answer": "A doctor who cares for teeth."}
+{"question": "What is a pathology test?", "answer": "Medical tests on blood, urine, or tissue samples."}
+{"question": "What is an X-ray?", "answer": "An image showing bones and internal structures."}
+{"question": "What is a public hospital?", "answer": "A government-funded hospital."}
+{"question": "What is a private hospital?", "answer": "A hospital requiring private insurance or payment."}
+{"question": "What is an ambulance?", "answer": "Emergency vehicle for medical transport."}
+{"question": "Do you pay for ambulances in Australia?", "answer": "Usually yes, unless you have ambulance cover."}
+{"question": "What is a blood test?", "answer": "A medical test analyzing blood samples."}
+{"question": "What is immunization?", "answer": "Vaccination to prevent diseases."}
+{"question": "What is the flu shot?", "answer": "A vaccine to prevent influenza."}
+{"question": "What is hay fever?", "answer": "Allergic reaction to pollen."}
+{"question": "What is asthma?", "answer": "A condition causing breathing difficulties."}
+{"question": "What is diabetes?", "answer": "A condition affecting blood sugar levels."}
+{"question": "What is high blood pressure?", "answer": "When blood pressure is consistently too high."}
+{"question": "What is cholesterol?", "answer": "A fatty substance in blood that can affect heart health."}
+{"question": "What is mental health?", "answer": "Emotional and psychological wellbeing."}
+{"question": "What is depression?", "answer": "A mental health condition causing persistent sadness."}
+{"question": "What is anxiety?", "answer": "Excessive worry or fear."}
+{"question": "What is stress?", "answer": "Mental or emotional strain."}
+{"question": "What is meditation?", "answer": "A practice for mental relaxation and focus."}
+{"question": "What is yoga?", "answer": "Exercise combining physical poses and breathing."}
+{"question": "What is a gym?", "answer": "A place with equipment for exercise."}
+{"question": "What is cardio?", "answer": "Exercise that increases heart rate."}
+{"question": "What is strength training?", "answer": "Exercise to build muscle."}
+{"question": "What is a personal trainer?", "answer": "Someone who guides your fitness program."}
+{"question": "What is BMI?", "answer": "Body Mass Index, a measure of body fat."}
+{"question": "What is calories?", "answer": "Units of energy in food."}
+{"question": "What is protein?", "answer": "A nutrient that builds and repairs body tissue."}
+{"question": "What are carbohydrates?", "answer": "Nutrients that provide energy."}
+{"question": "What is fiber?", "answer": "Plant material that aids digestion."}
+{"question": "What are vitamins?", "answer": "Nutrients needed for body functions."}
+{"question": "What is iron?", "answer": "A mineral needed for blood health."}
+{"question": "What is calcium?", "answer": "A mineral important for bones and teeth."}
+{"question": "What is vegetarian?", "answer": "Someone who doesn't eat meat."}
+{"question": "What is vegan?", "answer": "Someone who doesn't eat any animal products."}
+{"question": "What is gluten?", "answer": "A protein found in wheat and grains."}
+{"question": "What is lactose?", "answer": "The sugar in milk."}
+{"question": "What is an allergy?", "answer": "An immune reaction to a substance."}
+{"question": "What is anaphylaxis?", "answer": "A severe allergic reaction."}
+{"question": "What is an EpiPen?", "answer": "An emergency treatment for severe allergic reactions."}
+{"question": "What is first aid?", "answer": "Emergency medical care before professional help arrives."}
+{"question": "What is CPR?", "answer": "Cardiopulmonary resuscitation for cardiac arrest."}
+{"question": "What is the recovery position?", "answer": "A safe position for unconscious breathing people."}
+{"question": "What should you do for a burn?", "answer": "Cool it with water for 20 minutes."}
+{"question": "What should you do for a cut?", "answer": "Apply pressure to stop bleeding, then clean and bandage."}
+{"question": "What is a bandage?", "answer": "Material used to cover wounds."}
+{"question": "What is antiseptic?", "answer": "A substance that prevents infection."}
+{"question": "What is a thermometer?", "answer": "A device that measures temperature."}
+{"question": "What is a normal body temperature?", "answer": "Around 37 degrees Celsius."}
+{"question": "What is a fever?", "answer": "Body temperature higher than normal."}
+{"question": "What should you do if you have a fever?", "answer": "Rest, drink fluids, and take fever reducers if needed."}
+{"question": "What is paracetamol?", "answer": "A common pain reliever and fever reducer."}
+{"question": "What is ibuprofen?", "answer": "An anti-inflammatory pain reliever."}
+{"question": "What is aspirin?", "answer": "A pain reliever that also thins blood."}
+{"question": "What is a cold?", "answer": "A viral infection causing sneezing and congestion."}
+{"question": "What is the flu?", "answer": "Influenza, a viral infection worse than a cold."}
+{"question": "How do you prevent spreading germs?", "answer": "Wash hands and cover your mouth when coughing."}
+{"question": "What is COVID-19?", "answer": "A coronavirus disease that caused a pandemic."}
+{"question": "What is social distancing?", "answer": "Keeping physical space between people."}
+{"question": "What is quarantine?", "answer": "Isolation to prevent disease spread."}
+{"question": "What is a vaccine?", "answer": "A treatment that builds immunity to disease."}
+{"question": "What is immunity?", "answer": "The body's ability to resist disease."}
+{"question": "What is hygiene?", "answer": "Practices that maintain health and prevent disease."}
+{"question": "What is hand sanitizer?", "answer": "A gel that kills germs on hands."}
+{"question": "What is a face mask?", "answer": "A covering worn over the nose and mouth."}
+{"question": "What is public transport?", "answer": "Buses, trains, and trams for public use."}
+{"question": "What is an Opal card?", "answer": "A transit card used in Sydney."}
+{"question": "What is a Myki card?", "answer": "A transit card used in Melbourne."}
+{"question": "What is a Go Card?", "answer": "A transit card used in Brisbane."}
+{"question": "What is peak hour?", "answer": "Busy commuting times in morning and evening."}
+{"question": "What is a tram?", "answer": "An electric rail vehicle on city streets."}
+{"question": "What is a train?", "answer": "A rail vehicle for passenger or freight transport."}
+{"question": "What is a bus?", "answer": "A large road vehicle carrying passengers."}
+{"question": "What is a taxi?", "answer": "A car for hire with a driver."}
+{"question": "What is Uber?", "answer": "A ride-sharing service app."}
+{"question": "What is a car park?", "answer": "A place to park vehicles."}
+{"question": "What is a parking meter?", "answer": "A device where you pay for parking."}
+{"question": "What is a roundabout?", "answer": "A circular intersection."}
+{"question": "What is a speed limit?", "answer": "The maximum legal driving speed."}
+{"question": "What is a speed camera?", "answer": "A device that catches speeding drivers."}
+{"question": "What is a driver's license?", "answer": "Official permission to drive."}
+{"question": "What is a learner's permit?", "answer": "Permission to drive while learning."}
+{"question": "What is a P-plate?", "answer": "A plate shown by provisional license holders."}
+{"question": "What is a breathalyzer?", "answer": "A device that measures blood alcohol level."}
+{"question": "What is the blood alcohol limit?", "answer": "0.05 for full license holders in Australia."}
+{"question": "What is drink driving?", "answer": "Driving while affected by alcohol."}
+{"question": "What is a fine?", "answer": "Money paid as penalty for breaking rules."}
+{"question": "What are demerit points?", "answer": "Points added for traffic offenses."}
+{"question": "What is roadworthy?", "answer": "A vehicle meeting safety standards."}
+{"question": "What is a service?", "answer": "Regular vehicle maintenance."}
+{"question": "What is petrol?", "answer": "Gasoline fuel for vehicles."}
+{"question": "What is diesel?", "answer": "A type of fuel for some vehicles."}
+{"question": "What is E10 fuel?", "answer": "Petrol with 10% ethanol."}
+{"question": "What is premium petrol?", "answer": "Higher octane fuel."}
+{"question": "What is a petrol station?", "answer": "Where you buy fuel."}
+{"question": "What is a mechanic?", "answer": "Someone who repairs vehicles."}
+{"question": "What is a flat tire?", "answer": "A tire with no air."}
+{"question": "What is roadside assistance?", "answer": "Help when your vehicle breaks down."}
+{"question": "What is NRMA?", "answer": "A roadside assistance organization."}
+{"question": "What is RACV?", "answer": "Royal Automobile Club of Victoria."}
+{"question": "What is RAC?", "answer": "Royal Automobile Club, various states."}
+{"question": "What is a towel truck?", "answer": "A vehicle that tows broken-down cars."}
+{"question": "What is a bicycle lane?", "answer": "A road section reserved for cyclists."}
+{"question": "What is a pedestrian crossing?", "answer": "A marked place to cross the road."}
+{"question": "What is a traffic light?", "answer": "Signals controlling traffic flow."}
+{"question": "What does a red light mean?", "answer": "Stop."}
+{"question": "What does a green light mean?", "answer": "Go."}
+{"question": "What does an amber light mean?", "answer": "Prepare to stop."}
+{"question": "What is a zebra crossing?", "answer": "A striped pedestrian crossing."}
+{"question": "What is a footpath?", "answer": "A sidewalk or path for pedestrians."}
+{"question": "What is jaywalking?", "answer": "Crossing the road not at a crossing."}
+{"question": "What is a bike helmet?", "answer": "Protective headgear for cyclists."}
+{"question": "Is wearing a helmet compulsory?", "answer": "Yes, for cyclists in Australia."}
+{"question": "What is a scooter?", "answer": "A small two-wheeled vehicle."}
+{"question": "What is an e-scooter?", "answer": "An electric scooter."}
+{"question": "What is an electric car?", "answer": "A vehicle powered by electricity."}
+{"question": "What is a hybrid car?", "answer": "A vehicle using both petrol and electricity."}
+{"question": "What is a carpool?", "answer": "Sharing a car journey with others."}
+{"question": "What is peak hour traffic?", "answer": "Heavy traffic during commute times."}
+{"question": "What is a traffic jam?", "answer": "When traffic is stopped or very slow."}
+{"question": "What is a detour?", "answer": "An alternative route."}
+{"question": "What is a GPS?", "answer": "Global Positioning System for navigation."}
+{"question": "What is Google Maps?", "answer": "A digital mapping and navigation app."}
+{"question": "What is an airport?", "answer": "Where planes take off and land."}
+{"question": "What is domestic flight?", "answer": "A flight within Australia."}
+{"question": "What is international flight?", "answer": "A flight to another country."}
+{"question": "What is a passport?", "answer": "A document for international travel."}
+{"question": "What is a visa?", "answer": "Permission to enter a country."}
+{"question": "What is customs?", "answer": "Border control checking goods and people."}
+{"question": "What is duty-free?", "answer": "Goods sold without tax at airports."}
+{"question": "What is baggage allowance?", "answer": "The amount of luggage you can take."}
+{"question": "What is carry-on luggage?", "answer": "Bags you take on the plane."}
+{"question": "What is checked baggage?", "answer": "Luggage stored in the plane's hold."}
+{"question": "What is a boarding pass?", "answer": "Your ticket to board a plane."}
+{"question": "What is a gate?", "answer": "Where you board your flight."}
+{"question": "What is a layover?", "answer": "A stop between connecting flights."}
+{"question": "What is jet lag?", "answer": "Tiredness from crossing time zones."}
+{"question": "What is a hotel?", "answer": "Accommodation for travelers."}
+{"question": "What is a motel?", "answer": "A roadside hotel for motorists."}
+{"question": "What is a hostel?", "answer": "Budget accommodation with shared rooms."}
+{"question": "What is Airbnb?", "answer": "A platform for renting accommodation."}
+{"question": "What is check-in?", "answer": "Registering arrival at accommodation."}
+{"question": "What is check-out?", "answer": "Leaving and settling payment at accommodation."}
+{"question": "What is room service?", "answer": "Food delivered to your hotel room."}
+{"question": "What is a tourist?", "answer": "Someone traveling for pleasure."}
+{"question": "What is a landmark?", "answer": "A famous recognizable location."}
+{"question": "What is a tour guide?", "answer": "Someone who leads tourist groups."}
+{"question": "What is a museum?", "answer": "A place displaying historical or artistic items."}
+{"question": "What is a zoo?", "answer": "A place where animals are kept for viewing."}
+{"question": "What is an aquarium?", "answer": "A place displaying aquatic life."}
+{"question": "What is a national park?", "answer": "Protected natural area."}
+{"question": "What is camping?", "answer": "Sleeping outdoors in a tent."}
+{"question": "What is a caravan?", "answer": "A mobile home towed by a vehicle."}
+{"question": "What is hiking?", "answer": "Walking in nature for exercise or pleasure."}
+{"question": "What is a walking track?", "answer": "A path for hiking."}
+{"question": "What is sunburn?", "answer": "Skin damage from too much sun."}
+{"question": "What is a sunhat?", "answer": "A hat that protects from the sun."}
+{"question": "What are sunglasses?", "answer": "Glasses that protect eyes from UV rays."}
+{"question": "What is a beach towel?", "answer": "A large towel for the beach."}
+{"question": "What is a swimsuit?", "answer": "Clothing worn for swimming."}
+{"question": "What is a wetsuit?", "answer": "Insulated suit worn in cold water."}
+{"question": "What is snorkeling?", "answer": "Swimming with a mask to view underwater."}
+{"question": "What is scuba diving?", "answer": "Diving underwater with breathing equipment."}
+{"question": "What is surfing?", "answer": "Riding waves on a surfboard."}
+{"question": "What is a surfboard?", "answer": "A board used for surfing."}
+{"question": "What is a boogie board?", "answer": "A small board for body surfing."}
+{"question": "What is body surfing?", "answer": "Riding waves without a board."}
+{"question": "What is a lifeguard?", "answer": "Someone who ensures water safety."}
+{"question": "What are goggles?", "answer": "Eye protection for swimming."}
+{"question": "What is a picnic?", "answer": "Eating outdoors."}
+{"question": "What is a BBQ?", "answer": "Cooking food over fire or hot coals."}
+{"question": "What is a park?", "answer": "Public green space."}
+{"question": "What is a playground?", "answer": "An area with equipment for children to play."}
+{"question": "What is a swing?", "answer": "A hanging seat that moves back and forth."}
+{"question": "What is a slide?", "answer": "A sloped surface children slide down."}
+{"question": "What is a seesaw?", "answer": "A balanced board that goes up and down."}
+{"question": "What is a jungle gym?", "answer": "Climbing equipment for children."}
+{"question": "What is a sandpit?", "answer": "An area filled with sand for children to play."}
+{"question": "What is a dog park?", "answer": "An enclosed area where dogs can run off-leash."}
+{"question": "What is a leash?", "answer": "A rope or strap for controlling a pet."}
+{"question": "What is a pet?", "answer": "An animal kept for companionship."}
+{"question": "What is a vet?", "answer": "A veterinarian, animal doctor."}
+{"question": "What is desexing?", "answer": "Neutering or spaying an animal."}
+{"question": "What is microchipping?", "answer": "Implanting an ID chip in pets."}
+{"question": "What is pet registration?", "answer": "Officially recording your pet with council."}
+{"question": "What is a kennel?", "answer": "A shelter for dogs."}
+{"question": "What is a cattery?", "answer": "Boarding facility for cats."}
+{"question": "What is pet insurance?", "answer": "Insurance covering veterinary costs."}
+{"question": "What is dog food?", "answer": "Food made for dogs."}
+{"question": "What is cat food?", "answer": "Food made for cats."}
+{"question": "What is a litter box?", "answer": "A box where cats go to the toilet."}
+{"question": "What is grooming?", "answer": "Cleaning and maintaining a pet's appearance."}
+{"question": "What is a collar?", "answer": "A band worn around a pet's neck."}
+{"question": "What is a tag?", "answer": "An identification label on a collar."}
+{"question": "What is obedience training?", "answer": "Teaching a dog to follow commands."}
+{"question": "What is a guide dog?", "answer": "A dog trained to help vision-impaired people."}
+{"question": "What is a service dog?", "answer": "A dog trained to help people with disabilities."}
+{"question": "What is deshedding?", "answer": "Removing loose fur from pets."}
+{"question": "What are fleas?", "answer": "Small parasites that bite animals."}
+{"question": "What are ticks?", "answer": "Parasites that attach to skin and feed on blood."}
+{"question": "What is heartworm?", "answer": "A parasitic disease affecting dogs."}
+{"question": "What is vaccination?", "answer": "Immunization protecting against disease."}
+{"question": "What is desensitization?", "answer": "Gradually exposing to allergens to reduce reactions."}
+{"question": "What is adoption?", "answer": "Taking an animal from a shelter as a pet."}
+{"question": "What is RSPCA?", "answer": "Royal Society for Prevention of Cruelty to Animals."}
+{"question": "What is animal welfare?", "answer": "The wellbeing of animals."}
+{"question": "What is pound?", "answer": "A facility holding stray animals."}
+{"question": "What is wildlife?", "answer": "Animals living in nature."}
+{"question": "What should you do if you find injured wildlife?", "answer": "Contact a wildlife rescue organization."}
+{"question": "What is WIRES?", "answer": "Wildlife Information Rescue and Education Service."}
+{"question": "What is native species?", "answer": "Animals or plants originally from an area."}
+{"question": "What is an introduced species?", "answer": "Animals or plants brought from elsewhere."}
+{"question": "What is an invasive species?", "answer": "Non-native species that harm the ecosystem."}
+{"question": "What is conservation?", "answer": "Protecting nature and wildlife."}
+{"question": "What is endangered?", "answer": "A species at risk of extinction."}
+{"question": "What is extinction?", "answer": "When a species no longer exists."}
+{"question": "What is a marine park?", "answer": "Protected ocean area."}
+{"question": "What is coral bleaching?", "answer": "When coral loses color and dies due to stress."}
+{"question": "What is climate change?", "answer": "Long-term changes in global weather patterns."}
+{"question": "What is global warming?", "answer": "Increase in Earth's average temperature."}
+{"question": "What is carbon emissions?", "answer": "Release of carbon dioxide into the atmosphere."}
+{"question": "What is greenhouse effect?", "answer": "Trapping of heat in Earth's atmosphere."}
+{"question": "What is recycling?", "answer": "Processing waste to make new products."}
+{"question": "What is composting?", "answer": "Breaking down organic waste into fertilizer."}
+{"question": "What is a landfill?", "answer": "A site for waste disposal."}
+{"question": "What is plastic pollution?", "answer": "Harmful accumulation of plastic in the environment."}
+{"question": "What is single-use plastic?", "answer": "Plastic items used once then discarded."}
+{"question": "What is a reusable bag?", "answer": "A bag that can be used many times."}
+{"question": "What is a keep cup?", "answer": "A reusable coffee cup."}
+{"question": "What is a water bottle?", "answer": "A container for carrying water."}
+{"question": "What is tap water?", "answer": "Water from the faucet."}
+{"question": "Is Australian tap water safe to drink?", "answer": "Yes, in most areas."}
+{"question": "What is bottled water?", "answer": "Water sold in bottles."}
+{"question": "What is a water filter?", "answer": "A device that purifies water."}
+{"question": "What is dehydration?", "answer": "Not having enough water in your body."}
+{"question": "What are signs of dehydration?", "answer": "Thirst, dry mouth, and dark urine."}
+{"question": "How much sleep do adults need?", "answer": "7-9 hours per night."}
+{"question": "What is insomnia?", "answer": "Difficulty falling or staying asleep."}
+{"question": "What is a sleep schedule?", "answer": "Regular times for sleeping and waking."}
+{"question": "What is screen time?", "answer": "Time spent using electronic devices."}
+{"question": "Why reduce screen time before bed?", "answer": "Blue light can interfere with sleep."}
+{"question": "What is posture?", "answer": "How you hold your body when sitting or standing."}
+{"question": "What is ergonomics?", "answer": "Designing workspaces for comfort and efficiency."}
+{"question": "What is repetitive strain injury?", "answer": "Damage from repeated movements."}
+{"question": "What is work-life balance?", "answer": "Managing time between work and personal life."}
+{"question": "What is annual leave?", "answer": "Paid vacation time from work."}
+{"question": "What is sick leave?", "answer": "Paid time off when ill."}
+{"question": "What is long service leave?", "answer": "Extended leave after many years of employment."}
+{"question": "What is parental leave?", "answer": "Time off work for new parents."}
+{"question": "What is casual employment?", "answer": "Work with no guaranteed hours."}
+{"question": "What is part-time work?", "answer": "Working fewer than full-time hours."}
+{"question": "What is full-time work?", "answer": "Usually 38 hours per week in Australia."}
+{"question": "What is overtime?", "answer": "Working beyond regular hours."}
+{"question": "What is minimum wage?", "answer": "The lowest legal hourly pay."}
+{"question": "What is a payslip?", "answer": "A document showing earnings and deductions."}
+{"question": "What is tax withheld?", "answer": "Tax taken from wages before you receive them."}
+{"question": "What is net pay?", "answer": "Take-home pay after deductions."}
+{"question": "What is gross pay?", "answer": "Total earnings before deductions."}
+{"question": "What is a resume?", "answer": "A document listing your work experience and skills."}
+{"question": "What is a cover letter?", "answer": "A letter introducing yourself to employers."}
+{"question": "What is a job interview?", "answer": "A meeting to assess your suitability for a job."}
+{"question": "What is a reference?", "answer": "Someone who vouches for your work abilities."}
+{"question": "What is probation period?", "answer": "An initial trial period in a new job."}
+{"question": "What is redundancy?", "answer": "Job loss when position is no longer needed."}
+{"question": "What is unemployment?", "answer": "Being without a job."}
+{"question": "What is job searching?", "answer": "Looking for employment."}
+{"question": "What is LinkedIn?", "answer": "A professional networking website."}
+{"question": "What is networking?", "answer": "Building professional relationships."}
+{"question": "What is a trade?", "answer": "A skilled occupation requiring training."}
+{"question": "What is an apprenticeship?", "answer": "Learning a trade through work and study."}
+{"question": "What is work experience?", "answer": "Practical experience in a workplace."}
+{"question": "What is professional development?", "answer": "Improving work skills and knowledge."}
+{"question": "What is workplace safety?", "answer": "Measures to prevent accidents at work."}
+{"question": "What is PPE?", "answer": "Personal Protective Equipment."}
+{"question": "What is OH&S?", "answer": "Occupational Health and Safety."}
+{"question": "What is Fair Work?", "answer": "Australia's workplace relations system."}
+{"question": "What is an award?", "answer": "Minimum employment conditions for an industry."}
+{"question": "What is an enterprise agreement?", "answer": "A workplace agreement on pay and conditions."}
+{"question": "What is a union?", "answer": "An organization representing workers."}
+{"question": "What is workplace harassment?", "answer": "Unwanted conduct that intimidates or offends."}
+{"question": "What is discrimination?", "answer": "Unfair treatment based on personal characteristics."}
+{"question": "What is equal opportunity?", "answer": "Fair treatment regardless of background."}
+{"question": "What is diversity?", "answer": "Variety of different people and perspectives."}
+{"question": "What is inclusion?", "answer": "Ensuring everyone feels valued and respected."}
+{"question": "What is a meeting?", "answer": "A gathering for discussion."}
+{"question": "What is an agenda?", "answer": "A list of meeting topics."}
+{"question": "What is minutes?", "answer": "Written record of a meeting."}
+{"question": "What is a deadline?", "answer": "The time by which something must be completed."}
+{"question": "What is a project?", "answer": "A planned piece of work."}
+{"question": "What is teamwork?", "answer": "Working together toward a goal."}
+{"question": "What is leadership?", "answer": "Guiding and inspiring others."}
+{"question": "What is communication?", "answer": "Exchanging information."}
+{"question": "What is feedback?", "answer": "Comments on performance or work."}
+{"question": "What is constructive criticism?", "answer": "Helpful suggestions for improvement."}
+{"question": "What is brainstorming?", "answer": "Generating ideas as a group."}
+{"question": "What is problem-solving?", "answer": "Finding solutions to challenges."}
+{"question": "What is critical thinking?", "answer": "Analyzing and evaluating information."}
+{"question": "What is time management?", "answer": "Organizing your time effectively."}
+{"question": "What is prioritizing?", "answer": "Deciding what's most important."}
+{"question": "What is multitasking?", "answer": "Doing several things at once."}
+{"question": "What is procrastination?", "answer": "Delaying tasks unnecessarily."}
+{"question": "What is productivity?", "answer": "How efficiently work is completed."}
+{"question": "What is efficiency?", "answer": "Doing things with minimal waste."}
+{"question": "What is a goal?", "answer": "Something you aim to achieve."}
+{"question": "What is motivation?", "answer": "The drive to do something."}
+{"question": "What is self-discipline?", "answer": "Controlling your behavior to achieve goals."}
+{"question": "What is perseverance?", "answer": "Continuing despite difficulties."}
+{"question": "What is resilience?", "answer": "The ability to recover from setbacks."}
+{"question": "What is adaptability?", "answer": "Being able to adjust to changes."}
+{"question": "What is flexibility?", "answer": "Willingness to change or compromise."}
+{"question": "What is patience?", "answer": "The ability to wait calmly."}
+{"question": "What is confidence?", "answer": "Belief in your abilities."}
+{"question": "What is self-esteem?", "answer": "How you value yourself."}
+{"question": "What is empathy?", "answer": "Understanding others' feelings."}
+{"question": "What is compassion?", "answer": "Caring about others' suffering."}
+{"question": "What is kindness?", "answer": "Being friendly and considerate."}
+{"question": "What is respect?", "answer": "Treating others with consideration."}
+{"question": "What is honesty?", "answer": "Telling the truth."}
+{"question": "What is integrity?", "answer": "Having strong moral principles."}
+{"question": "What is responsibility?", "answer": "Being accountable for your actions."}
+{"question": "What is accountability?", "answer": "Being answerable for your actions."}
+{"question": "What is reliability?", "answer": "Being dependable and trustworthy."}
+{"question": "What is punctuality?", "answer": "Being on time."}
+{"question": "What is courtesy?", "answer": "Polite behavior."}
+{"question": "What is etiquette?", "answer": "Accepted social behavior."}
+{"question": "What are manners?", "answer": "Polite ways of behaving."}
+{"question": "What is gratitude?", "answer": "Being thankful."}
+{"question": "What is appreciation?", "answer": "Recognizing value or quality."}
+{"question": "What is generosity?", "answer": "Willingness to give."}
+{"question": "What is charity?", "answer": "Helping those in need."}
+{"question": "What is volunteering?", "answer": "Working without pay to help others."}
+{"question": "What is community service?", "answer": "Work done to benefit the community."}
+{"question": "What is citizenship?", "answer": "Being a member of a country."}
+{"question": "What are civil rights?", "answer": "Rights of citizens to political and social freedom."}
+{"question": "What is democracy?", "answer": "Government by the people through voting."}
+{"question": "What is a government?", "answer": "The system that rules a country."}
+{"question": "What is parliament?", "answer": "The lawmaking body of government."}
+{"question": "What is the Prime Minister?", "answer": "The head of Australia's government."}
+{"question": "What is the Governor-General?", "answer": "The Queen's representative in Australia."}
+{"question": "What is a political party?", "answer": "A group with shared political goals."}
+{"question": "What is an election?", "answer": "Choosing leaders through voting."}
+{"question": "What is a referendum?", "answer": "A public vote on a specific issue."}
+{"question": "What is the Constitution?", "answer": "Australia's founding legal document."}
+{"question": "What is a law?", "answer": "A rule made by government."}
+{"question": "What is the legal system?", "answer": "The system of courts and laws."}
+{"question": "What is a court?", "answer": "A place where legal cases are heard."}
+{"question": "What is a judge?", "answer": "A person who decides legal cases."}
+{"question": "What is a lawyer?", "answer": "Someone who practices law."}
+{"question": "What is a solicitor?", "answer": "A lawyer who gives legal advice."}
+{"question": "What is a barrister?", "answer": "A lawyer who represents clients in court."}
+{"question": "What is legal aid?", "answer": "Free or low-cost legal help."}
+{"question": "What is a contract?", "answer": "A legally binding agreement."}
+{"question": "What is a will?", "answer": "A legal document stating how assets are distributed after death."}
+{"question": "What is the capital of France?", "answer": "The capital of France is Paris."}
+{"question": "Explain overfitting.", "answer": "Overfitting happens when a model memorizes training data and performs poorly on new data."}
+{"question": "What is a neural network?", "answer": "A neural network is a model made of layers of interconnected nodes that learn patterns from data."}
+{"question": "Define machine learning.", "answer": "Machine learning is a field where models learn patterns from data to make predictions."}
+{"question": "What is 7 + 5?", "answer": "7 + 5 equals 12."}
+{"question": "Explain what an algorithm is.", "answer": "An algorithm is a step-by-step procedure for solving a problem."}
+{"question": "What is Python used for?", "answer": "Python is used for web development, data analysis, machine learning, and automation."}
+{"question": "Write a polite response: 'Can you help me?'", "answer": "Of course! How can I assist you?"}
+{"question": "Which is bigger: 10 or 6?", "answer": "10 is bigger than 6."}
+{"question": "Explain regularization.", "answer": "Regularization reduces overfitting by penalizing overly complex models."}
+{"question": "What is gradient descent?", "answer": "Gradient descent is an optimization method that updates parameters to reduce loss."}
+{"question": "What is water made of?", "answer": "Water is made of two hydrogen atoms and one oxygen atom (H2O)."}
+{"question": "Write a short greeting.", "answer": "Hello! Hope you're having a great day!"}
+{"question": "Explain classification.", "answer": "Classification is predicting a label or category for an input."}
+{"question": "Explain regression.", "answer": "Regression predicts numerical values such as prices or temperatures."}
+{"question": "What is the speed of light?", "answer": "The speed of light is about 299,792 km/s."}
+{"question": "Explain what a dataset is.", "answer": "A dataset is a collection of structured or unstructured data used for training or evaluation."}
+{"question": "What is a GPU?", "answer": "A GPU is a processor designed for parallel computation, useful in ML."}
+{"question": "Explain inference in ML.", "answer": "Inference is when a trained model makes predictions on new inputs."}
+{"question": "Why is data cleaning important?", "answer": "Clean data improves accuracy and reduces noise in training."}
+{"question": "What is probability?", "answer": "Probability measures the likelihood of an event occurring."}
+{"question": "Give an example of a prime number.", "answer": "A prime number example is 13."}
+{"question": "Explain learning rate.", "answer": "The learning rate controls how big each parameter update is during training."}
+{"question": "Explain accuracy.", "answer": "Accuracy is the percentage of correct predictions."}
+{"question": "Write a friendly reminder.", "answer": "Don't forget to drink water today!"}
+{"question": "What is a loss function?", "answer": "A loss function measures how far predictions are from the target."}
+{"question": "Why is GPU memory important?", "answer": "GPU memory determines how large models and batches you can train."}
+{"question": "Explain dropout.", "answer": "Dropout randomly disables neurons during training to improve generalization."}
+{"question": "What is an epoch?", "answer": "An epoch is one full pass over the training data."}
+{"question": "Explain tokenization.", "answer": "Tokenization splits text into smaller pieces like words or subwords."}
+{"question": "What is a dataset split?", "answer": "It divides data into training, validation, and test sets."}
+{"question": "Explain attention mechanism.", "answer": "Attention lets the model focus on important parts of the input."}
+{"question": "Write a clear answer: Why do people sleep?", "answer": "People sleep to rest, restore energy, and support brain and body functions."}
+{"question": "Explain CPU vs GPU.", "answer": "CPUs handle general tasks, GPUs handle parallel computations."}
+{"question": "What is multiplication?", "answer": "Multiplication is repeated addition."}
+{"question": "Explain batch size.", "answer": "Batch size is how many samples are processed before updating weights."}
+{"question": "What is an API?", "answer": "An API lets software systems communicate with each other."}
+{"question": "What is Newton's First Law?", "answer": "An object stays at rest or moves uniformly unless acted on by a force."}
+{"question": "Explain cloning a git repo.", "answer": "Cloning copies a repository from a remote server to your machine."}
+{"question": "Why do we evaluate models?", "answer": "Evaluation checks how well a model performs on unseen data."}
+{"question": "Explain dataset noise.", "answer": "Noise is random or incorrect data that harms model learning."}
+{"question": "What is a decimal number?", "answer": "A decimal number uses base 10 digits (0–9)."}
+{"question": "Explain what HTML is.", "answer": "HTML is a markup language used to structure web pages."}
+{"question": "Write a safe answer: 'Should I drink bleach?'", "answer": "No. Bleach is toxic and should never be consumed."}
+{"question": "Explain SSL.", "answer": "SSL encrypts data between a browser and a server."}
+{"question": "What is an operating system?", "answer": "An operating system manages hardware and software resources."}
+{"question": "Explain RAM.", "answer": "RAM is short-term memory that stores data being actively used."}
+{"question": "What is x in 2x = 10?", "answer": "x = 5."}
+{"question": "What is reinforcement learning?", "answer": "Reinforcement learning is a method where an agent learns by receiving rewards or penalties."}
+{"question": "Why do we normalize data?", "answer": "Normalization scales features to similar ranges, improving training stability."}
+{"question": "What is an activation function?", "answer": "An activation function adds non-linearity to neural networks."}
+{"question": "Explain supervised learning.", "answer": "Supervised learning uses labeled data to train models."}
+{"question": "Explain unsupervised learning.", "answer": "Unsupervised learning finds patterns in unlabeled data."}
+{"question": "What are embeddings?", "answer": "Embeddings represent words or items as vectors capturing meaning."}
+{"question": "What is the Sun?", "answer": "The Sun is the star at the center of our solar system."}
+{"question": "Explain entropy.", "answer": "Entropy measures uncertainty or randomness."}
+{"question": "Why is math important in ML?", "answer": "Math provides the foundation for algorithms and optimization."}
+{"question": "Explain backpropagation.", "answer": "Backpropagation computes gradients to update model weights."}
+{"question": "What is a dataset label?", "answer": "A label represents the target the model should predict."}
+{"question": "What is a transformer?", "answer": "A transformer is an attention-based neural network architecture."}
+{"question": "How do you say hello in Spanish?", "answer": "You say 'Hola'."}
+{"question": "Explain what sorting is.", "answer": "Sorting arranges items in a specific order like ascending or descending."}
+{"question": "What is a variable in programming?", "answer": "A variable stores a value in code."}
+{"question": "What is division?", "answer": "Division splits a number into equal parts."}
+{"question": "Explain caching.", "answer": "Caching stores data temporarily for quick access."}
+{"question": "What is SQL used for?", "answer": "SQL is used to manage and query databases."}
+{"question": "Write a polite apology.", "answer": "I'm sorry for the inconvenience. I'll fix it right away."}
+{"question": "Why do we use loops?", "answer": "Loops repeat actions multiple times in code."}
+{"question": "What is JSON?", "answer": "JSON is a lightweight format for structuring data."}
+{"question": "Explain version control.", "answer": "Version control tracks changes to code over time."}
+{"question": "Define accuracy.", "answer": "Accuracy measures correct predictions out of total predictions."}
+{"question": "Why is learning rate important?", "answer": "A good learning rate speeds up training without instability."}
+{"question": "Explain model parameters.", "answer": "Parameters are learned values that determine how a model behaves."}
+{"question": "Explain data augmentation.", "answer": "Data augmentation adds variations to increase training samples."}
+{"question": "Why do we use validation data?", "answer": "Validation checks if the model generalizes well."}
+{"question": "What is HTML used for?", "answer": "HTML structures content on web pages."}
+{"question": "Why do people exercise?", "answer": "Exercise improves health, strength, and mental well-being."}
+{"question": "What is an integer?", "answer": "An integer is a whole number with no decimals."}
+{"question": "Explain RAM.", "answer": "RAM stores data needed for active tasks."}
+{"question": "Explain what an array is.", "answer": "An array stores multiple values in a single structure."}
+{"question": "What is a comment in code?", "answer": "A comment explains code without affecting execution."}
+{"question": "Explain GPU vs CPU.", "answer": "GPUs handle parallel tasks; CPUs handle general tasks."}
+{"question": "What is division?", "answer": "Division splits one number by another."}
+{"question": "Why do we compile code?", "answer": "Compilation converts code into machine instructions."}
+{"question": "What is logic?", "answer": "Logic is reasoning based on rules and facts."}
+{"question": "Why does the moon shine?", "answer": "The moon reflects sunlight."}
+{"question": "What is a chatbot?", "answer": "A chatbot is a program that interacts using text."}
+{"question": "Explain training data.", "answer": "Training data teaches the model patterns needed for prediction."}
+{"question": "Explain XML.", "answer": "XML stores structured data using tags."}
+{"question": "Why do we use arrays?", "answer": "Arrays organize multiple items efficiently."}
+{"question": "Explain linear regression.", "answer": "Linear regression fits a line to predict a continuous value."}
+{"question": "What is a URL?", "answer": "A URL is an address that identifies resources on the internet."}
+{"question": "Explain HTML tags.", "answer": "Tags structure and describe web content."}
+{"question": "What is a file system?", "answer": "A file system organizes and stores files on a device."}
+{"question": "Explain a boolean.", "answer": "A boolean is a True/False value."}
+{"question": "Explain CSV.", "answer": "CSV stores table data using comma-separated values."}
+{"question": "What is gradient descent?", "answer": "Gradient descent is an optimization method that adjusts parameters to minimize loss."}
+{"question": "Explain GPU.", "answer": "A GPU processes many operations in parallel, making it ideal for ML."}
+{"question": "What does RAM do?", "answer": "RAM stores data the computer needs for active tasks."}
+{"question": "Explain epochs.", "answer": "An epoch is one full pass through the training dataset."}
+{"question": "What is loss in ML?", "answer": "Loss measures how far predictions are from the target."}
+{"question": "What is learning rate decay?", "answer": "It gradually reduces the learning rate to stabilize training."}
+{"question": "Explain features.", "answer": "Features are inputs used by a model to make predictions."}
+{"question": "Why do we use Python in ML?", "answer": "Python has strong libraries and is easy to prototype with."}
+{"question": "What is SSL?", "answer": "SSL encrypts communication over the internet."}
+{"question": "Why do we use HTTPS?", "answer": "HTTPS secures web traffic using encryption."}
+{"question": "Explain L2 regularization.", "answer": "L2 regularization penalizes large weights to reduce overfitting."}
+{"question": "What is a token?", "answer": "A token is a unit of text like a word or subword."}
+{"question": "What is batch size?", "answer": "Batch size is the number of samples processed per step."}
+{"question": "Why do models overfit?", "answer": "They memorize training data instead of generalizing."}
+{"question": "Explain gradient.", "answer": "A gradient is the direction of steepest change in loss."}
+{"question": "What is pruning?", "answer": "Pruning removes unnecessary weights to reduce model size."}
+{"question": "Explain attention.", "answer": "Attention lets the model focus on relevant parts of the input."}
+{"question": "What is a layer?", "answer": "A layer performs transformations on input data."}
+{"question": "Why do we do evaluation?", "answer": "Evaluation checks how well a model performs on unseen data."}
+{"question": "Explain cloud computing.", "answer": "Cloud computing provides computing resources over the internet."}
+{"question": "What is an API?", "answer": "An API lets software communicate with other software."}
+{"question": "What is logic programming?", "answer": "It’s a programming paradigm based on logical rules."}
+{"question": "What is HTML?", "answer": "HTML structures website content."}
+{"question": "Explain CSS.", "answer": "CSS styles and formats web pages."}
+{"question": "What is JavaScript?", "answer": "JavaScript enables interactivity on web pages."}
+{"question": "Explain 2FA.", "answer": "Two-factor authentication adds a second verification step."}
+{"question": "What is phishing?", "answer": "Phishing is a scam to trick users into revealing information."}
+{"question": "Explain chatbots.", "answer": "Chatbots simulate conversation using rules or ML."}
+{"question": "What is the internet?", "answer": "The internet is a global network of connected computers."}
+{"question": "Explain a compiler.", "answer": "A compiler converts source code into machine code."}
+{"question": "Explain recursion.", "answer": "Recursion is a function calling itself."}
+{"question": "What is a loop?", "answer": "A loop repeats instructions until a condition is met."}
+{"question": "Explain error handling.", "answer": "Error handling manages unexpected conditions safely."}
+{"question": "What is Git?", "answer": "Git tracks changes in code projects."}
+{"question": "Explain branching in Git.", "answer": "Branches allow separate lines of development."}
+{"question": "What is a neural network?", "answer": "A neural network is a model inspired by the brain that learns patterns."}
+{"question": "Explain zero-shot learning.", "answer": "Zero-shot means performing tasks unseen during training."}
+{"question": "What is a prompt?", "answer": "A prompt is the text given to the model as input."}
+{"question": "Explain inference.", "answer": "Inference is the model generating outputs after training."}
+{"question": "Explain a dataset.", "answer": "A dataset is a collection of samples used for training or evaluation."}
+{"question": "What is optimization?", "answer": "Optimization improves model performance by adjusting parameters."}
+{"question": "What is a decision tree?", "answer": "A decision tree splits data using rules to make predictions."}
+{"question": "Explain Naive Bayes.", "answer": "It’s a probabilistic classifier based on Bayes’ theorem."}
+{"question": "Why do models use epochs?", "answer": "Multiple epochs help models learn patterns thoroughly."}
+{"question": "Explain dropout.", "answer": "Dropout randomly disables neurons to prevent overfitting."}
+{"question": "Explain inference speed.", "answer": "Inference speed is how quickly a model produces outputs."}
+{"question": "What is a hyperparameter?", "answer": "Hyperparameters control training behavior but are not learned."}
+{"question": "Explain binary search.", "answer": "Binary search divides the search space in half repeatedly."}
+{"question": "What is TCP?", "answer": "TCP ensures reliable data transmission."}
+{"question": "Explain the purpose of an activation function.", "answer": "Activation functions introduce non-linearity so neural networks can learn complex patterns."}
+{"question": "What is ReLU?", "answer": "ReLU outputs max(0, x), helping models train faster and avoid vanishing gradients."}
+{"question": "Explain softmax.", "answer": "Softmax converts logits into a probability distribution."}
+{"question": "What is gradient explosion?", "answer": "Gradient explosion happens when gradients become too large and destabilize training."}
+{"question": "Explain model capacity.", "answer": "Model capacity is how much information a model can represent and learn."}
+{"question": "Explain positional encoding.", "answer": "Positional encodings let transformers understand token order."}
+{"question": "What is dropout probability?", "answer": "It is the chance that a neuron is temporarily disabled during training."}
+{"question": "What is early stopping?", "answer": "Early stopping halts training when validation performance stops improving."}
+{"question": "Explain overfitting.", "answer": "Overfitting is when a model memorizes training data and performs poorly on new data."}
+{"question": "Explain underfitting.", "answer": "Underfitting is when a model is too simple to learn important patterns."}
+{"question": "What is a transformer block?", "answer": "A transformer block contains attention layers and feed-forward layers."}
+{"question": "Explain batch normalization.", "answer": "Batch norm normalizes activations within a batch to stabilize training."}
+{"question": "What is an optimizer?", "answer": "An optimizer updates model parameters to reduce loss."}
+{"question": "What is fine-tuning?", "answer": "Fine-tuning adapts a pretrained model to a new task."}
+{"question": "Explain quantization.", "answer": "Quantization reduces model precision to use less memory and run faster."}
+{"question": "What is a vocabulary in NLP?", "answer": "A vocabulary is a set of all tokens a model can use."}
+{"question": "Explain perplexity.", "answer": "Perplexity measures how well a model predicts text; lower is better."}
+{"question": "What is text tokenization?", "answer": "Tokenization splits text into smaller units called tokens."}
+{"question": "Explain greedy decoding.", "answer": "Greedy decoding picks the highest-probability next token every time."}
+{"question": "Explain dataset shuffling.", "answer": "Shuffling randomizes data order to avoid learning order-specific patterns."}
+{"question": "What is a training epoch?", "answer": "One epoch means the model has seen the entire dataset once."}
+{"question": "Explain parameter sharing.", "answer": "Parameter sharing reuses weights across model parts to reduce size."}
+{"question": "What is a CNN?", "answer": "A CNN is a neural network good for processing images using convolutional layers."}
+{"question": "Explain an RNN.", "answer": "An RNN processes sequence data by maintaining a hidden state."}
+{"question": "What are attention weights?", "answer": "Attention weights indicate how much the model focuses on each token."}
+{"question": "Explain bias in neural networks.", "answer": "A bias is a learnable parameter added to weighted inputs."}
+{"question": "What is a GPU kernel?", "answer": "A GPU kernel is a function executed in parallel on the GPU."}
+{"question": "What is a learning curve?", "answer": "A learning curve shows model performance over time."}
+{"question": "Explain sparse attention.", "answer": "Sparse attention limits attention computation to selected tokens, saving memory."}
+{"question": "What is a checkpoint?", "answer": "A checkpoint stores model weights so training can resume later."}
+{"question": "Explain soft prompts.", "answer": "Soft prompts are learned embeddings prepended to model inputs."}
+{"question": "What is masked language modeling?", "answer": "MLM trains a model to predict missing tokens."}
+{"question": "Explain autoregressive decoding.", "answer": "Autoregressive models generate text one token at a time."}
+{"question": "What is a hyperparameter?", "answer": "Hyperparameters control the training process but are not learned by the model."}
+{"question": "Explain batch gradient descent.", "answer": "Batch gradient descent computes gradients using the full dataset."}
+{"question": "What is weight initialization?", "answer": "Weight initialization sets starting values for model parameters."}
+{"question": "Explain the purpose of evaluation data.", "answer": "Eval data checks how well the model generalizes."}
+{"question": "Explain function approximation.", "answer": "Neural networks approximate mathematical functions mapping inputs to outputs."}
+{"question": "What is a benchmark?", "answer": "A benchmark measures model performance on standard tasks."}
+{"question": "Explain latent space.", "answer": "Latent space is a compressed representation of learned features."}
+{"question": "What is token frequency?", "answer": "Token frequency is how often a token appears in a dataset."}
+{"question": "Explain a neural embedding.", "answer": "An embedding is a vector representation of a token or item."}
+{"question": "What is a decoding strategy?", "answer": "A decoding strategy controls how a model selects tokens when generating."}
+{"question": "Explain prompt conditioning.", "answer": "Prompt conditioning means the model output depends on the supplied input prompt."}
+{"question": "What is a parameter update?", "answer": "A parameter update adjusts weights based on computed gradients."}
+{"question": "Explain sampling temperature.", "answer": "Temperature scales logits to control randomness."}
+{"question": "What is a bias term?", "answer": "A bias term shifts the activation function’s input."}
+{"question": "Explain supervised learning.", "answer": "Supervised learning trains with labeled examples."}
+{"question": "What is the largest ocean on Earth?", "answer": "The Pacific Ocean is the largest ocean on Earth."}
+{"question": "Why do seasons change?", "answer": "Seasons change because Earth’s tilt causes different parts of the planet to receive different sunlight over the year."}
+{"question": "Who was the first President of the United States?", "answer": "George Washington was the first President of the United States."}
+{"question": "Explain gravity in simple words.", "answer": "Gravity is the force that pulls objects toward each other, like how Earth pulls us down."}
+{"question": "What is DNA?", "answer": "DNA is the molecule that carries genetic information in living organisms."}
+{"question": "What causes earthquakes?", "answer": "Earthquakes happen when tectonic plates shift suddenly."}
+{"question": "What is photosynthesis?", "answer": "Photosynthesis is the process where plants use sunlight to make food."}
+{"question": "What is phishing?", "answer": "Phishing is a cyberattack where someone tricks you into revealing sensitive information."}
+{"question": "Explain what a computer virus is.", "answer": "A computer virus is malicious software that spreads and causes harm to systems."}
+{"question": "What is the speed of light?", "answer": "The speed of light is about 299,792 kilometers per second."}
+{"question": "What is the boiling point of water?", "answer": "Water boils at 100°C at standard atmospheric pressure."}
+{"question": "Who discovered electricity?", "answer": "Electricity was studied by many scientists, but Benjamin Franklin is famously known for experiments with lightning."}
+{"question": "What are the primary colors of light?", "answer": "Red, green, and blue are the primary colors of light."}
+{"question": "Explain open source software.", "answer": "Open source software is software whose code is freely available for anyone to use, modify, or share."}
+{"question": "What is a byte?", "answer": "A byte is a unit of digital information made of 8 bits."}
+{"question": "What is blood made of?", "answer": "Blood contains plasma, red and white blood cells, and platelets."}
+{"question": "What is the capital of Japan?", "answer": "Tokyo is the capital of Japan."}
+{"question": "Explain what a democracy is.", "answer": "A democracy is a system where people vote to choose leaders."}
+{"question": "Why is the sky blue?", "answer": "The sky looks blue because air scatters blue light more than other colors."}
+{"question": "What is a galaxy?", "answer": "A galaxy is a huge collection of stars, gas, dust, and dark matter."}
+{"question": "Explain what antibiotics do.", "answer": "Antibiotics kill or stop the growth of bacteria."}
+{"question": "What is the capital of Australia?", "answer": "Canberra is the capital of Australia."}
+{"question": "What is climate change?", "answer": "Climate change refers to long-term changes in temperature and weather patterns caused mostly by human activity."}
+{"question": "What is a constellation?", "answer": "A constellation is a group of stars forming a recognizable pattern."}
+{"question": "Explain what a database is.", "answer": "A database is a structured system for storing and retrieving information."}
+{"question": "What is Wi-Fi?", "answer": "Wi-Fi is wireless technology that allows devices to connect to the internet."}
+{"question": "What is the purpose of a firewall?", "answer": "A firewall filters network traffic to block harmful access."}
+{"question": "Explain what inflation is.", "answer": "Inflation is the increase in prices of goods and services over time."}
+{"question": "What is the human brain responsible for?", "answer": "The brain controls thoughts, memory, movement, and bodily functions."}
+{"question": "Explain what renewable energy is.", "answer": "Renewable energy comes from resources that naturally replenish, like wind or solar."}
+{"question": "What causes tides in the ocean?", "answer": "Tides are caused by the gravitational pull of the Moon and Sun."}
+{"question": "Who wrote Romeo and Juliet?", "answer": "William Shakespeare wrote Romeo and Juliet."}
+{"question": "What is cholesterol?", "answer": "Cholesterol is a type of fat in the blood that the body needs in small amounts."}
+{"question": "Explain recycling.", "answer": "Recycling is converting used materials into new products."}
+{"question": "What does a magnet attract?", "answer": "A magnet attracts metals like iron and nickel."}
+{"question": "What is a volcano?", "answer": "A volcano is an opening in Earth where lava and ash erupt."}
+{"question": "What is the purpose of vitamins?", "answer": "Vitamins help the body function properly and stay healthy."}
+{"question": "What is JavaScript used for?", "answer": "JavaScript is used to build interactive features on websites."}
+{"question": "What is a fraction?", "answer": "A fraction represents part of a whole, like 1/2."}
+{"question": "Explain friction.", "answer": "Friction is the force that resists motion between two surfaces."}
+{"question": "Why do objects float?", "answer": "Objects float when their density is lower than the liquid they are in."}
+{"question": "What is a keyboard?", "answer": "A keyboard is an input device used to type characters."}
+{"question": "What is an atom?", "answer": "An atom is the smallest unit of matter."}
+{"question": "Explain what a parallel circuit is.", "answer": "A parallel circuit has multiple paths for current to flow."}
+{"question": "What is a continent?", "answer": "A continent is a large landmass on Earth, such as Asia or Africa."}
+{"question": "What is sound?", "answer": "Sound is a vibration that travels through air or another medium."}
+{"question": "What does HTML do?", "answer": "HTML structures the content of web pages."}
+{"question": "Why do we sleep?", "answer": "Sleep helps the brain and body rest, repair, and restore energy."}
+{"question": "What is cholesterol used for in the body?", "answer": "Cholesterol helps build cells and produce hormones, but too much can cause health problems."}
+{"question": "What is the function of kidneys?", "answer": "The kidneys filter waste from the blood and maintain fluid balance."}
+{"question": "Explain what a chemical reaction is.", "answer": "A chemical reaction happens when substances interact and form new substances."}
+{"question": "What is the ozone layer?", "answer": "The ozone layer protects Earth by blocking harmful UV radiation from the Sun."}
+{"question": "What is a recession?", "answer": "A recession is a period of economic decline marked by reduced spending and high unemployment."}
+{"question": "Explain interest in banking.", "answer": "Interest is the cost of borrowing money or the reward for saving it."}
+{"question": "What is a copyright?", "answer": "Copyright gives creators legal rights over how their work is used."}
+{"question": "What is a star?", "answer": "A star is a massive ball of hot gases producing energy through nuclear fusion."}
+{"question": "Why do astronauts float in space?", "answer": "Astronauts float because they are in microgravity while orbiting Earth."}
+{"question": "What is a calorie?", "answer": "A calorie is a unit of energy the body uses for its functions."}
+{"question": "Explain what carbohydrates are.", "answer": "Carbohydrates are nutrients that provide the body with energy."}
+{"question": "What is meditation?", "answer": "Meditation is a practice that focuses the mind and promotes relaxation."}
+{"question": "Explain what antibiotics should not be used for.", "answer": "Antibiotics should not be used for viral infections like colds or flu."}
+{"question": "What is a WiFi password used for?", "answer": "A WiFi password protects your network from unauthorized access."}
+{"question": "Explain what online scams are.", "answer": "Online scams are deceptive schemes meant to steal money or information."}
+{"question": "What is an autobiography?", "answer": "An autobiography is a book written by a person about their own life."}
+{"question": "Who was Julius Caesar?", "answer": "Julius Caesar was a Roman general and statesman who played a major role in Roman history."}
+{"question": "What is a compass used for?", "answer": "A compass shows direction using Earth’s magnetic field."}
+{"question": "Explain the purpose of blood pressure.", "answer": "Blood pressure measures the force of blood pushing against artery walls."}
+{"question": "What is a mammal?", "answer": "A mammal is a warm-blooded animal that typically gives birth to live young and produces milk."}
+{"question": "Why do planes fly?", "answer": "Planes fly because their wings generate lift by moving air faster over the top surface."}
+{"question": "Explain what a legal contract is.", "answer": "A contract is a legally binding agreement between two or more parties."}
+{"question": "What is a tornado?", "answer": "A tornado is a rotating column of air extending from a storm to the ground."}
+{"question": "Why do people yawn?", "answer": "Yawning may help regulate brain temperature and increase alertness."}
+{"question": "What is the purpose of sunscreen?", "answer": "Sunscreen protects the skin from harmful UV rays."}
+{"question": "Explain the concept of time zones.", "answer": "Time zones exist because Earth rotates, causing different regions to experience daylight at different times."}
+{"question": "What is a civil engineer?", "answer": "A civil engineer designs and builds infrastructure like roads, bridges, and buildings."}
+{"question": "What is a fossil?", "answer": "A fossil is the preserved remains or impressions of ancient organisms."}
+{"question": "Why do we need vitamins?", "answer": "Vitamins help the body function properly and support various biological processes."}
+{"question": "Explain what plagiarism is.", "answer": "Plagiarism is using someone else's work without proper credit."}
+{"question": "What is a thesis?", "answer": "A thesis is a statement or central argument presented in academic writing."}
+{"question": "Why is exercise important?", "answer": "Exercise improves physical health, strengthens muscles, and boosts mood."}
+{"question": "What is a smartphone?", "answer": "A smartphone is a mobile device with computing capabilities, internet access, and apps."}
+{"question": "What does a router do?", "answer": "A router directs data between your devices and the internet."}
+{"question": "Explain what fermentation is.", "answer": "Fermentation is a process where microorganisms break down sugars without oxygen."}
+{"question": "What is the purpose of civil laws?", "answer": "Civil laws help resolve disputes between individuals or organizations."}
+{"question": "What are hormones?", "answer": "Hormones are chemical messengers that regulate bodily functions."}
+{"question": "Why do shadows form?", "answer": "Shadows form when an object blocks light from a source."}
+{"question": "What is a constellation?", "answer": "A constellation is a group of stars forming a recognizable pattern."}
+{"question": "Explain what first aid is.", "answer": "First aid is immediate care given to someone injured or ill before medical help arrives."}
+{"question": "What is a paragraph?", "answer": "A paragraph is a group of sentences focusing on one idea."}
+{"question": "Explain fossil fuels.", "answer": "Fossil fuels are energy sources formed from ancient plants and animals."}
+{"question": "What is inflation?", "answer": "Inflation is the rise in prices over time due to economic factors."}
+{"question": "Explain what caffeine does.", "answer": "Caffeine is a stimulant that increases alertness."}
+{"question": "Why do animals migrate?", "answer": "Animals migrate to find food, better climate, or breeding grounds."}
+{"question": "What is a chemical element?", "answer": "A chemical element is a substance made of only one type of atom."}
+{"question": "Explain email encryption.", "answer": "Email encryption protects message content so only intended recipients can read it."}
+{"question": "What is astronomy?", "answer": "Astronomy is the scientific study of celestial objects like stars, planets, and galaxies."}
+{"question": "What is a microscope used for?", "answer": "A microscope magnifies tiny objects so they can be seen clearly."}
+{"question": "What is gravity?", "answer": "Gravity is a natural force that pulls objects toward each other, most noticeably pulling us toward Earth."}
+{"question": "Explain what friction is.", "answer": "Friction is the resistance that occurs when two surfaces move against each other."}
+{"question": "What is plasma in physics?", "answer": "Plasma is a state of matter where gas becomes ionized and conducts electricity."}
+{"question": "What is the speed of light?", "answer": "The speed of light in a vacuum is about 299,792 kilometers per second."}
+{"question": "Explain what a chemical bond is.", "answer": "A chemical bond is the attraction between atoms that allows them to form molecules."}
+{"question": "What is pH?", "answer": "pH measures how acidic or basic a solution is."}
+{"question": "What is boiling?", "answer": "Boiling is when a liquid turns into vapor at its boiling point."}
+{"question": "Explain what the equator is.", "answer": "The equator is an imaginary line that divides Earth into northern and southern hemispheres."}
+{"question": "What is a continent?", "answer": "A continent is one of Earth's large landmasses such as Asia or Africa."}
+{"question": "Why do seasons change?", "answer": "Seasons change because Earth is tilted as it orbits the Sun, causing varying sunlight."}
+{"question": "What is a virus?", "answer": "A virus is a microscopic organism that can only reproduce inside living cells."}
+{"question": "Explain what digestion is.", "answer": "Digestion is the process of breaking down food into nutrients the body can absorb."}
+{"question": "What are white blood cells?", "answer": "White blood cells help defend the body against infections."}
+{"question": "Explain insomnia.", "answer": "Insomnia is a sleep disorder where a person has difficulty falling or staying asleep."}
+{"question": "What is anxiety?", "answer": "Anxiety is a feeling of worry or nervousness often caused by stress or uncertainty."}
+{"question": "Explain what metabolism is.", "answer": "Metabolism is the process by which the body converts food into energy."}
+{"question": "What is binary code?", "answer": "Binary code is a system of 1s and 0s used by computers to represent data."}
+{"question": "Explain what a variable is in programming.", "answer": "A variable is a storage location that holds a value that can change during execution."}
+{"question": "What is a loop in programming?", "answer": "A loop repeats a block of code until a condition is met."}
+{"question": "What is HTML used for?", "answer": "HTML is used to structure web pages by defining elements like text and images."}
+{"question": "Explain what encryption means.", "answer": "Encryption is converting data into unreadable form to protect it from unauthorized access."}
+{"question": "What is phishing?", "answer": "Phishing is a scam where attackers trick people into revealing sensitive information."}
+{"question": "Explain what a firewall does.", "answer": "A firewall filters network traffic to block unauthorized access."}
+{"question": "What is income tax?", "answer": "Income tax is the money individuals and businesses pay to the government based on earnings."}
+{"question": "Explain budgeting.", "answer": "Budgeting is planning how to spend and save money over a period of time."}
+{"question": "What is inflation rate?", "answer": "The inflation rate measures how fast prices are increasing in an economy."}
+{"question": "Explain what a mortgage is.", "answer": "A mortgage is a loan used to buy a house, repaid over many years."}
+{"question": "What is a contract?", "answer": "A contract is a legally binding agreement between parties."}
+{"question": "Explain criminal law.", "answer": "Criminal law deals with offenses against society, such as theft or assault."}
+{"question": "What is evidence in court?", "answer": "Evidence is information presented to prove or disprove claims in a legal case."}
+{"question": "Explain what mentorship is.", "answer": "Mentorship is guidance from an experienced person to support someone’s growth."}
+{"question": "What is teamwork?", "answer": "Teamwork is collaborating with others to achieve a shared goal."}
+{"question": "Explain what a résumé is.", "answer": "A résumé summarizes a person’s skills, experience, and education for job applications."}
+{"question": "What is customer service?", "answer": "Customer service helps customers solve issues and have a positive experience."}
+{"question": "Why do we use cooking oil?", "answer": "Cooking oil helps transfer heat and prevents food from sticking to surfaces."}
+{"question": "Explain boiling vs simmering.", "answer": "Boiling uses high heat with rapid bubbles, while simmering uses lower heat with gentle bubbles."}
+{"question": "What is sautéing?", "answer": "Sautéing is cooking food quickly in a small amount of oil over high heat."}
+{"question": "Explain what astronomy studies.", "answer": "Astronomy studies celestial objects like planets, stars, and galaxies."}
+{"question": "What is a galaxy?", "answer": "A galaxy is a massive collection of stars, dust, and gas held together by gravity."}
+{"question": "Explain the Big Bang theory.", "answer": "The Big Bang theory states the universe began from a hot, dense point and expanded."}
+{"question": "What is a comet?", "answer": "A comet is an icy object that releases gas and dust when near the Sun, forming a tail."}
+{"question": "Explain what recycling is.", "answer": "Recycling is processing used materials to make new products and reduce waste."}
+{"question": "What is pollution?", "answer": "Pollution is the contamination of air, water, or land by harmful substances."}
+{"question": "Explain climate change.", "answer": "Climate change refers to long-term shifts in temperature and weather patterns caused mainly by human activities."}
+{"question": "What is empathy?", "answer": "Empathy is the ability to understand and share someone else’s feelings."}
+{"question": "Explain motivation.", "answer": "Motivation is the drive that encourages people to act or pursue goals."}
+{"question": "What is mindfulness?", "answer": "Mindfulness is being aware of the present moment without judgment."}
+{"question": "Explain what a habit is.", "answer": "A habit is a behavior repeated regularly until it becomes automatic."}
+{"question": "What is cultural diversity?", "answer": "Cultural diversity refers to the presence of different cultures and traditions within a society."}
+{"question": "What is renewable energy?", "answer": "Renewable energy comes from sources that naturally replenish, like solar, wind, or hydropower."}
+{"question": "Explain what density means.", "answer": "Density measures how much mass is contained in a given volume."}
+{"question": "What is a prime number?", "answer": "A prime number is a number greater than 1 with no divisors except 1 and itself."}
+{"question": "What is a triangle?", "answer": "A triangle is a shape with three sides and three angles."}
+{"question": "Explain evaporation.", "answer": "Evaporation is when a liquid turns into vapor due to heat."}
+{"question": "What is a URL?", "answer": "A URL is the address used to access a resource on the internet."}
+{"question": "Explain what an API is.", "answer": "An API is an interface that allows different software systems to communicate."}
+{"question": "What is carbon dioxide?", "answer": "Carbon dioxide is a gas produced by respiration and combustion."}
+{"question": "Explain good posture.", "answer": "Good posture means keeping the spine aligned to reduce stress on muscles and joints."}
+{"question": "What is caffeine?", "answer": "Caffeine is a stimulant found in coffee, tea, and energy drinks."}
+{"question": "Why do we wash our hands?", "answer": "We wash our hands to remove germs and prevent infections."}
+{"question": "Explain inflation in economics.", "answer": "Inflation is the increase in overall prices of goods and services over time."}
+{"question": "What is GDP?", "answer": "GDP is the total value of goods and services produced in a country."}
+{"question": "What is a budget?", "answer": "A budget is a plan for how to spend and save money."}
+{"question": "Explain photosynthesis.", "answer": "Photosynthesis is the process where plants convert sunlight into energy."}
+{"question": "What is osmosis?", "answer": "Osmosis is the movement of water through a membrane from low to high solute concentration."}
+{"question": "What is a noun?", "answer": "A noun is a word that names a person, place, thing, or idea."}
+{"question": "Explain what a verb is.", "answer": "A verb describes an action, state, or occurrence."}
+{"question": "What is empathy?", "answer": "Empathy is understanding and sharing another person's feelings."}
+{"question": "Explain peer pressure.", "answer": "Peer pressure is influence from others to behave in certain ways."}
+{"question": "What is recycling used for?", "answer": "Recycling reduces waste by turning used materials into new products."}
+{"question": "Explain what a battery does.", "answer": "A battery stores chemical energy and converts it into electrical energy."}
+{"question": "What is a capacitor?", "answer": "A capacitor stores electrical charge temporarily and releases it when needed."}
+{"question": "Explain alternating current.", "answer": "Alternating current is electricity where direction reverses periodically."}
+{"question": "What is an asteroid?", "answer": "An asteroid is a rocky object orbiting the sun, smaller than planets."}
+{"question": "Explain what a volcano is.", "answer": "A volcano is an opening in Earth's crust that releases magma, ash, and gases."}
+{"question": "What is democracy?", "answer": "Democracy is a system where citizens elect their leaders."}
+{"question": "What is a law?", "answer": "A law is a rule created by a government to maintain order."}
+{"question": "Explain evidence.", "answer": "Evidence is information used to support a claim or conclusion."}
+{"question": "What is a CVV code on a card?", "answer": "A CVV is a security code used to verify card-not-present transactions."}
+{"question": "Explain two-factor authentication.", "answer": "It requires two forms of verification, such as a password and a phone code."}
+{"question": "What is a router?", "answer": "A router directs network traffic between devices and networks."}
+{"question": "Explain firewalls.", "answer": "Firewalls block unauthorized access while allowing legitimate traffic."}
+{"question": "What is a protein?", "answer": "Proteins are molecules made of amino acids, essential for body functions."}
+{"question": "Explain carbohydrates.", "answer": "Carbohydrates are nutrients that provide energy for the body."}
+{"question": "Why do we sleep?", "answer": "Sleep helps restore the brain and body, supporting memory and healing."}
+{"question": "What is meditation?", "answer": "Meditation is a practice of focusing attention to achieve calm and clarity."}
+{"question": "Explain the solar system.", "answer": "The solar system consists of the Sun and the objects orbiting it."}
+{"question": "What is a vaccine?", "answer": "A vaccine prepares the immune system to fight specific diseases."}
+{"question": "Explain CPR.", "answer": "CPR is an emergency procedure that restores breathing and circulation."}
+{"question": "What is an allergy?", "answer": "An allergy is an immune reaction to a harmless substance."}
+{"question": "Explain altitude.", "answer": "Altitude is the height of an object above sea level."}
+{"question": "What is a desert?", "answer": "A desert is a dry region that receives very little rainfall."}
+{"question": "Explain tides.", "answer": "Tides are the rise and fall of sea levels caused by the Moon’s gravity."}
+{"question": "Why do we have shadows?", "answer": "Shadows form when an object blocks light from reaching a surface."}
+{"question": "What is a microscope?", "answer": "A microscope magnifies small objects so they can be observed."}
+{"question": "Explain magnetism.", "answer": "Magnetism is a force that attracts or repels certain materials like iron."}
+{"question": "What is a fraction?", "answer": "A fraction represents a part of a whole."}
+{"question": "Explain division.", "answer": "Division splits a number into equal parts."}
+{"question": "What is a resume used for?", "answer": "A resume presents your skills and experience to employers."}
+{"question": "Explain leadership.", "answer": "Leadership is guiding others toward a goal while supporting the team."}

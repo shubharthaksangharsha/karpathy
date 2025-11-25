@@ -3,9 +3,64 @@
 *.pth
 *.bin
 *.ckpt
+*.safetensors
 checkpoints/
+dpo_checkpoints/
+sft_checkpoints/
+qa_sft_checkpoints/
 models/
 runs/
 outputs/
-# ===============================
+eval_logs/
 
+# ======== SECRETS & KEYS ========
+*.json
+!qa-gpt2-small.jsonl
+!sft_train.jsonl
+!sft_test.jsonl
+!sft_val.jsonl
+!dpo_gpt2_small.jsonl
+gpt2-bucket-key.json
+.env
+.netrc
+wandb/
+
+# ======== PYTHON ========
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ======== ENVIRONMENTS ========
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ======== LOGS ========
+*.log
+logs/
+
+# ======== IDEs ========
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,390 @@
+{"question": "What is the capital of France?", "answer": "The capital of France is Paris."}
+{"question": "Explain overfitting.", "answer": "Overfitting happens when a model memorizes training data and performs poorly on new data."}
+{"question": "What is a neural network?", "answer": "A neural network is a model made of layers of interconnected nodes that learn patterns from data."}
+{"question": "Define machine learning.", "answer": "Machine learning is a field where models learn patterns from data to make predictions."}
+{"question": "What is 7 + 5?", "answer": "7 + 5 equals 12."}
+{"question": "Explain what an algorithm is.", "answer": "An algorithm is a step-by-step procedure for solving a problem."}
+{"question": "What is Python used for?", "answer": "Python is used for web development, data analysis, machine learning, and automation."}
+{"question": "Write a polite response: 'Can you help me?'", "answer": "Of course! How can I assist you?"}
+{"question": "Which is bigger: 10 or 6?", "answer": "10 is bigger than 6."}
+{"question": "Explain regularization.", "answer": "Regularization reduces overfitting by penalizing overly complex models."}
+{"question": "What is gradient descent?", "answer": "Gradient descent is an optimization method that updates parameters to reduce loss."}
+{"question": "What is water made of?", "answer": "Water is made of two hydrogen atoms and one oxygen atom (H2O)."}
+{"question": "Write a short greeting.", "answer": "Hello! Hope you're having a great day!"}
+{"question": "Explain classification.", "answer": "Classification is predicting a label or category for an input."}
+{"question": "Explain regression.", "answer": "Regression predicts numerical values such as prices or temperatures."}
+{"question": "What is the speed of light?", "answer": "The speed of light is about 299,792 km/s."}
+{"question": "Explain what a dataset is.", "answer": "A dataset is a collection of structured or unstructured data used for training or evaluation."}
+{"question": "What is a GPU?", "answer": "A GPU is a processor designed for parallel computation, useful in ML."}
+{"question": "Explain inference in ML.", "answer": "Inference is when a trained model makes predictions on new inputs."}
+{"question": "Why is data cleaning important?", "answer": "Clean data improves accuracy and reduces noise in training."}
+{"question": "What is probability?", "answer": "Probability measures the likelihood of an event occurring."}
+{"question": "Give an example of a prime number.", "answer": "A prime number example is 13."}
+{"question": "Explain learning rate.", "answer": "The learning rate controls how big each parameter update is during training."}
+{"question": "Explain accuracy.", "answer": "Accuracy is the percentage of correct predictions."}
+{"question": "Write a friendly reminder.", "answer": "Don't forget to drink water today!"}
+{"question": "What is a loss function?", "answer": "A loss function measures how far predictions are from the target."}
+{"question": "Why is GPU memory important?", "answer": "GPU memory determines how large models and batches you can train."}
+{"question": "Explain dropout.", "answer": "Dropout randomly disables neurons during training to improve generalization."}
+{"question": "What is an epoch?", "answer": "An epoch is one full pass over the training data."}
+{"question": "Explain tokenization.", "answer": "Tokenization splits text into smaller pieces like words or subwords."}
+{"question": "What is a dataset split?", "answer": "It divides data into training, validation, and test sets."}
+{"question": "Explain attention mechanism.", "answer": "Attention lets the model focus on important parts of the input."}
+{"question": "Write a clear answer: Why do people sleep?", "answer": "People sleep to rest, restore energy, and support brain and body functions."}
+{"question": "Explain CPU vs GPU.", "answer": "CPUs handle general tasks, GPUs handle parallel computations."}
+{"question": "What is multiplication?", "answer": "Multiplication is repeated addition."}
+{"question": "Explain batch size.", "answer": "Batch size is how many samples are processed before updating weights."}
+{"question": "What is an API?", "answer": "An API lets software systems communicate with each other."}
+{"question": "What is Newton's First Law?", "answer": "An object stays at rest or moves uniformly unless acted on by a force."}
+{"question": "Explain cloning a git repo.", "answer": "Cloning copies a repository from a remote server to your machine."}
+{"question": "Why do we evaluate models?", "answer": "Evaluation checks how well a model performs on unseen data."}
+{"question": "Explain dataset noise.", "answer": "Noise is random or incorrect data that harms model learning."}
+{"question": "What is a decimal number?", "answer": "A decimal number uses base 10 digits (0–9)."}
+{"question": "Explain what HTML is.", "answer": "HTML is a markup language used to structure web pages."}
+{"question": "Write a safe answer: 'Should I drink bleach?'", "answer": "No. Bleach is toxic and should never be consumed."}
+{"question": "Explain SSL.", "answer": "SSL encrypts data between a browser and a server."}
+{"question": "What is an operating system?", "answer": "An operating system manages hardware and software resources."}
+{"question": "Explain RAM.", "answer": "RAM is short-term memory that stores data being actively used."}
+{"question": "What is x in 2x = 10?", "answer": "x = 5."}
+{"question": "What is reinforcement learning?", "answer": "Reinforcement learning is a method where an agent learns by receiving rewards or penalties."}
+{"question": "Why do we normalize data?", "answer": "Normalization scales features to similar ranges, improving training stability."}
+{"question": "What is an activation function?", "answer": "An activation function adds non-linearity to neural networks."}
+{"question": "Explain supervised learning.", "answer": "Supervised learning uses labeled data to train models."}
+{"question": "Explain unsupervised learning.", "answer": "Unsupervised learning finds patterns in unlabeled data."}
+{"question": "What are embeddings?", "answer": "Embeddings represent words or items as vectors capturing meaning."}
+{"question": "What is the Sun?", "answer": "The Sun is the star at the center of our solar system."}
+{"question": "Explain entropy.", "answer": "Entropy measures uncertainty or randomness."}
+{"question": "Why is math important in ML?", "answer": "Math provides the foundation for algorithms and optimization."}
+{"question": "Explain backpropagation.", "answer": "Backpropagation computes gradients to update model weights."}
+{"question": "What is a dataset label?", "answer": "A label represents the target the model should predict."}
+{"question": "What is a transformer?", "answer": "A transformer is an attention-based neural network architecture."}
+{"question": "How do you say hello in Spanish?", "answer": "You say 'Hola'."}
+{"question": "Explain what sorting is.", "answer": "Sorting arranges items in a specific order like ascending or descending."}
+{"question": "What is a variable in programming?", "answer": "A variable stores a value in code."}
+{"question": "What is division?", "answer": "Division splits a number into equal parts."}
+{"question": "Explain caching.", "answer": "Caching stores data temporarily for quick access."}
+{"question": "What is SQL used for?", "answer": "SQL is used to manage and query databases."}
+{"question": "Write a polite apology.", "answer": "I'm sorry for the inconvenience. I'll fix it right away."}
+{"question": "Why do we use loops?", "answer": "Loops repeat actions multiple times in code."}
+{"question": "What is JSON?", "answer": "JSON is a lightweight format for structuring data."}
+{"question": "Explain version control.", "answer": "Version control tracks changes to code over time."}
+{"question": "Define accuracy.", "answer": "Accuracy measures correct predictions out of total predictions."}
+{"question": "Why is learning rate important?", "answer": "A good learning rate speeds up training without instability."}
+{"question": "Explain model parameters.", "answer": "Parameters are learned values that determine how a model behaves."}
+{"question": "Explain data augmentation.", "answer": "Data augmentation adds variations to increase training samples."}
+{"question": "Why do we use validation data?", "answer": "Validation checks if the model generalizes well."}
+{"question": "What is HTML used for?", "answer": "HTML structures content on web pages."}
+{"question": "Why do people exercise?", "answer": "Exercise improves health, strength, and mental well-being."}
+{"question": "What is an integer?", "answer": "An integer is a whole number with no decimals."}
+{"question": "Explain RAM.", "answer": "RAM stores data needed for active tasks."}
+{"question": "Explain what an array is.", "answer": "An array stores multiple values in a single structure."}
+{"question": "What is a comment in code?", "answer": "A comment explains code without affecting execution."}
+{"question": "Explain GPU vs CPU.", "answer": "GPUs handle parallel tasks; CPUs handle general tasks."}
+{"question": "What is division?", "answer": "Division splits one number by another."}
+{"question": "Why do we compile code?", "answer": "Compilation converts code into machine instructions."}
+{"question": "What is logic?", "answer": "Logic is reasoning based on rules and facts."}
+{"question": "Why does the moon shine?", "answer": "The moon reflects sunlight."}
+{"question": "What is a chatbot?", "answer": "A chatbot is a program that interacts using text."}
+{"question": "Explain training data.", "answer": "Training data teaches the model patterns needed for prediction."}
+{"question": "Explain XML.", "answer": "XML stores structured data using tags."}
+{"question": "Why do we use arrays?", "answer": "Arrays organize multiple items efficiently."}
+{"question": "Explain linear regression.", "answer": "Linear regression fits a line to predict a continuous value."}
+{"question": "What is a URL?", "answer": "A URL is an address that identifies resources on the internet."}
+{"question": "Explain HTML tags.", "answer": "Tags structure and describe web content."}
+{"question": "What is a file system?", "answer": "A file system organizes and stores files on a device."}
+{"question": "Explain a boolean.", "answer": "A boolean is a True/False value."}
+{"question": "Explain CSV.", "answer": "CSV stores table data using comma-separated values."}
+{"question": "What is gradient descent?", "answer": "Gradient descent is an optimization method that adjusts parameters to minimize loss."}
+{"question": "Explain GPU.", "answer": "A GPU processes many operations in parallel, making it ideal for ML."}
+{"question": "What does RAM do?", "answer": "RAM stores data the computer needs for active tasks."}
+{"question": "Explain epochs.", "answer": "An epoch is one full pass through the training dataset."}
+{"question": "What is loss in ML?", "answer": "Loss measures how far predictions are from the target."}
+{"question": "What is learning rate decay?", "answer": "It gradually reduces the learning rate to stabilize training."}
+{"question": "Explain features.", "answer": "Features are inputs used by a model to make predictions."}
+{"question": "Why do we use Python in ML?", "answer": "Python has strong libraries and is easy to prototype with."}
+{"question": "What is SSL?", "answer": "SSL encrypts communication over the internet."}
+{"question": "Why do we use HTTPS?", "answer": "HTTPS secures web traffic using encryption."}
+{"question": "Explain L2 regularization.", "answer": "L2 regularization penalizes large weights to reduce overfitting."}
+{"question": "What is a token?", "answer": "A token is a unit of text like a word or subword."}
+{"question": "What is batch size?", "answer": "Batch size is the number of samples processed per step."}
+{"question": "Why do models overfit?", "answer": "They memorize training data instead of generalizing."}
+{"question": "Explain gradient.", "answer": "A gradient is the direction of steepest change in loss."}
+{"question": "What is pruning?", "answer": "Pruning removes unnecessary weights to reduce model size."}
+{"question": "Explain attention.", "answer": "Attention lets the model focus on relevant parts of the input."}
+{"question": "What is a layer?", "answer": "A layer performs transformations on input data."}
+{"question": "Why do we do evaluation?", "answer": "Evaluation checks how well a model performs on unseen data."}
+{"question": "Explain cloud computing.", "answer": "Cloud computing provides computing resources over the internet."}
+{"question": "What is an API?", "answer": "An API lets software communicate with other software."}
+{"question": "What is logic programming?", "answer": "It’s a programming paradigm based on logical rules."}
+{"question": "What is HTML?", "answer": "HTML structures website content."}
+{"question": "Explain CSS.", "answer": "CSS styles and formats web pages."}
+{"question": "What is JavaScript?", "answer": "JavaScript enables interactivity on web pages."}
+{"question": "Explain 2FA.", "answer": "Two-factor authentication adds a second verification step."}
+{"question": "What is phishing?", "answer": "Phishing is a scam to trick users into revealing information."}
+{"question": "Explain chatbots.", "answer": "Chatbots simulate conversation using rules or ML."}
+{"question": "What is the internet?", "answer": "The internet is a global network of connected computers."}
+{"question": "Explain a compiler.", "answer": "A compiler converts source code into machine code."}
+{"question": "Explain recursion.", "answer": "Recursion is a function calling itself."}
+{"question": "What is a loop?", "answer": "A loop repeats instructions until a condition is met."}
+{"question": "Explain error handling.", "answer": "Error handling manages unexpected conditions safely."}
+{"question": "What is Git?", "answer": "Git tracks changes in code projects."}
+{"question": "Explain branching in Git.", "answer": "Branches allow separate lines of development."}
+{"question": "What is a neural network?", "answer": "A neural network is a model inspired by the brain that learns patterns."}
+{"question": "Explain zero-shot learning.", "answer": "Zero-shot means performing tasks unseen during training."}
+{"question": "What is a prompt?", "answer": "A prompt is the text given to the model as input."}
+{"question": "Explain inference.", "answer": "Inference is the model generating outputs after training."}
+{"question": "Explain a dataset.", "answer": "A dataset is a collection of samples used for training or evaluation."}
+{"question": "What is optimization?", "answer": "Optimization improves model performance by adjusting parameters."}
+{"question": "What is a decision tree?", "answer": "A decision tree splits data using rules to make predictions."}
+{"question": "Explain Naive Bayes.", "answer": "It’s a probabilistic classifier based on Bayes’ theorem."}
+{"question": "Why do models use epochs?", "answer": "Multiple epochs help models learn patterns thoroughly."}
+{"question": "Explain dropout.", "answer": "Dropout randomly disables neurons to prevent overfitting."}
+{"question": "Explain inference speed.", "answer": "Inference speed is how quickly a model produces outputs."}
+{"question": "What is a hyperparameter?", "answer": "Hyperparameters control training behavior but are not learned."}
+{"question": "Explain binary search.", "answer": "Binary search divides the search space in half repeatedly."}
+{"question": "What is TCP?", "answer": "TCP ensures reliable data transmission."}
+{"question": "Explain the purpose of an activation function.", "answer": "Activation functions introduce non-linearity so neural networks can learn complex patterns."}
+{"question": "What is ReLU?", "answer": "ReLU outputs max(0, x), helping models train faster and avoid vanishing gradients."}
+{"question": "Explain softmax.", "answer": "Softmax converts logits into a probability distribution."}
+{"question": "What is gradient explosion?", "answer": "Gradient explosion happens when gradients become too large and destabilize training."}
+{"question": "Explain model capacity.", "answer": "Model capacity is how much information a model can represent and learn."}
+{"question": "Explain positional encoding.", "answer": "Positional encodings let transformers understand token order."}
+{"question": "What is dropout probability?", "answer": "It is the chance that a neuron is temporarily disabled during training."}
+{"question": "What is early stopping?", "answer": "Early stopping halts training when validation performance stops improving."}
+{"question": "Explain overfitting.", "answer": "Overfitting is when a model memorizes training data and performs poorly on new data."}
+{"question": "Explain underfitting.", "answer": "Underfitting is when a model is too simple to learn important patterns."}
+{"question": "What is a transformer block?", "answer": "A transformer block contains attention layers and feed-forward layers."}
+{"question": "Explain batch normalization.", "answer": "Batch norm normalizes activations within a batch to stabilize training."}
+{"question": "What is an optimizer?", "answer": "An optimizer updates model parameters to reduce loss."}
+{"question": "What is fine-tuning?", "answer": "Fine-tuning adapts a pretrained model to a new task."}
+{"question": "Explain quantization.", "answer": "Quantization reduces model precision to use less memory and run faster."}
+{"question": "What is a vocabulary in NLP?", "answer": "A vocabulary is a set of all tokens a model can use."}
+{"question": "Explain perplexity.", "answer": "Perplexity measures how well a model predicts text; lower is better."}
+{"question": "What is text tokenization?", "answer": "Tokenization splits text into smaller units called tokens."}
+{"question": "Explain greedy decoding.", "answer": "Greedy decoding picks the highest-probability next token every time."}
+{"question": "Explain dataset shuffling.", "answer": "Shuffling randomizes data order to avoid learning order-specific patterns."}
+{"question": "What is a training epoch?", "answer": "One epoch means the model has seen the entire dataset once."}
+{"question": "Explain parameter sharing.", "answer": "Parameter sharing reuses weights across model parts to reduce size."}
+{"question": "What is a CNN?", "answer": "A CNN is a neural network good for processing images using convolutional layers."}
+{"question": "Explain an RNN.", "answer": "An RNN processes sequence data by maintaining a hidden state."}
+{"question": "What are attention weights?", "answer": "Attention weights indicate how much the model focuses on each token."}
+{"question": "Explain bias in neural networks.", "answer": "A bias is a learnable parameter added to weighted inputs."}
+{"question": "What is a GPU kernel?", "answer": "A GPU kernel is a function executed in parallel on the GPU."}
+{"question": "What is a learning curve?", "answer": "A learning curve shows model performance over time."}
+{"question": "Explain sparse attention.", "answer": "Sparse attention limits attention computation to selected tokens, saving memory."}
+{"question": "What is a checkpoint?", "answer": "A checkpoint stores model weights so training can resume later."}
+{"question": "Explain soft prompts.", "answer": "Soft prompts are learned embeddings prepended to model inputs."}
+{"question": "What is masked language modeling?", "answer": "MLM trains a model to predict missing tokens."}
+{"question": "Explain autoregressive decoding.", "answer": "Autoregressive models generate text one token at a time."}
+{"question": "What is a hyperparameter?", "answer": "Hyperparameters control the training process but are not learned by the model."}
+{"question": "Explain batch gradient descent.", "answer": "Batch gradient descent computes gradients using the full dataset."}
+{"question": "What is weight initialization?", "answer": "Weight initialization sets starting values for model parameters."}
+{"question": "Explain the purpose of evaluation data.", "answer": "Eval data checks how well the model generalizes."}
+{"question": "Explain function approximation.", "answer": "Neural networks approximate mathematical functions mapping inputs to outputs."}
+{"question": "What is a benchmark?", "answer": "A benchmark measures model performance on standard tasks."}
+{"question": "Explain latent space.", "answer": "Latent space is a compressed representation of learned features."}
+{"question": "What is token frequency?", "answer": "Token frequency is how often a token appears in a dataset."}
+{"question": "Explain a neural embedding.", "answer": "An embedding is a vector representation of a token or item."}
+{"question": "What is a decoding strategy?", "answer": "A decoding strategy controls how a model selects tokens when generating."}
+{"question": "Explain prompt conditioning.", "answer": "Prompt conditioning means the model output depends on the supplied input prompt."}
+{"question": "What is a parameter update?", "answer": "A parameter update adjusts weights based on computed gradients."}
+{"question": "Explain sampling temperature.", "answer": "Temperature scales logits to control randomness."}
+{"question": "What is a bias term?", "answer": "A bias term shifts the activation function’s input."}
+{"question": "Explain supervised learning.", "answer": "Supervised learning trains with labeled examples."}
+{"question": "What is the largest ocean on Earth?", "answer": "The Pacific Ocean is the largest ocean on Earth."}
+{"question": "Why do seasons change?", "answer": "Seasons change because Earth’s tilt causes different parts of the planet to receive different sunlight over the year."}
+{"question": "Who was the first President of the United States?", "answer": "George Washington was the first President of the United States."}
+{"question": "Explain gravity in simple words.", "answer": "Gravity is the force that pulls objects toward each other, like how Earth pulls us down."}
+{"question": "What is DNA?", "answer": "DNA is the molecule that carries genetic information in living organisms."}
+{"question": "What causes earthquakes?", "answer": "Earthquakes happen when tectonic plates shift suddenly."}
+{"question": "What is photosynthesis?", "answer": "Photosynthesis is the process where plants use sunlight to make food."}
+{"question": "What is phishing?", "answer": "Phishing is a cyberattack where someone tricks you into revealing sensitive information."}
+{"question": "Explain what a computer virus is.", "answer": "A computer virus is malicious software that spreads and causes harm to systems."}
+{"question": "What is the speed of light?", "answer": "The speed of light is about 299,792 kilometers per second."}
+{"question": "What is the boiling point of water?", "answer": "Water boils at 100°C at standard atmospheric pressure."}
+{"question": "Who discovered electricity?", "answer": "Electricity was studied by many scientists, but Benjamin Franklin is famously known for experiments with lightning."}
+{"question": "What are the primary colors of light?", "answer": "Red, green, and blue are the primary colors of light."}
+{"question": "Explain open source software.", "answer": "Open source software is software whose code is freely available for anyone to use, modify, or share."}
+{"question": "What is a byte?", "answer": "A byte is a unit of digital information made of 8 bits."}
+{"question": "What is blood made of?", "answer": "Blood contains plasma, red and white blood cells, and platelets."}
+{"question": "What is the capital of Japan?", "answer": "Tokyo is the capital of Japan."}
+{"question": "Explain what a democracy is.", "answer": "A democracy is a system where people vote to choose leaders."}
+{"question": "Why is the sky blue?", "answer": "The sky looks blue because air scatters blue light more than other colors."}
+{"question": "What is a galaxy?", "answer": "A galaxy is a huge collection of stars, gas, dust, and dark matter."}
+{"question": "Explain what antibiotics do.", "answer": "Antibiotics kill or stop the growth of bacteria."}
+{"question": "What is the capital of Australia?", "answer": "Canberra is the capital of Australia."}
+{"question": "What is climate change?", "answer": "Climate change refers to long-term changes in temperature and weather patterns caused mostly by human activity."}
+{"question": "What is a constellation?", "answer": "A constellation is a group of stars forming a recognizable pattern."}
+{"question": "Explain what a database is.", "answer": "A database is a structured system for storing and retrieving information."}
+{"question": "What is Wi-Fi?", "answer": "Wi-Fi is wireless technology that allows devices to connect to the internet."}
+{"question": "What is the purpose of a firewall?", "answer": "A firewall filters network traffic to block harmful access."}
+{"question": "Explain what inflation is.", "answer": "Inflation is the increase in prices of goods and services over time."}
+{"question": "What is the human brain responsible for?", "answer": "The brain controls thoughts, memory, movement, and bodily functions."}
+{"question": "Explain what renewable energy is.", "answer": "Renewable energy comes from resources that naturally replenish, like wind or solar."}
+{"question": "What causes tides in the ocean?", "answer": "Tides are caused by the gravitational pull of the Moon and Sun."}
+{"question": "Who wrote Romeo and Juliet?", "answer": "William Shakespeare wrote Romeo and Juliet."}
+{"question": "What is cholesterol?", "answer": "Cholesterol is a type of fat in the blood that the body needs in small amounts."}
+{"question": "Explain recycling.", "answer": "Recycling is converting used materials into new products."}
+{"question": "What does a magnet attract?", "answer": "A magnet attracts metals like iron and nickel."}
+{"question": "What is a volcano?", "answer": "A volcano is an opening in Earth where lava and ash erupt."}
+{"question": "What is the purpose of vitamins?", "answer": "Vitamins help the body function properly and stay healthy."}
+{"question": "What is JavaScript used for?", "answer": "JavaScript is used to build interactive features on websites."}
+{"question": "What is a fraction?", "answer": "A fraction represents part of a whole, like 1/2."}
+{"question": "Explain friction.", "answer": "Friction is the force that resists motion between two surfaces."}
+{"question": "Why do objects float?", "answer": "Objects float when their density is lower than the liquid they are in."}
+{"question": "What is a keyboard?", "answer": "A keyboard is an input device used to type characters."}
+{"question": "What is an atom?", "answer": "An atom is the smallest unit of matter."}
+{"question": "Explain what a parallel circuit is.", "answer": "A parallel circuit has multiple paths for current to flow."}
+{"question": "What is a continent?", "answer": "A continent is a large landmass on Earth, such as Asia or Africa."}
+{"question": "What is sound?", "answer": "Sound is a vibration that travels through air or another medium."}
+{"question": "What does HTML do?", "answer": "HTML structures the content of web pages."}
+{"question": "Why do we sleep?", "answer": "Sleep helps the brain and body rest, repair, and restore energy."}
+{"question": "What is cholesterol used for in the body?", "answer": "Cholesterol helps build cells and produce hormones, but too much can cause health problems."}
+{"question": "What is the function of kidneys?", "answer": "The kidneys filter waste from the blood and maintain fluid balance."}
+{"question": "Explain what a chemical reaction is.", "answer": "A chemical reaction happens when substances interact and form new substances."}
+{"question": "What is the ozone layer?", "answer": "The ozone layer protects Earth by blocking harmful UV radiation from the Sun."}
+{"question": "What is a recession?", "answer": "A recession is a period of economic decline marked by reduced spending and high unemployment."}
+{"question": "Explain interest in banking.", "answer": "Interest is the cost of borrowing money or the reward for saving it."}
+{"question": "What is a copyright?", "answer": "Copyright gives creators legal rights over how their work is used."}
+{"question": "What is a star?", "answer": "A star is a massive ball of hot gases producing energy through nuclear fusion."}
+{"question": "Why do astronauts float in space?", "answer": "Astronauts float because they are in microgravity while orbiting Earth."}
+{"question": "What is a calorie?", "answer": "A calorie is a unit of energy the body uses for its functions."}
+{"question": "Explain what carbohydrates are.", "answer": "Carbohydrates are nutrients that provide the body with energy."}
+{"question": "What is meditation?", "answer": "Meditation is a practice that focuses the mind and promotes relaxation."}
+{"question": "Explain what antibiotics should not be used for.", "answer": "Antibiotics should not be used for viral infections like colds or flu."}
+{"question": "What is a WiFi password used for?", "answer": "A WiFi password protects your network from unauthorized access."}
+{"question": "Explain what online scams are.", "answer": "Online scams are deceptive schemes meant to steal money or information."}
+{"question": "What is an autobiography?", "answer": "An autobiography is a book written by a person about their own life."}
+{"question": "Who was Julius Caesar?", "answer": "Julius Caesar was a Roman general and statesman who played a major role in Roman history."}
+{"question": "What is a compass used for?", "answer": "A compass shows direction using Earth’s magnetic field."}
+{"question": "Explain the purpose of blood pressure.", "answer": "Blood pressure measures the force of blood pushing against artery walls."}
+{"question": "What is a mammal?", "answer": "A mammal is a warm-blooded animal that typically gives birth to live young and produces milk."}
+{"question": "Why do planes fly?", "answer": "Planes fly because their wings generate lift by moving air faster over the top surface."}
+{"question": "Explain what a legal contract is.", "answer": "A contract is a legally binding agreement between two or more parties."}
+{"question": "What is a tornado?", "answer": "A tornado is a rotating column of air extending from a storm to the ground."}
+{"question": "Why do people yawn?", "answer": "Yawning may help regulate brain temperature and increase alertness."}
+{"question": "What is the purpose of sunscreen?", "answer": "Sunscreen protects the skin from harmful UV rays."}
+{"question": "Explain the concept of time zones.", "answer": "Time zones exist because Earth rotates, causing different regions to experience daylight at different times."}
+{"question": "What is a civil engineer?", "answer": "A civil engineer designs and builds infrastructure like roads, bridges, and buildings."}
+{"question": "What is a fossil?", "answer": "A fossil is the preserved remains or impressions of ancient organisms."}
+{"question": "Why do we need vitamins?", "answer": "Vitamins help the body function properly and support various biological processes."}
+{"question": "Explain what plagiarism is.", "answer": "Plagiarism is using someone else's work without proper credit."}
+{"question": "What is a thesis?", "answer": "A thesis is a statement or central argument presented in academic writing."}
+{"question": "Why is exercise important?", "answer": "Exercise improves physical health, strengthens muscles, and boosts mood."}
+{"question": "What is a smartphone?", "answer": "A smartphone is a mobile device with computing capabilities, internet access, and apps."}
+{"question": "What does a router do?", "answer": "A router directs data between your devices and the internet."}
+{"question": "Explain what fermentation is.", "answer": "Fermentation is a process where microorganisms break down sugars without oxygen."}
+{"question": "What is the purpose of civil laws?", "answer": "Civil laws help resolve disputes between individuals or organizations."}
+{"question": "What are hormones?", "answer": "Hormones are chemical messengers that regulate bodily functions."}
+{"question": "Why do shadows form?", "answer": "Shadows form when an object blocks light from a source."}
+{"question": "What is a constellation?", "answer": "A constellation is a group of stars forming a recognizable pattern."}
+{"question": "Explain what first aid is.", "answer": "First aid is immediate care given to someone injured or ill before medical help arrives."}
+{"question": "What is a paragraph?", "answer": "A paragraph is a group of sentences focusing on one idea."}
+{"question": "Explain fossil fuels.", "answer": "Fossil fuels are energy sources formed from ancient plants and animals."}
+{"question": "What is inflation?", "answer": "Inflation is the rise in prices over time due to economic factors."}
+{"question": "Explain what caffeine does.", "answer": "Caffeine is a stimulant that increases alertness."}
+{"question": "Why do animals migrate?", "answer": "Animals migrate to find food, better climate, or breeding grounds."}
+{"question": "What is a chemical element?", "answer": "A chemical element is a substance made of only one type of atom."}
+{"question": "Explain email encryption.", "answer": "Email encryption protects message content so only intended recipients can read it."}
+{"question": "What is astronomy?", "answer": "Astronomy is the scientific study of celestial objects like stars, planets, and galaxies."}
+{"question": "What is a microscope used for?", "answer": "A microscope magnifies tiny objects so they can be seen clearly."}
+{"question": "What is gravity?", "answer": "Gravity is a natural force that pulls objects toward each other, most noticeably pulling us toward Earth."}
+{"question": "Explain what friction is.", "answer": "Friction is the resistance that occurs when two surfaces move against each other."}
+{"question": "What is plasma in physics?", "answer": "Plasma is a state of matter where gas becomes ionized and conducts electricity."}
+{"question": "What is the speed of light?", "answer": "The speed of light in a vacuum is about 299,792 kilometers per second."}
+{"question": "Explain what a chemical bond is.", "answer": "A chemical bond is the attraction between atoms that allows them to form molecules."}
+{"question": "What is pH?", "answer": "pH measures how acidic or basic a solution is."}
+{"question": "What is boiling?", "answer": "Boiling is when a liquid turns into vapor at its boiling point."}
+{"question": "Explain what the equator is.", "answer": "The equator is an imaginary line that divides Earth into northern and southern hemispheres."}
+{"question": "What is a continent?", "answer": "A continent is one of Earth's large landmasses such as Asia or Africa."}
+{"question": "Why do seasons change?", "answer": "Seasons change because Earth is tilted as it orbits the Sun, causing varying sunlight."}
+{"question": "What is a virus?", "answer": "A virus is a microscopic organism that can only reproduce inside living cells."}
+{"question": "Explain what digestion is.", "answer": "Digestion is the process of breaking down food into nutrients the body can absorb."}
+{"question": "What are white blood cells?", "answer": "White blood cells help defend the body against infections."}
+{"question": "Explain insomnia.", "answer": "Insomnia is a sleep disorder where a person has difficulty falling or staying asleep."}
+{"question": "What is anxiety?", "answer": "Anxiety is a feeling of worry or nervousness often caused by stress or uncertainty."}
+{"question": "Explain what metabolism is.", "answer": "Metabolism is the process by which the body converts food into energy."}
+{"question": "What is binary code?", "answer": "Binary code is a system of 1s and 0s used by computers to represent data."}
+{"question": "Explain what a variable is in programming.", "answer": "A variable is a storage location that holds a value that can change during execution."}
+{"question": "What is a loop in programming?", "answer": "A loop repeats a block of code until a condition is met."}
+{"question": "What is HTML used for?", "answer": "HTML is used to structure web pages by defining elements like text and images."}
+{"question": "Explain what encryption means.", "answer": "Encryption is converting data into unreadable form to protect it from unauthorized access."}
+{"question": "What is phishing?", "answer": "Phishing is a scam where attackers trick people into revealing sensitive information."}
+{"question": "Explain what a firewall does.", "answer": "A firewall filters network traffic to block unauthorized access."}
+{"question": "What is income tax?", "answer": "Income tax is the money individuals and businesses pay to the government based on earnings."}
+{"question": "Explain budgeting.", "answer": "Budgeting is planning how to spend and save money over a period of time."}
+{"question": "What is inflation rate?", "answer": "The inflation rate measures how fast prices are increasing in an economy."}
+{"question": "Explain what a mortgage is.", "answer": "A mortgage is a loan used to buy a house, repaid over many years."}
+{"question": "What is a contract?", "answer": "A contract is a legally binding agreement between parties."}
+{"question": "Explain criminal law.", "answer": "Criminal law deals with offenses against society, such as theft or assault."}
+{"question": "What is evidence in court?", "answer": "Evidence is information presented to prove or disprove claims in a legal case."}
+{"question": "Explain what mentorship is.", "answer": "Mentorship is guidance from an experienced person to support someone’s growth."}
+{"question": "What is teamwork?", "answer": "Teamwork is collaborating with others to achieve a shared goal."}
+{"question": "Explain what a résumé is.", "answer": "A résumé summarizes a person’s skills, experience, and education for job applications."}
+{"question": "What is customer service?", "answer": "Customer service helps customers solve issues and have a positive experience."}
+{"question": "Why do we use cooking oil?", "answer": "Cooking oil helps transfer heat and prevents food from sticking to surfaces."}
+{"question": "Explain boiling vs simmering.", "answer": "Boiling uses high heat with rapid bubbles, while simmering uses lower heat with gentle bubbles."}
+{"question": "What is sautéing?", "answer": "Sautéing is cooking food quickly in a small amount of oil over high heat."}
+{"question": "Explain what astronomy studies.", "answer": "Astronomy studies celestial objects like planets, stars, and galaxies."}
+{"question": "What is a galaxy?", "answer": "A galaxy is a massive collection of stars, dust, and gas held together by gravity."}
+{"question": "Explain the Big Bang theory.", "answer": "The Big Bang theory states the universe began from a hot, dense point and expanded."}
+{"question": "What is a comet?", "answer": "A comet is an icy object that releases gas and dust when near the Sun, forming a tail."}
+{"question": "Explain what recycling is.", "answer": "Recycling is processing used materials to make new products and reduce waste."}
+{"question": "What is pollution?", "answer": "Pollution is the contamination of air, water, or land by harmful substances."}
+{"question": "Explain climate change.", "answer": "Climate change refers to long-term shifts in temperature and weather patterns caused mainly by human activities."}
+{"question": "What is empathy?", "answer": "Empathy is the ability to understand and share someone else’s feelings."}
+{"question": "Explain motivation.", "answer": "Motivation is the drive that encourages people to act or pursue goals."}
+{"question": "What is mindfulness?", "answer": "Mindfulness is being aware of the present moment without judgment."}
+{"question": "Explain what a habit is.", "answer": "A habit is a behavior repeated regularly until it becomes automatic."}
+{"question": "What is cultural diversity?", "answer": "Cultural diversity refers to the presence of different cultures and traditions within a society."}
+{"question": "What is renewable energy?", "answer": "Renewable energy comes from sources that naturally replenish, like solar, wind, or hydropower."}
+{"question": "Explain what density means.", "answer": "Density measures how much mass is contained in a given volume."}
+{"question": "What is a prime number?", "answer": "A prime number is a number greater than 1 with no divisors except 1 and itself."}
+{"question": "What is a triangle?", "answer": "A triangle is a shape with three sides and three angles."}
+{"question": "Explain evaporation.", "answer": "Evaporation is when a liquid turns into vapor due to heat."}
+{"question": "What is a URL?", "answer": "A URL is the address used to access a resource on the internet."}
+{"question": "Explain what an API is.", "answer": "An API is an interface that allows different software systems to communicate."}
+{"question": "What is carbon dioxide?", "answer": "Carbon dioxide is a gas produced by respiration and combustion."}
+{"question": "Explain good posture.", "answer": "Good posture means keeping the spine aligned to reduce stress on muscles and joints."}
+{"question": "What is caffeine?", "answer": "Caffeine is a stimulant found in coffee, tea, and energy drinks."}
+{"question": "Why do we wash our hands?", "answer": "We wash our hands to remove germs and prevent infections."}
+{"question": "Explain inflation in economics.", "answer": "Inflation is the increase in overall prices of goods and services over time."}
+{"question": "What is GDP?", "answer": "GDP is the total value of goods and services produced in a country."}
+{"question": "What is a budget?", "answer": "A budget is a plan for how to spend and save money."}
+{"question": "Explain photosynthesis.", "answer": "Photosynthesis is the process where plants convert sunlight into energy."}
+{"question": "What is osmosis?", "answer": "Osmosis is the movement of water through a membrane from low to high solute concentration."}
+{"question": "What is a noun?", "answer": "A noun is a word that names a person, place, thing, or idea."}
+{"question": "Explain what a verb is.", "answer": "A verb describes an action, state, or occurrence."}
+{"question": "What is empathy?", "answer": "Empathy is understanding and sharing another person's feelings."}
+{"question": "Explain peer pressure.", "answer": "Peer pressure is influence from others to behave in certain ways."}
+{"question": "What is recycling used for?", "answer": "Recycling reduces waste by turning used materials into new products."}
+{"question": "Explain what a battery does.", "answer": "A battery stores chemical energy and converts it into electrical energy."}
+{"question": "What is a capacitor?", "answer": "A capacitor stores electrical charge temporarily and releases it when needed."}
+{"question": "Explain alternating current.", "answer": "Alternating current is electricity where direction reverses periodically."}
+{"question": "What is an asteroid?", "answer": "An asteroid is a rocky object orbiting the sun, smaller than planets."}
+{"question": "Explain what a volcano is.", "answer": "A volcano is an opening in Earth's crust that releases magma, ash, and gases."}
+{"question": "What is democracy?", "answer": "Democracy is a system where citizens elect their leaders."}
+{"question": "What is a law?", "answer": "A law is a rule created by a government to maintain order."}
+{"question": "Explain evidence.", "answer": "Evidence is information used to support a claim or conclusion."}
+{"question": "What is a CVV code on a card?", "answer": "A CVV is a security code used to verify card-not-present transactions."}
+{"question": "Explain two-factor authentication.", "answer": "It requires two forms of verification, such as a password and a phone code."}
+{"question": "What is a router?", "answer": "A router directs network traffic between devices and networks."}
+{"question": "Explain firewalls.", "answer": "Firewalls block unauthorized access while allowing legitimate traffic."}
+{"question": "What is a protein?", "answer": "Proteins are molecules made of amino acids, essential for body functions."}
+{"question": "Explain carbohydrates.", "answer": "Carbohydrates are nutrients that provide energy for the body."}
+{"question": "Why do we sleep?", "answer": "Sleep helps restore the brain and body, supporting memory and healing."}
+{"question": "What is meditation?", "answer": "Meditation is a practice of focusing attention to achieve calm and clarity."}
+{"question": "Explain the solar system.", "answer": "The solar system consists of the Sun and the objects orbiting it."}
+{"question": "What is a vaccine?", "answer": "A vaccine prepares the immune system to fight specific diseases."}
+{"question": "Explain CPR.", "answer": "CPR is an emergency procedure that restores breathing and circulation."}
+{"question": "What is an allergy?", "answer": "An allergy is an immune reaction to a harmless substance."}
+{"question": "Explain altitude.", "answer": "Altitude is the height of an object above sea level."}
+{"question": "What is a desert?", "answer": "A desert is a dry region that receives very little rainfall."}
+{"question": "Explain tides.", "answer": "Tides are the rise and fall of sea levels caused by the Moon’s gravity."}
+{"question": "Why do we have shadows?", "answer": "Shadows form when an object blocks light from reaching a surface."}
+{"question": "What is a microscope?", "answer": "A microscope magnifies small objects so they can be observed."}
+{"question": "Explain magnetism.", "answer": "Magnetism is a force that attracts or repels certain materials like iron."}
+{"question": "What is a fraction?", "answer": "A fraction represents a part of a whole."}
+{"question": "Explain division.", "answer": "Division splits a number into equal parts."}
+{"question": "What is a resume used for?", "answer": "A resume presents your skills and experience to employers."}
+{"question": "Explain leadership.", "answer": "Leadership is guiding others toward a goal while supporting the team."}
