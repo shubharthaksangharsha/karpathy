@@ -77,3 +77,6 @@ webapp_standalone.log
 .DS_Store
 Thumbs.db
 
+# ======== EXTERNAL REPOS ========
+gpt2-124m-qa/
+

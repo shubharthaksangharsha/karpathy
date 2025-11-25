@@ -6,6 +6,8 @@ A comprehensive collection of machine learning and neural network implementation
 
 **Live Demo:** [https://gpt2.devshubh.me](https://gpt2.devshubh.me)
 
+**Model Weights:** [https://huggingface.co/shubharthak/gpt2-124m-qa](https://huggingface.co/shubharthak/gpt2-124m-qa)
+
 ## Table of Contents
 
 | Chapter | Title | Directory | Main Notebook | Key Concepts | Description |
@@ -17,8 +19,8 @@ A comprehensive collection of machine learning and neural network implementation
 | **5** | **Building WaveNet - RNNs** | [`chapter-5-building-wavenet/`](./chapter-5-building-wavenet/) | [`building-makemore-part5-rnns.ipynb`](./chapter-5-building-wavenet/building-makemore-part5-rnns.ipynb) | RNNs, hierarchical processing, sequence modeling, context windows | Introduction to Recurrent Neural Networks (RNNs) and hierarchical processing for sequence modeling. |
 | **6** | **Building GPT** | [`chapter-6-building-gpt/`](./chapter-6-building-gpt/) | [`gpt-dev.ipynb`](./chapter-6-building-gpt/gpt-dev.ipynb), [`my_first_nano_gpt_train.ipynb`](./chapter-6-building-gpt/my_first_nano_gpt_train.ipynb) | Self-attention, multi-head attention, transformers, GPT architecture, positional encoding | Building a complete GPT (Generative Pre-trained Transformer) from scratch. Implementation of self-attention, multi-head attention, and transformer architecture. |
 | **7** | **Building Tokenization** | [`chapter-7-building-tokenization/`](./chapter-7-building-tokenization/) | [`building-tokenization.ipynb`](./chapter-7-building-tokenization/building-tokenization.ipynb) | Tokenization, BPE, vocabulary building, text preprocessing | Understanding and implementing tokenization techniques for language models, including BPE (Byte Pair Encoding). |
-| **8** | **Building GPT-2 124M** | [`chapter-8-building-gpt2-124m/`](./chapter-8-building-gpt2-124m/) | [`play.ipynb`](./chapter-8-building-gpt2-124m/play.ipynb) | Large-scale transformers, pre-trained models, model scaling, Hugging Face transformers | Scaling up to GPT-2 124M parameters. Working with pre-trained models and understanding large-scale transformer architectures. |
-| **9** | **Fine-tuning GPT-2: SFT, RLHF & DPO** | [`chapter-9-sft-rhlf-dpo-gpt2-124m/`](./chapter-9-sft-rhlf-dpo-gpt2-124m/) | [`webapp_standalone.py`](./chapter-9-sft-rhlf-dpo-gpt2-124m/webapp_standalone.py), [`sft_train.py`](./chapter-9-sft-rhlf-dpo-gpt2-124m/sft_train.py) | Supervised fine-tuning (SFT), RLHF, DPO, Q&A datasets, model alignment, deployment | Fine-tuning GPT-2 124M on Q&A tasks using supervised fine-tuning and direct preference optimization. Deploy as a web application. **[Live Demo](https://gpt2.devshubh.me)** |
+| **8** | **Building GPT-2 124M** | [`chapter-8-building-gpt2-124m/`](./chapter-8-building-gpt2-124m/) | [`training-gpt-2-from-scratch-Final.ipynb`](./chapter-8-building-gpt2-124m/training-gpt-2-from-scratch-Final.ipynb) | Large-scale transformers, pre-trained models, model scaling, Hugging Face transformers | Scaling up to GPT-2 124M parameters. Working with pre-trained models and understanding large-scale transformer architectures. |
+| **9** | **Fine-tuning GPT-2: SFT, RLHF & DPO** | [`chapter-9-sft-rhlf-dpo-gpt2-124m/`](./chapter-9-sft-rhlf-dpo-gpt2-124m/) | [`sft-rlhf-dpo-on-gpt2-model-final-kaggle.ipynb`](./chapter-9-sft-rhlf-dpo-gpt2-124m/sft-rlhf-dpo-on-gpt2-model-final-kaggle.ipynb) | Supervised fine-tuning (SFT), RLHF, DPO, Q&A datasets, model alignment, deployment | Fine-tuning GPT-2 124M on Q&A tasks using supervised fine-tuning and direct preference optimization. Deploy as a web application. **[Live Demo](https://gpt2.devshubh.me) • [Model Weights](https://huggingface.co/shubharthak/gpt2-124m-qa)** |
 
 ## Getting Started
 
@@ -88,9 +90,19 @@ karpathy/
 
 Experience the fine-tuned GPT-2 Q&A model in action:
 
-**[https://gpt2.devshubh.me](https://gpt2.devshubh.me)**
+**Live Web App:** [https://gpt2.devshubh.me](https://gpt2.devshubh.me)
+
+**Model Weights:** [https://huggingface.co/shubharthak/gpt2-124m-qa](https://huggingface.co/shubharthak/gpt2-124m-qa)
 
 This interactive demo showcases a GPT-2 124M model fine-tuned on Q&A datasets covering Australian facts, technology, and general knowledge.
+
+### Available Model Checkpoints
+
+The Hugging Face repository includes:
+- **Pretrained Model** (`model_09535.pt`) - Trained from scratch on Ultra-FineWeb Edu (5B tokens)
+- **QA SFT Model** (`qa-sft_best.pt`) - Fine-tuned for Q&A tasks using Supervised Fine-Tuning
+
+Both models are available for download and experimentation!
 
 ## Contributing
 
@@ -99,6 +111,7 @@ This repository follows the structure and content from Andrej Karpathy's "Neural
 ## Additional Resources
 
 - [Neural Networks: Zero to Hero - YouTube Playlist](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=SH5UXoaWnx7mwTaW)
+- [GPT-2 124M Q&A Model on Hugging Face](https://huggingface.co/shubharthak/gpt2-124m-qa)
 - [Karpathy's Blog](https://karpathy.github.io/)
 - [PyTorch Documentation](https://pytorch.org/docs/)
 - [Gradio Documentation](https://gradio.app/docs/)
