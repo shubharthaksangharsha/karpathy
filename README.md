@@ -2,6 +2,10 @@
 
 A comprehensive collection of machine learning and neural network implementations following Andrej Karpathy's "Neural Networks: Zero to Hero" course. This repository contains hands-on implementations from basic neural networks to advanced transformer architectures.
 
+![GPT-2 Q&A Assistant Demo](gpt2-devshubh.me.png)
+
+**Live Demo:** [https://gpt2.devshubh.me](https://gpt2.devshubh.me)
+
 ## Table of Contents
 
 | Chapter | Title | Directory | Main Notebook | Key Concepts | Description |
